@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://0ug05b63nomu"
+path="res://.godot/imported/quiet mountain.ogg-46b5e7e805b48e24c0971e9df60c72fa.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/music/quiet mountain.ogg"
+dest_files=["res://.godot/imported/quiet mountain.ogg-46b5e7e805b48e24c0971e9df60c72fa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

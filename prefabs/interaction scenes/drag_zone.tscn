@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://y33d0kakprlx"]
+
+[ext_resource type="Script" uid="uid://dq8jx7a2tuxlq" path="res://scripts/interaction scenes/mouse_draggable.gd" id="1_713wt"]
+
+[node name="Drag Zone" type="TextureRect" unique_id=352917950]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="." unique_id=919875315]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -4.0
+offset_right = -4.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_713wt")
+
+[connection signal="button_down" from="Button" to="Button" method="_on_button_down"]
+[connection signal="button_up" from="Button" to="Button" method="_on_button_up"]

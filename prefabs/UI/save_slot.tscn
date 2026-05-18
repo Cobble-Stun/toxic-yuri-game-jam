@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bb7p7r0uc45n2"]
+
+[node name="SaveSlot" type="Button" unique_id=1931283174]
+custom_minimum_size = Vector2(128, 128)
+
+[node name="Label" type="Label" parent="." unique_id=523140634]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=81123122]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -36.0
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2

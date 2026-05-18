@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cgn1dmy6afhvr"]
+
+[ext_resource type="FontFile" uid="uid://btxbhtpdn8ce6" path="res://fonts/jmh-typewriter.regular.ttf" id="1_5i4cy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5i4cy"]
+
+[resource]
+default_font = ExtResource("1_5i4cy")
+/colors/default = Color(0, 0, 0, 1)
+/styles/default = SubResource("StyleBoxEmpty_5i4cy")
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 24
+LineEdit/colors/caret_color = Color(0, 0, 0, 1)
+LineEdit/colors/clear_button_color = Color(0, 0, 0, 1)
+LineEdit/colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/colors/font_selected_color = Color(0, 0, 0, 1)
+LineEdit/colors/selection_color = Color(0, 0, 0, 1)
+TextEdit/colors/caret_color = Color(0, 0, 0, 1)
+TextEdit/colors/font_color = Color(0, 0, 0, 1)
+TextEdit/colors/search_result_color = Color(0, 0, 0, 1)
+TextEdit/colors/selection_color = Color(0, 0, 0, 1)

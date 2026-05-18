@@ -1,0 +1,8 @@
+[
+	{"background": "car:1.0", "ambient": "car", "sprite": "car left hand:left hand:0:0:1.0", "sprite2": "car right hand:right hand:0:0:1.0", "text": "[b]I flutter my eyelids open as I tilt my head up to look at the road.[/b]"},
+	{"text": "I started falling asleep over the wheel again."},
+	{"text": "It's getting so late, and I need to get home."},
+	{"text": "Hmm? A message from mom?"},
+	{"sprite2": "phone:right hand:0:0:1.0", "event": "hide text"},
+	{"event": "unhide text", "text": "\"Where are you? Come home as soon as possible. It's getting dark.\""}
+]

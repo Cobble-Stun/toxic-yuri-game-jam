@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://rywfyeidjt1j"]
+
+[ext_resource type="Texture2D" uid="uid://ieogysmnicbm" path="res://temporary assets/interactive scenes/temp/groping mechanic/West3.png" id="2_hiucn"]
+[ext_resource type="Texture2D" uid="uid://bh1o0goqm5gxd" path="res://temporary assets/interactive scenes/temp/groping mechanic/West2.png" id="3_k6its"]
+[ext_resource type="Texture2D" uid="uid://dila84flxjjuj" path="res://temporary assets/interactive scenes/temp/groping mechanic/West1.png" id="4_2dw41"]
+[ext_resource type="PackedScene" uid="uid://y33d0kakprlx" path="res://scenes/interaction scenes/drag_zone.tscn" id="4_6m80x"]
+[ext_resource type="Texture2D" uid="uid://d3acvi68f50kh" path="res://temporary assets/interactive scenes/temp/groping mechanic/East1.png" id="5_ykxp3"]
+[ext_resource type="Texture2D" uid="uid://beyhusrjbubfp" path="res://temporary assets/interactive scenes/temp/groping mechanic/East2.png" id="6_g6y4b"]
+[ext_resource type="Texture2D" uid="uid://dgiepf04itr1f" path="res://temporary assets/interactive scenes/temp/groping mechanic/East3.png" id="7_pvxhv"]
+[ext_resource type="Texture2D" uid="uid://c8kyimuq6efv5" path="res://temporary assets/interactive scenes/temp/groping mechanic/North3.png" id="8_6h1ut"]
+[ext_resource type="Texture2D" uid="uid://hrin04aomsi1" path="res://temporary assets/interactive scenes/temp/groping mechanic/North2.png" id="9_6m80x"]
+[ext_resource type="Texture2D" uid="uid://b3pcqohuxnx6o" path="res://temporary assets/interactive scenes/temp/groping mechanic/North1.png" id="10_cqn77"]
+[ext_resource type="Texture2D" uid="uid://do4de6ncon6y1" path="res://temporary assets/interactive scenes/temp/groping mechanic/South1.png" id="11_22oil"]
+[ext_resource type="Texture2D" uid="uid://cura1g25sqmuf" path="res://temporary assets/interactive scenes/temp/groping mechanic/South2.png" id="12_p7tmn"]
+[ext_resource type="Texture2D" uid="uid://c8qjd0l2wmmnb" path="res://temporary assets/interactive scenes/temp/groping mechanic/South3.png" id="13_b11sm"]
+[ext_resource type="Texture2D" uid="uid://ck28w3cyx6ypq" path="res://temporary assets/interactive scenes/temp/groping mechanic/NorthWest3.png" id="14_5qgi0"]
+[ext_resource type="Texture2D" uid="uid://c24h205kcr7kb" path="res://temporary assets/interactive scenes/temp/groping mechanic/Neutral.png" id="14_k6its"]
+[ext_resource type="Texture2D" uid="uid://dol5bu7v7akqx" path="res://temporary assets/interactive scenes/temp/groping mechanic/NorthWest2.png" id="15_7kp7o"]
+[ext_resource type="Texture2D" uid="uid://btid1qohbrdsf" path="res://temporary assets/interactive scenes/temp/groping mechanic/NorthWest1.png" id="16_8fq6b"]
+[ext_resource type="Texture2D" uid="uid://lreflyhh7pok" path="res://temporary assets/interactive scenes/temp/groping mechanic/SouthEast1.png" id="17_oy8sc"]
+[ext_resource type="Texture2D" uid="uid://bljr7yu4aklda" path="res://temporary assets/interactive scenes/temp/groping mechanic/SouthEast2.png" id="18_2nf64"]
+[ext_resource type="Texture2D" uid="uid://d27ek7eu4wgad" path="res://temporary assets/interactive scenes/temp/groping mechanic/SouthEast3.png" id="19_sxsde"]
+[ext_resource type="Texture2D" uid="uid://bt2w5ltsmam81" path="res://temporary assets/interactive scenes/temp/groping mechanic/SouthWest3.png" id="20_r5xgu"]
+[ext_resource type="Texture2D" uid="uid://bbie8vb5vrmmq" path="res://temporary assets/interactive scenes/temp/groping mechanic/SouthWest2.png" id="21_rygqd"]
+[ext_resource type="Texture2D" uid="uid://b2eqs7k2nveds" path="res://temporary assets/interactive scenes/temp/groping mechanic/SouthWest1.png" id="22_8k62k"]
+[ext_resource type="Texture2D" uid="uid://cn82yj0xlupwu" path="res://temporary assets/interactive scenes/temp/groping mechanic/NorthEast1.png" id="23_akknq"]
+[ext_resource type="Texture2D" uid="uid://bhctniohmy6dt" path="res://temporary assets/interactive scenes/temp/groping mechanic/NorthEast2.png" id="24_chy0g"]
+[ext_resource type="Texture2D" uid="uid://brahkfbymlt01" path="res://temporary assets/interactive scenes/temp/groping mechanic/NorthEast3.png" id="25_pknf1"]
+[ext_resource type="PackedScene" uid="uid://ceuxrty46xugc" path="res://scenes/interaction scenes/drag_cursor.tscn" id="27_b11sm"]
+
+[node name="Test" type="Node2D" unique_id=1520711829]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1790683266]
+
+[node name="Drag Zone" parent="CanvasLayer" unique_id=1827525774 instance=ExtResource("4_6m80x")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -256.0
+offset_right = 256.0
+offset_bottom = 256.0
+texture = ExtResource("14_k6its")
+expand_mode = 0
+
+[node name="Button" parent="CanvasLayer/Drag Zone" index="0" unique_id=919875315]
+horizontalImages = Array[Texture2D]([ExtResource("2_hiucn"), ExtResource("3_k6its"), ExtResource("4_2dw41"), ExtResource("5_ykxp3"), ExtResource("6_g6y4b"), ExtResource("7_pvxhv")])
+verticalImages = Array[Texture2D]([ExtResource("8_6h1ut"), ExtResource("9_6m80x"), ExtResource("10_cqn77"), ExtResource("11_22oil"), ExtResource("12_p7tmn"), ExtResource("13_b11sm")])
+topLeftToBotRightImages = Array[Texture2D]([ExtResource("14_5qgi0"), ExtResource("15_7kp7o"), ExtResource("16_8fq6b"), ExtResource("17_oy8sc"), ExtResource("18_2nf64"), ExtResource("19_sxsde")])
+botLeftToTopRightImages = Array[Texture2D]([ExtResource("20_r5xgu"), ExtResource("21_rygqd"), ExtResource("22_8k62k"), ExtResource("23_akknq"), ExtResource("24_chy0g"), ExtResource("25_pknf1")])
+neutralImage = ExtResource("14_k6its")
+
+[node name="Cursor" parent="CanvasLayer" unique_id=1481296318 instance=ExtResource("27_b11sm")]
+position = Vector2(12, 16)
+
+[editable path="CanvasLayer/Drag Zone"]

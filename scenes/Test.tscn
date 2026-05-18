@@ -1,0 +1,549 @@
+[gd_scene format=3 uid="uid://cs5ampied1occ"]
+
+[ext_resource type="Script" uid="uid://bj5diwbto78kv" path="res://scripts/scene_player.gd" id="1_jbd4l"]
+[ext_resource type="Texture2D" uid="uid://bg6skvntjxjf8" path="res://gui/speech/textbox.png" id="2_fu3ou"]
+[ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="3_bhwsq"]
+[ext_resource type="FontFile" uid="uid://b0rdav5dsu3wg" path="res://fonts/jmh-typewriter.bold.ttf" id="4_fu3ou"]
+[ext_resource type="Script" uid="uid://b6k6vsem8bafv" path="res://scripts/text_sound.gd" id="4_xftjw"]
+[ext_resource type="AudioStream" uid="uid://caiyq74swduhi" path="res://audio/sounds/nextdialogue.ogg" id="5_8bdjt"]
+[ext_resource type="Script" uid="uid://bu0oglgq237js" path="res://scripts/pause_menu.gd" id="5_bhwsq"]
+[ext_resource type="AudioStream" uid="uid://c8exbcby5t2ru" path="res://audio/sounds/text1.ogg" id="6_wnywe"]
+[ext_resource type="Texture2D" uid="uid://c2g35syaxhf1k" path="res://gui/pause menu/main_menu.png" id="6_xftjw"]
+[ext_resource type="AudioStream" uid="uid://i11hgsleo5su" path="res://audio/sounds/text2.ogg" id="7_1of5j"]
+[ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="7_wnywe"]
+[ext_resource type="Texture2D" uid="uid://bfh8tqhanj8vs" path="res://gui/main menu/Slider Center.png" id="8_1of5j"]
+[ext_resource type="AudioStream" uid="uid://dehhrxqnpl387" path="res://audio/sounds/text3.ogg" id="8_80npy"]
+[ext_resource type="AudioStream" uid="uid://bph33q502x8j2" path="res://audio/sounds/text4.ogg" id="9_k07xo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_njov2"]
+content_margin_left = 20.0
+content_margin_top = 40.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2au82"]
+content_margin_left = 30.0
+
+[sub_resource type="Animation" id="Animation_80npy"]
+resource_name = "Hidden"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1.5),
+"update": 0,
+"values": [Vector2(-350, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1of5j"]
+resource_name = "Hide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1.5),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-350, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_wnywe"]
+resource_name = "idle"
+
+[sub_resource type="Animation" id="Animation_xftjw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_8bdjt"]
+resource_name = "Show"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1.5, 1),
+"update": 0,
+"values": [Vector2(-350, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_80npy"]
+_data = {
+&"Hidden": SubResource("Animation_80npy"),
+&"Hide": SubResource("Animation_1of5j"),
+&"Idle": SubResource("Animation_wnywe"),
+&"RESET": SubResource("Animation_xftjw"),
+&"Show": SubResource("Animation_8bdjt")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xftjw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8bdjt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wnywe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1of5j"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_80npy"]
+texture = ExtResource("8_1of5j")
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k07xo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gm34k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fn7yj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xdyba"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b1ed2"]
+
+[node name="Stage" type="Node2D" unique_id=2143544941]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=384353046]
+script = ExtResource("1_jbd4l")
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=684691030]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Background" type="TextureRect" parent="CanvasLayer/Control" unique_id=1841474973]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_behavior_recursive = 1
+expand_mode = 3
+
+[node name="Dialogue Box" type="TextureRect" parent="CanvasLayer/Control" unique_id=1182628965]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -167.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+mouse_behavior_recursive = 1
+texture = ExtResource("2_fu3ou")
+expand_mode = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control/Dialogue Box" unique_id=737503451]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 214.77258
+offset_top = 6.0
+offset_right = -215.77258
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_behavior_recursive = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_njov2")
+
+[node name="Dialogue Text" type="RichTextLabel" parent="CanvasLayer/Control/Dialogue Box/PanelContainer" unique_id=1328541999]
+clip_contents = false
+layout_mode = 2
+mouse_filter = 2
+mouse_behavior_recursive = 1
+theme = ExtResource("3_bhwsq")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/bold_font = ExtResource("4_fu3ou")
+theme_override_font_sizes/normal_font_size = 22
+theme_override_font_sizes/bold_font_size = 22
+theme_override_font_sizes/bold_italics_font_size = 22
+theme_override_font_sizes/italics_font_size = 22
+theme_override_font_sizes/mono_font_size = 22
+bbcode_enabled = true
+text = "Insert text here"
+
+[node name="PanelContainer2" type="PanelContainer" parent="CanvasLayer/Control/Dialogue Box" unique_id=1542671256]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 187.77258
+offset_top = 10.0
+offset_right = -187.77258
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_behavior_recursive = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_2au82")
+
+[node name="Name Text" type="Label" parent="CanvasLayer/Control/Dialogue Box/PanelContainer2" unique_id=500309995]
+layout_mode = 2
+mouse_behavior_recursive = 1
+theme = ExtResource("3_bhwsq")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Name"
+
+[node name="Pause Menu" type="Control" parent="CanvasLayer" unique_id=2026236985]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_bhwsq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Pause Menu" unique_id=1468273829]
+libraries/ = SubResource("AnimationLibrary_80npy")
+
+[node name="Buttons" type="Control" parent="CanvasLayer/Pause Menu" unique_id=129716162]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Pause Menu/Buttons" unique_id=1863732360]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_xftjw")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Buttons" type="VBoxContainer" parent="CanvasLayer/Pause Menu/Buttons" unique_id=1371208937]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -847.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_bhwsq")
+alignment = 1
+
+[node name="Save" type="Button" parent="CanvasLayer/Pause Menu/Buttons/Buttons" unique_id=1686315116]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.39308554, 0.39308554, 0.39308533, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xftjw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8bdjt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wnywe")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1of5j")
+text = "Save
+"
+
+[node name="Load" type="Button" parent="CanvasLayer/Pause Menu/Buttons/Buttons" unique_id=1111744633]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.39308554, 0.39308554, 0.39308533, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xftjw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8bdjt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wnywe")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1of5j")
+text = "Load"
+
+[node name="Options" type="Button" parent="CanvasLayer/Pause Menu/Buttons/Buttons" unique_id=1013099247]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.39308554, 0.39308554, 0.39308533, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xftjw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8bdjt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wnywe")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1of5j")
+text = "Options
+"
+
+[node name="Quit To Menu" type="Button" parent="CanvasLayer/Pause Menu/Buttons/Buttons" unique_id=958157988]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.39308554, 0.39308554, 0.39308533, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xftjw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8bdjt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wnywe")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1of5j")
+text = "Quit To Menu
+"
+
+[node name="Quit Game" type="Button" parent="CanvasLayer/Pause Menu/Buttons/Buttons" unique_id=2066806351]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.39308554, 0.39308554, 0.39308533, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xftjw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8bdjt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wnywe")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1of5j")
+text = "Quit Game
+"
+
+[node name="Load Game" type="VBoxContainer" parent="CanvasLayer/Pause Menu" unique_id=643705192]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 103.0
+offset_top = 134.0
+offset_right = -547.0
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Pause Menu/Load Game" unique_id=1393104797]
+layout_mode = 2
+
+[node name="Save Game" type="VBoxContainer" parent="CanvasLayer/Pause Menu" unique_id=1707853399]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 103.0
+offset_top = 134.0
+offset_right = -547.0
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Pause Menu/Save Game" unique_id=160829750]
+layout_mode = 2
+
+[node name="Options" type="Control" parent="CanvasLayer/Pause Menu" unique_id=196637880]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Pause Menu/Options" unique_id=1718724339]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 932.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_xftjw")
+expand_mode = 5
+
+[node name="Options" type="VBoxContainer" parent="CanvasLayer/Pause Menu/Options" unique_id=1405789193]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 26.919985
+offset_top = 158.0
+offset_right = 484.91998
+offset_bottom = 378.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_bhwsq")
+
+[node name="Text Volume" type="HBoxContainer" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=1160053062]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text Volume Text" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Text Volume" unique_id=878097604]
+layout_mode = 2
+text = "Text Volume"
+
+[node name="Text Volume Slider" type="HSlider" parent="CanvasLayer/Pause Menu/Options/Options/Text Volume" unique_id=532023846]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("7_wnywe")
+theme_override_icons/grabber_highlight = ExtResource("7_wnywe")
+theme_override_icons/grabber_disabled = ExtResource("7_wnywe")
+theme_override_styles/slider = SubResource("StyleBoxTexture_80npy")
+max_value = 80.0
+step = 0.25
+value = 72.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Text Volume" unique_id=1098672806]
+layout_mode = 2
+theme = ExtResource("3_bhwsq")
+text = "100"
+metadata/_edit_use_anchors_ = true
+
+[node name="SFX Volume" type="HBoxContainer" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=2081407246]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="SFX Volume Text" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/SFX Volume" unique_id=532072916]
+layout_mode = 2
+text = "SFX Volume"
+
+[node name="SFX Volume Slider" type="HSlider" parent="CanvasLayer/Pause Menu/Options/Options/SFX Volume" unique_id=482366782]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("7_wnywe")
+theme_override_icons/grabber_highlight = ExtResource("7_wnywe")
+theme_override_icons/grabber_disabled = ExtResource("7_wnywe")
+theme_override_styles/slider = SubResource("StyleBoxTexture_80npy")
+max_value = 80.0
+step = 0.25
+value = 72.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/SFX Volume" unique_id=2078646691]
+layout_mode = 2
+theme = ExtResource("3_bhwsq")
+text = "100"
+metadata/_edit_use_anchors_ = true
+
+[node name="Music Volume" type="HBoxContainer" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=670619543]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Music Volume Text" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Music Volume" unique_id=1291860938]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="Music Volume Slider" type="HSlider" parent="CanvasLayer/Pause Menu/Options/Options/Music Volume" unique_id=498190977]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("7_wnywe")
+theme_override_icons/grabber_highlight = ExtResource("7_wnywe")
+theme_override_icons/grabber_disabled = ExtResource("7_wnywe")
+theme_override_styles/slider = SubResource("StyleBoxTexture_80npy")
+max_value = 80.0
+step = 0.25
+value = 72.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Music Volume" unique_id=330748400]
+layout_mode = 2
+theme = ExtResource("3_bhwsq")
+text = "100"
+metadata/_edit_use_anchors_ = true
+
+[node name="Text Speed" type="HBoxContainer" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=1052395174]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Text Speed Text" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Text Speed" unique_id=1508846962]
+layout_mode = 2
+text = "Text Speed"
+
+[node name="SFX Volume Slider" type="HSlider" parent="CanvasLayer/Pause Menu/Options/Options/Text Speed" unique_id=240210000]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("7_wnywe")
+theme_override_icons/grabber_highlight = ExtResource("7_wnywe")
+theme_override_icons/grabber_disabled = ExtResource("7_wnywe")
+theme_override_styles/slider = SubResource("StyleBoxTexture_80npy")
+min_value = 0.001
+max_value = 0.5
+step = 0.001
+value = 0.05
+
+[node name="Label" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Text Speed" unique_id=1279091922]
+layout_mode = 2
+theme = ExtResource("3_bhwsq")
+text = "100"
+metadata/_edit_use_anchors_ = true
+
+[node name="Auto Progress Speed" type="HBoxContainer" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=1696968677]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Auto Progress Speed Text" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Auto Progress Speed" unique_id=136263657]
+layout_mode = 2
+text = "Auto Progress Speed"
+
+[node name="Auto Progress Speed Slider" type="HSlider" parent="CanvasLayer/Pause Menu/Options/Options/Auto Progress Speed" unique_id=1514962014]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("7_wnywe")
+theme_override_icons/grabber_highlight = ExtResource("7_wnywe")
+theme_override_icons/grabber_disabled = ExtResource("7_wnywe")
+theme_override_styles/slider = SubResource("StyleBoxTexture_80npy")
+max_value = 6.0
+step = 0.1
+value = 3.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Auto Progress Speed" unique_id=590289433]
+layout_mode = 2
+theme = ExtResource("3_bhwsq")
+text = "100"
+metadata/_edit_use_anchors_ = true
+
+[node name="Back" type="Button" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=1828114413]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_k07xo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gm34k")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fn7yj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xdyba")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b1ed2")
+text = "back"
+alignment = 0
+
+[node name="Choice Menu" type="VBoxContainer" parent="CanvasLayer" unique_id=1577672439]
+visible = false
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -264.0
+offset_top = 60.0
+offset_right = 264.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Text Speed Timer" type="Timer" parent="CanvasLayer" unique_id=477367250]
+wait_time = 0.05
+
+[node name="Text Auto Progress Timer" type="Timer" parent="CanvasLayer" unique_id=278998653]
+wait_time = 3.0
+
+[node name="Text Sound" type="Node" parent="CanvasLayer" unique_id=1155634173]
+script = ExtResource("4_xftjw")
+nextDialogueSound = ExtResource("5_8bdjt")
+textSounds = Array[AudioStream]([ExtResource("6_wnywe"), ExtResource("7_1of5j"), ExtResource("8_80npy"), ExtResource("9_k07xo")])
+
+[node name="Music Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=96049220]
+
+[node name="Ambient Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=11722248]
+
+[node name="Sound Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=217950561]
+
+[connection signal="pressed" from="CanvasLayer/Pause Menu/Buttons/Buttons/Save" to="CanvasLayer/Pause Menu" method="_on_save_pressed"]
+[connection signal="pressed" from="CanvasLayer/Pause Menu/Buttons/Buttons/Load" to="CanvasLayer/Pause Menu" method="_on_load_pressed"]
+[connection signal="pressed" from="CanvasLayer/Pause Menu/Buttons/Buttons/Options" to="CanvasLayer/Pause Menu" method="_on_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/Pause Menu/Buttons/Buttons/Quit To Menu" to="CanvasLayer/Pause Menu" method="_on_quit_to_menu_pressed"]
+[connection signal="pressed" from="CanvasLayer/Pause Menu/Buttons/Buttons/Quit Game" to="CanvasLayer/Pause Menu" method="_on_quit_game_pressed"]
