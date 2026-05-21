@@ -6,7 +6,7 @@ extends CanvasLayer
 @onready var primaryMenuButtons = $"Control/Primary Menu Buttons"
 @onready var options = $Control/Options
 @onready var loadGame = $"Control/Load Game"
-@onready var loadSlotParent = $Control/LoadGame/VBoxContainer
+@onready var loadSlotParent = $"Control/Load Game/Scroll Container/Load Slots"
 
 @onready var textVolumeValue = $"Control/Options/Text Volume/Label"
 @onready var sfxVolumeValue = $"Control/Options/SFX Volume/Label"
@@ -15,6 +15,7 @@ extends CanvasLayer
 @onready var autoProgressValue = $"Control/Options/Auto Progress Speed/Label"
 
 func _ready() -> void:
+	SaveSystem.load_settings()
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Text"), Globals.textVolume)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), Globals.musicVolume)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), Globals.sfxVolume)
@@ -23,29 +24,29 @@ func _ready() -> void:
 	musicVolumeValue.text = str(Globals.musicVolume+72)
 	textSpeedValue.text = str(Globals.textSpeed)
 	autoProgressValue.text = str(Globals.textAutoProgressSpeed)
-	#if Globals.changeMainMenuBackground == true:
-		#background.texture = bgs[1]
-	#else:
-		#background.texture = bgs[0]
-	#temp below
 	background.texture = bgs[0]
-	
-	
-	#loadSlotParent.add_child()
 		
 func start_new_game():
 	SaveSystem.new_game()
 	Globals.load_data()
-	get_tree().change_scene_to_file(Globals.savedScene)
+	get_tree().change_scene_to_file("res://scenes/Stage.tscn")
 
-func load_game():
-	#SaveSystem.load_game()
-	Globals.load_data()
-	get_tree().change_scene_to_file(Globals.savedScene)
+func load_game(name: String):
+	SaveSystem.load_game(name)
+	get_tree().change_scene_to_file("res://scenes/Stage.tscn")
 
 func toggle_load_game():
 	primaryMenuButtons.visible = !primaryMenuButtons.visible
-	loadGame.visible = !primaryMenuButtons.visible
+	loadGame.visible = !loadGame.visible
+	var saves = SaveSystem.read_save_data()
+	for save in saves:
+		var image = SaveSystem.read_save_image(save)
+		var slot = loadSlotScene.instantiate()
+		loadSlotParent.add_child(slot)
+		slot.get_node("Name").text = save
+		slot.get_node("DateTime").text = saves[save]["date_and_time"]
+		slot.get_node("TextureRect").texture = image
+		slot.pressed.connect(load_game.bind(save))
 	
 func toggle_options():
 	primaryMenuButtons.visible = !primaryMenuButtons.visible
@@ -77,4 +78,6 @@ func change_auto_progress_speed(value: float):
 	Globals.textAutoProgressSpeed = value
 	autoProgressValue.text = str(value)
 	
+func save_changes():
+	SaveSystem.save_settings()
 	

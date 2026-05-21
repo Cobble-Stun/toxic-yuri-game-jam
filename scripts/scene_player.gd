@@ -35,6 +35,8 @@ func _ready() -> void:
 	read_current_script_line()
 	
 func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("Test"):
+		SaveSystem.save_game("Penis")
 	if Input.is_action_just_pressed("ToggleDialogueBox") and preventToggleDialogueBox == false:
 		toggle_dialogue_box(false)
 	if !dialogueBox.visible and gameDialogueBoxHide == false:
@@ -47,6 +49,7 @@ func _process(_delta: float) -> void:
 		elif dialogIndex < dialog.size()-1:
 			capture_scene_state()
 			dialogIndex += 1
+			
 			read_current_script_line()
 	if Input.is_action_just_pressed("PreviousDialogue"):
 		scene_rollback()
@@ -85,7 +88,6 @@ func capture_scene_state():
 			})
 	
 	stateHistory.append(snapshot)
-	print(stateHistory)
 	
 func scene_rollback():
 	if stateHistory.size() < 1:
@@ -203,6 +205,8 @@ func read_current_script_line():
 			"unhide text":
 				dialogueBox.visible = true
 				gameDialogueBoxHide = false
+	Globals.savedDialogIndex = dialogIndex
+	Globals.savedScene = currentScript
 		
 
 func toggle_dialogue_box(removeText : bool):

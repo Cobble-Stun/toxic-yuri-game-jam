@@ -13,5 +13,5 @@ var textSpeed = 0.05
 var textAutoProgressSpeed = 3.0
 
 func load_data():
-	savedDialogIndex = SaveSystem.data["saved_Dialog_index"]
+	savedDialogIndex = SaveSystem.data["saved_dialog_index"]
 	savedScene = SaveSystem.data["saved_scene"]

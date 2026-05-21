@@ -52,6 +52,16 @@ expand_margin_bottom = 10.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_50kmc"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_khfdq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i5clu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_04aus"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ssorb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uikcu"]
+
 [node name="MainMenu" type="Node2D" unique_id=301113644]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1508004869]
@@ -293,6 +303,16 @@ theme_override_font_sizes/font_size = 32
 text = "100"
 metadata/_edit_use_anchors_ = true
 
+[node name="Save Changes" type="Button" parent="CanvasLayer/Control/Options" unique_id=1749066073]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1fbba")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_sepmt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_uk30l")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_q6nfa")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_50kmc")
+text = "Save Changes
+"
+
 [node name="Back" type="Button" parent="CanvasLayer/Control/Options" unique_id=1838790865]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_1fbba")
@@ -300,27 +320,47 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_sepmt")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_uk30l")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_q6nfa")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_50kmc")
-text = "back"
+text = "Back"
 
-[node name="LoadGame" type="ScrollContainer" parent="CanvasLayer/Control" unique_id=142739886]
+[node name="Load Game" type="Control" parent="CanvasLayer/Control" unique_id=1901667767]
 visible = false
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -219.0
-offset_top = -279.0
-offset_right = 219.0
-offset_bottom = 279.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 392.0
+offset_top = 80.0
+offset_right = -392.0
+offset_bottom = -201.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_estw7")
+
+[node name="Scroll Container" type="ScrollContainer" parent="CanvasLayer/Control/Load Game" unique_id=34166858]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/LoadGame" unique_id=593376214]
+[node name="Load Slots" type="VBoxContainer" parent="CanvasLayer/Control/Load Game/Scroll Container" unique_id=1318549323]
 layout_mode = 2
 size_flags_horizontal = 4
 alignment = 1
+
+[node name="Back" type="Button" parent="CanvasLayer/Control/Load Game" unique_id=411301551]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 378.0
+offset_right = 234.0
+offset_bottom = 413.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_khfdq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_i5clu")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_04aus")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ssorb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uikcu")
+text = "Back"
 
 [node name="Music" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=1148540266]
 stream = ExtResource("4_ism2r")
@@ -336,4 +376,6 @@ bus = &"Music"
 [connection signal="value_changed" from="CanvasLayer/Control/Options/Music Volume/Music Volume Slider" to="CanvasLayer" method="change_music_volume"]
 [connection signal="value_changed" from="CanvasLayer/Control/Options/Text Speed/SFX Volume Slider" to="CanvasLayer" method="change_text_speed"]
 [connection signal="value_changed" from="CanvasLayer/Control/Options/Auto Progress Speed/Auto Progress Speed Slider" to="CanvasLayer" method="change_auto_progress_speed"]
+[connection signal="pressed" from="CanvasLayer/Control/Options/Save Changes" to="CanvasLayer" method="save_changes"]
 [connection signal="pressed" from="CanvasLayer/Control/Options/Back" to="CanvasLayer" method="toggle_options"]
+[connection signal="pressed" from="CanvasLayer/Control/Load Game/Back" to="CanvasLayer" method="toggle_load_game"]
