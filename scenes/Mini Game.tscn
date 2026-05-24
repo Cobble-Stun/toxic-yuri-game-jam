@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://djjoomuw6l037"]
+
+[ext_resource type="Script" uid="uid://g17vjj3whv85" path="res://scripts/worm.gd" id="1_hymqf"]
+[ext_resource type="Script" uid="uid://div11xvua2h1g" path="res://scripts/minigame_wall.gd" id="2_g14jk"]
+[ext_resource type="Texture2D" uid="uid://ce6t2nxmqwn6s" path="res://icon.svg" id="2_y8eb4"]
+[ext_resource type="Script" uid="uid://5h0ishyoyy38" path="res://scripts/minigame_camera.gd" id="4_678qf"]
+
+[sub_resource type="Curve" id="Curve_hymqf"]
+_data = [Vector2(0, 1), 0.0, -1.0, 0, 1, Vector2(1, 0), -1.0, 0.0, 1, 0]
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g14jk"]
+size = Vector2(164, 100)
+
+[node name="Mini Game" type="Node2D" unique_id=802131244]
+
+[node name="Worm" type="Line2D" parent="." unique_id=327222106]
+points = PackedVector2Array(0, 0, 0, 15, 0, 30, 0, 45, 0, 60, 0, 75, 0, 90, 0, 105, 0, 120, 0, 135, 0, 150)
+width = 30.0
+width_curve = SubResource("Curve_hymqf")
+default_color = Color(0.86908764, 0.48173475, 0.4666658, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+script = ExtResource("1_hymqf")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Worm" unique_id=683932388 groups=["Worm"]]
+
+[node name="StaticBody2D" type="Area2D" parent="." unique_id=132790759 node_paths=PackedStringArray("camera")]
+position = Vector2(-261.34, 0)
+script = ExtResource("2_g14jk")
+camera = NodePath("../CharacterBody2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=548672888]
+shape = SubResource("RectangleShape2D_g14jk")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1120817073]
+position = Vector2(-0.10000801, 1.0000005)
+scale = Vector2(1.2812499, 0.78125)
+texture = ExtResource("2_y8eb4")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1942839046]
+script = ExtResource("4_678qf")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1696983179]
+
+[connection signal="body_entered" from="StaticBody2D" to="StaticBody2D" method="_on_body_entered"]
