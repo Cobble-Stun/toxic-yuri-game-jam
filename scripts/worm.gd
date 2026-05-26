@@ -9,7 +9,11 @@ var collected = 0
 
 var collision_shapes: Array[CollisionShape2D] = []
 
+var mousePos = Vector2.ZERO
+var dead = false
+
 func _ready():
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	if points.size() < 2:
 		points = [Vector2.ZERO, Vector2.ZERO]
 	setup_collisions()
@@ -28,11 +32,16 @@ func setup_collisions():
 		new_shape.shape = capsule
 		
 		collision_shapes.append(new_shape)
+		
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		mousePos += event.relative
 
 func _physics_process(delta):
-	var mouse_pos = get_global_mouse_position()
-	
-	points[0] = mouse_pos
+	if dead:
+		return
+		
+	points[0] = mousePos
 	
 	for i in range(1, points.size()):
 		var target_pos = points[i - 1]
@@ -46,7 +55,7 @@ func _physics_process(delta):
 		points.resize(max_points)
 	elif points.size() < max_points and points.size() > 0:
 		var last_point = points[points.size() - 1]
-		var to_mouse = last_point.direction_to(mouse_pos)
+		var to_mouse = last_point.direction_to(mousePos)
 		var new_point = last_point - (to_mouse * segment_length)
 		points.append(new_point)
 		setup_collisions()

@@ -1,17 +1,33 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cgn1dmy6afhvr"]
+[gd_resource type="Theme" format=3 uid="uid://cgn1dmy6afhvr"]
 
-[ext_resource type="FontFile" uid="uid://btxbhtpdn8ce6" path="res://fonts/jmh-typewriter.regular.ttf" id="1_5i4cy"]
+[ext_resource type="FontFile" uid="uid://bh0jy13vf7qp6" path="res://fonts/Mangafont-Regular.ttf" id="1_5i4cy"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5i4cy"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4n7cf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6clxd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kt0pg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_27js8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_47v5l"]
+
 [resource]
 default_font = ExtResource("1_5i4cy")
+default_font_size = 32
 /colors/default = Color(0, 0, 0, 1)
 /styles/default = SubResource("StyleBoxEmpty_5i4cy")
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/colors/font_focus_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_color = Color(0, 0, 0, 1)
 Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/styles/disabled = SubResource("StyleBoxEmpty_4n7cf")
+Button/styles/focus = SubResource("StyleBoxEmpty_6clxd")
+Button/styles/hover = SubResource("StyleBoxEmpty_kt0pg")
+Button/styles/normal = SubResource("StyleBoxEmpty_27js8")
+Button/styles/pressed = SubResource("StyleBoxEmpty_47v5l")
 Label/colors/font_color = Color(0, 0, 0, 1)
 Label/font_sizes/font_size = 24
 LineEdit/colors/caret_color = Color(0, 0, 0, 1)

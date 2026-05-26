@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://c3xi10o6b6103"]
 
 [ext_resource type="Script" uid="uid://edni2miemupg" path="res://scripts/collectible.gd" id="1_vipen"]
-[ext_resource type="Texture2D" uid="uid://ce6t2nxmqwn6s" path="res://icon.svg" id="2_vikrm"]
+[ext_resource type="Texture2D" uid="uid://d3nfjdm5xjj8i" path="res://images/minigame sprites/Red Blood Cell.png" id="2_vipen"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_imcew"]
-radius = 7.0
+radius = 18.027756
 
 [node name="Collectible" type="Area2D" unique_id=1912279942]
 script = ExtResource("1_vipen")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1289694167]
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("2_vikrm")
+scale = Vector2(0.059308082, 0.05930807)
+texture = ExtResource("2_vipen")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=34125988]
 shape = SubResource("CircleShape2D_imcew")

@@ -1,18 +1,62 @@
 [gd_scene format=3 uid="uid://djjoomuw6l037"]
 
+[ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="1_678qf"]
+[ext_resource type="Script" uid="uid://cjgns41xsdy6c" path="res://scripts/minigame_game_state.gd" id="1_fy1tf"]
 [ext_resource type="Script" uid="uid://g17vjj3whv85" path="res://scripts/worm.gd" id="1_hymqf"]
+[ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="1_imcew"]
 [ext_resource type="Script" uid="uid://div11xvua2h1g" path="res://scripts/minigame_wall.gd" id="2_g14jk"]
-[ext_resource type="Texture2D" uid="uid://ce6t2nxmqwn6s" path="res://icon.svg" id="2_y8eb4"]
 [ext_resource type="Script" uid="uid://5h0ishyoyy38" path="res://scripts/minigame_camera.gd" id="4_678qf"]
+[ext_resource type="AudioStream" uid="uid://ccb2sluqkgrks" path="res://audio/music/Sex Music.ogg" id="7_jlgmr"]
+[ext_resource type="PackedScene" uid="uid://c3xi10o6b6103" path="res://prefabs/collectible.tscn" id="8_o4axc"]
 
 [sub_resource type="Curve" id="Curve_hymqf"]
 _data = [Vector2(0, 1), 0.0, -1.0, 0, 1, Vector2(1, 0), -1.0, 0.0, 1, 0]
 point_count = 2
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g14jk"]
-size = Vector2(164, 100)
-
 [node name="Mini Game" type="Node2D" unique_id=802131244]
+
+[node name="GameState" type="CanvasLayer" parent="." unique_id=630450537]
+visible = false
+script = ExtResource("1_fy1tf")
+
+[node name="Label" type="Label" parent="GameState" unique_id=439253701]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -11.5
+offset_right = 159.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_imcew")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Click to restart"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GameState" unique_id=108713606]
+stream = ExtResource("7_jlgmr")
+autoplay = true
+
+[node name="Control" type="Control" parent="." unique_id=665431565]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -653.0
+offset_top = -12080.0
+offset_right = 653.0
+offset_bottom = 2986.0
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=258639136]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_678qf")
+expand_mode = 3
 
 [node name="Worm" type="Line2D" parent="." unique_id=327222106]
 points = PackedVector2Array(0, 0, 0, 15, 0, 30, 0, 45, 0, 60, 0, 75, 0, 90, 0, 105, 0, 120, 0, 135, 0, 150)
@@ -27,22 +71,40 @@ script = ExtResource("1_hymqf")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Worm" unique_id=683932388 groups=["Worm"]]
 
-[node name="StaticBody2D" type="Area2D" parent="." unique_id=132790759 node_paths=PackedStringArray("camera")]
-position = Vector2(-261.34, 0)
+[node name="StaticBody2D" type="Area2D" parent="." unique_id=132790759 node_paths=PackedStringArray("camera", "gameState")]
 script = ExtResource("2_g14jk")
-camera = NodePath("../CharacterBody2D")
+camera = NodePath("../CameraHolder")
+gameState = NodePath("../GameState")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=548672888]
-shape = SubResource("RectangleShape2D_g14jk")
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D" unique_id=1248075768]
+color = Color(0.43581748, 0, 0.008797868, 1)
+polygon = PackedVector2Array(-76, 395, -76, -288.5495, -78, -324, -85, -372, -115, -395, -155, -401, -216, -401, -320, -423, -408, -453, -467, -520, -490, -612, -492, -664, -456, -746, -405, -809, -331, -849, -231, -878, 273.00696, -882.1043, 326, -892, 359, -901, 375, -935, 383.84576, -971.5334, 386, -1197, -635, -1183, -624, 374)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1120817073]
-position = Vector2(-0.10000801, 1.0000005)
-scale = Vector2(1.2812499, 0.78125)
-texture = ExtResource("2_y8eb4")
+[node name="Polygon2D2" type="Polygon2D" parent="StaticBody2D" unique_id=1094761177]
+color = Color(0.43529412, 0, 0.007843138, 1)
+polygon = PackedVector2Array(72, 396, 70, -357, 54, -444, 23, -498, -15, -537, -76, -549, -207.05457, -550, -249, -551, -286, -561, -321, -592, -329, -637, -313, -691, -283, -711, -249, -719, -215.10706, -724, 201.26501, -724, 378, -746, 469, -799, 534, -903, 562.99994, -1005.2175, 563, -1197, 654, -1203, 660, -544, 664, 410)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1942839046]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1864700426]
+polygon = PackedVector2Array(-76, 395, -76, -288.5495, -78, -324, -85, -372, -115, -395, -155, -401, -216, -401, -320, -423, -408, -453, -467, -520, -490, -612, -492, -664, -456, -746, -405, -809, -331, -849, -231, -878, 273.00696, -882.1043, 326, -892, 359, -901, 375, -935, 383.84576, -971.5334, 386, -1197, -635, -1183, -624, 374)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=822075964]
+polygon = PackedVector2Array(72, 396, 70, -357, 54, -444, 23, -498, -15, -537, -76, -549, -207.05457, -550, -249, -551, -286, -561, -321, -592, -329, -637, -313, -691, -283, -711, -249, -719, -215.10706, -724, 201.26501, -724, 378, -746, 469, -799, 534, -903, 562.99994, -1005.2175, 563, -1197, 654, -1203, 660, -544, 664, 410)
+
+[node name="CameraHolder" type="CharacterBody2D" parent="." unique_id=1942839046]
 script = ExtResource("4_678qf")
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1696983179]
+[node name="Camera2D" type="Camera2D" parent="CameraHolder" unique_id=1696983179]
+
+[node name="Collectible" parent="." unique_id=1912279942 instance=ExtResource("8_o4axc")]
+position = Vector2(-416, -605)
+
+[node name="Collectible2" parent="." unique_id=1892355270 instance=ExtResource("8_o4axc")]
+position = Vector2(-127, -814)
+
+[node name="Collectible3" parent="." unique_id=13577715 instance=ExtResource("8_o4axc")]
+position = Vector2(470, -931)
+
+[node name="Collectible4" parent="." unique_id=1683043306 instance=ExtResource("8_o4axc")]
+position = Vector2(-13, -370)
 
 [connection signal="body_entered" from="StaticBody2D" to="StaticBody2D" method="_on_body_entered"]
