@@ -4,8 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://bg6skvntjxjf8" path="res://gui/speech/textbox.png" id="2_1t720"]
 [ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="3_ptht1"]
 [ext_resource type="FontFile" uid="uid://b0rdav5dsu3wg" path="res://fonts/jmh-typewriter.bold.ttf" id="4_vm6a4"]
+[ext_resource type="Script" uid="uid://pi0dlsq68aw3" path="res://scripts/speechbox_buttons.gd" id="5_ptht1"]
 [ext_resource type="Script" uid="uid://bu0oglgq237js" path="res://scripts/pause_menu.gd" id="5_vr4fv"]
 [ext_resource type="Texture2D" uid="uid://c2g35syaxhf1k" path="res://gui/pause menu/main_menu.png" id="6_780hr"]
+[ext_resource type="Texture2D" uid="uid://byd2gj8qy4cw6" path="res://gui/main menu/game_menu.png" id="6_vm6a4"]
 [ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="7_1aivi"]
 [ext_resource type="Texture2D" uid="uid://bfh8tqhanj8vs" path="res://gui/main menu/Slider Center.png" id="8_fpdpx"]
 [ext_resource type="Theme" uid="uid://dc3ye336atiph" path="res://gui/main menu/main_menu.tres" id="9_1t720"]
@@ -235,44 +237,133 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 text = "Name"
 
-[node name="Buttons" type="HBoxContainer" parent="CanvasLayer/Control" unique_id=1341931954]
+[node name="Buttons" type="HBoxContainer" parent="CanvasLayer/Control" unique_id=1341931954 node_paths=PackedStringArray("scenePlayer", "history")]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -2.772583
 offset_top = -28.0
-offset_right = -2.772583
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 10
 alignment = 1
+script = ExtResource("5_ptht1")
+scenePlayer = NodePath("../..")
+history = NodePath("../History")
 
 [node name="Auto" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=1320014172]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
+theme_override_colors/font_pressed_color = Color(0.49747366, 0.49747366, 0.49747366, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+toggle_mode = true
 text = "Auto"
 
 [node name="Skip" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=179013372]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
+theme_override_colors/font_pressed_color = Color(0.49747366, 0.49747366, 0.49747366, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+toggle_mode = true
 text = "Skip"
 
 [node name="QSave" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=1153502434]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 text = "Q.Save"
 
 [node name="QLoad" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=1427514672]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 text = "Q.Load"
 
 [node name="History" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=175468333]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 text = "History"
+
+[node name="History" type="Control" parent="CanvasLayer/Control" unique_id=525131787]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_ptht1")
+
+[node name="Background" type="TextureRect" parent="CanvasLayer/Control/History" unique_id=54844894]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_vm6a4")
+expand_mode = 5
+
+[node name="Title" type="Label" parent="CanvasLayer/Control/History" unique_id=24050869]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 42.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
+text = "History"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/History" unique_id=525396825]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -528.0
+offset_top = -264.0
+offset_right = 528.0
+offset_bottom = 204.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/History/ScrollContainer" unique_id=317074280]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Back" type="Button" parent="CanvasLayer/Control/History" unique_id=960457246]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 542.0
+offset_top = -94.0
+offset_right = -542.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Back"
+
+[node name="Choice Menu" type="VBoxContainer" parent="CanvasLayer" unique_id=1577672439]
+visible = false
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -264.0
+offset_top = 60.0
+offset_right = 264.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
 
 [node name="Pause Menu" type="Control" parent="CanvasLayer" unique_id=2026236985]
 visible = false
@@ -719,25 +810,14 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_vpemh")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_j1tkn")
 text = "Back"
 
-[node name="Choice Menu" type="VBoxContainer" parent="CanvasLayer" unique_id=1577672439]
-visible = false
-anchors_preset = 13
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -264.0
-offset_top = 60.0
-offset_right = 264.0
-offset_bottom = -60.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
 [node name="Text Speed Timer" type="Timer" parent="CanvasLayer" unique_id=477367250]
 wait_time = 0.05
 
 [node name="Text Auto Progress Timer" type="Timer" parent="CanvasLayer" unique_id=278998653]
 wait_time = 3.0
+
+[node name="Text Skip Timer" type="Timer" parent="CanvasLayer" unique_id=1670265538]
+wait_time = 0.25
 
 [node name="Text Sound" type="Node" parent="CanvasLayer" unique_id=1155634173]
 script = ExtResource("9_vpemh")
@@ -750,6 +830,12 @@ textSounds = Array[AudioStream]([ExtResource("11_bci3d"), ExtResource("12_ofuin"
 
 [node name="Sound Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=217950561]
 
+[connection signal="pressed" from="CanvasLayer/Control/Buttons/Auto" to="CanvasLayer/Control/Buttons" method="auto_toggle"]
+[connection signal="pressed" from="CanvasLayer/Control/Buttons/Skip" to="CanvasLayer/Control/Buttons" method="skip_toggle"]
+[connection signal="pressed" from="CanvasLayer/Control/Buttons/QSave" to="CanvasLayer/Control/Buttons" method="save_game"]
+[connection signal="pressed" from="CanvasLayer/Control/Buttons/QLoad" to="CanvasLayer/Control/Buttons" method="load_game"]
+[connection signal="pressed" from="CanvasLayer/Control/Buttons/History" to="CanvasLayer/Control/Buttons" method="show_history"]
+[connection signal="pressed" from="CanvasLayer/Control/History/Back" to="CanvasLayer/Control/Buttons" method="show_history"]
 [connection signal="pressed" from="CanvasLayer/Pause Menu/Buttons/Buttons/Save" to="CanvasLayer/Pause Menu" method="toggle_save"]
 [connection signal="pressed" from="CanvasLayer/Pause Menu/Buttons/Buttons/Load" to="CanvasLayer/Pause Menu" method="toggle_load_game"]
 [connection signal="pressed" from="CanvasLayer/Pause Menu/Buttons/Buttons/Options" to="CanvasLayer/Pause Menu" method="toggle_options"]

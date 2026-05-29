@@ -7,7 +7,6 @@
 [ext_resource type="Script" uid="uid://div11xvua2h1g" path="res://scripts/minigame_wall.gd" id="2_g14jk"]
 [ext_resource type="Script" uid="uid://5h0ishyoyy38" path="res://scripts/minigame_camera.gd" id="4_678qf"]
 [ext_resource type="AudioStream" uid="uid://ccb2sluqkgrks" path="res://audio/music/Sex Music.ogg" id="7_jlgmr"]
-[ext_resource type="PackedScene" uid="uid://c3xi10o6b6103" path="res://prefabs/collectible.tscn" id="8_o4axc"]
 
 [sub_resource type="Curve" id="Curve_hymqf"]
 _data = [Vector2(0, 1), 0.0, -1.0, 0, 1, Vector2(1, 0), -1.0, 0.0, 1, 0]
@@ -94,17 +93,5 @@ polygon = PackedVector2Array(72, 396, 70, -357, 54, -444, 23, -498, -15, -537, -
 script = ExtResource("4_678qf")
 
 [node name="Camera2D" type="Camera2D" parent="CameraHolder" unique_id=1696983179]
-
-[node name="Collectible" parent="." unique_id=1912279942 instance=ExtResource("8_o4axc")]
-position = Vector2(-416, -605)
-
-[node name="Collectible2" parent="." unique_id=1892355270 instance=ExtResource("8_o4axc")]
-position = Vector2(-127, -814)
-
-[node name="Collectible3" parent="." unique_id=13577715 instance=ExtResource("8_o4axc")]
-position = Vector2(470, -931)
-
-[node name="Collectible4" parent="." unique_id=1683043306 instance=ExtResource("8_o4axc")]
-position = Vector2(-13, -370)
 
 [connection signal="body_entered" from="StaticBody2D" to="StaticBody2D" method="_on_body_entered"]

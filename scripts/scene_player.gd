@@ -12,10 +12,11 @@ extends CanvasLayer
 @onready var background = $Control/Background
 @onready var choiceMenu = $"Choice Menu"
 @onready var dialogueBox = $"Control/Dialogue Box"
-@onready var nameText = $"Control/Dialogue Box/PanelContainer2/Name Text"
-@onready var dialogueText = $"Control/Dialogue Box/PanelContainer/Dialogue Text"
+@onready var nameText = $"Control/Dialogue Box/Name/Name Text"
+@onready var dialogueText = $"Control/Dialogue Box/Dialogue/Dialogue Text"
 @onready var textSpeedTimer = $"Text Speed Timer"
 @onready var textAutoProgressTimer = $"Text Auto Progress Timer"
+@onready var textSkipTimer = $"Text Skip Timer"
 var dialog: Array = []
 var stateHistory: Array[Dictionary] = []
 var is_rolling_back = false
@@ -26,6 +27,9 @@ var gameDialogueBoxHide = false
 var textRunning = false
 var preventTextProgress = false
 
+var skipping = false
+var auto = false
+
 func _ready() -> void:
 	textSpeedTimer.wait_time = Globals.textSpeed
 	textAutoProgressTimer.wait_time = Globals.textAutoProgressSpeed
@@ -35,6 +39,26 @@ func _ready() -> void:
 	read_current_script_line()
 	
 func _process(_delta: float) -> void:
+	if auto and textAutoProgressTimer.is_stopped() and !preventToggleDialogueBox and dialogIndex < dialog.size()-1:
+		textAutoProgressTimer.start()
+		await textAutoProgressTimer.timeout
+		capture_scene_state()
+		dialogIndex += 1
+		read_current_script_line()
+		textAutoProgressTimer.stop()
+		return
+	elif skipping and textSkipTimer.is_stopped() and !preventToggleDialogueBox and dialogIndex < dialog.size()-1:
+		textSkipTimer.start()
+		await textSkipTimer.timeout
+		capture_scene_state()
+		dialogIndex += 1
+		read_current_script_line()
+		if textRunning:
+			complete_text_instantly()
+		dialogIndex += 1
+		textSkipTimer.stop()
+		return
+	
 	if Input.is_action_just_pressed("ToggleDialogueBox") and preventToggleDialogueBox == false:
 		toggle_dialogue_box(false)
 	if !dialogueBox.visible and gameDialogueBoxHide == false:
@@ -47,7 +71,6 @@ func _process(_delta: float) -> void:
 		elif dialogIndex < dialog.size()-1:
 			capture_scene_state()
 			dialogIndex += 1
-			
 			read_current_script_line()
 	if Input.is_action_just_pressed("PreviousDialogue"):
 		scene_rollback()

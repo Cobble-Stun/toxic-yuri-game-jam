@@ -13,7 +13,7 @@ func new_game() -> void:
 func save_game(fileName: String):
 	var dateTime = Time.get_datetime_dict_from_system()
 	get_viewport().get_texture().get_image().save_png(path + fileName + "Thumbnail.png")
-	data["date_and_time"] = str(dateTime.year) + "-" + str(dateTime.month) + "-" + str(dateTime.day) + " " + "%02d" % dateTime.hour + ":" + "%02d" % dateTime.minute
+	data["date_and_time"] = str(dateTime.year) + "-" + "%02d" % dateTime.month + "-" + "%02d" % dateTime.day + " " + "%02d" % dateTime.hour + ":" + "%02d" % dateTime.minute
 	data["saved_dialog_index"] = Globals.savedDialogIndex
 	data["saved_scene"] = Globals.savedScene
 	
@@ -63,8 +63,8 @@ func read_save_data() -> Dictionary:
 			saves[file_name.get_basename()] = saveData
 	return saves
 	
-func read_save_image(name: String) -> Texture2D:
-	var openedFile = FileAccess.open(path + name + "Thumbnail.png", FileAccess.READ)
+func read_save_image(imgName: String) -> Texture2D:
+	var openedFile = FileAccess.open(path + imgName + "Thumbnail.png", FileAccess.READ)
 	if openedFile == null:
 		return null
 	

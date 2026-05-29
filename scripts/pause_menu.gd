@@ -13,10 +13,10 @@ var saveName: String
 @onready var scenePlayer = get_parent()
 
 @onready var textVolumeValue = $"Options/Options/Text Volume/Label"
-@onready var sfxVolumeValue = $"Control/Options/SFX Volume/Label"
-@onready var musicVolumeValue = $"Control/Options/Music Volume/Label"
-@onready var textSpeedValue = $"Control/Options/Text Speed/Label"
-@onready var autoProgressValue = $"Control/Options/Auto Progress Speed/Label"
+@onready var sfxVolumeValue = $"Options/Options/SFX Volume/Label"
+@onready var musicVolumeValue = $"Options/Options/Music Volume/Label"
+@onready var textSpeedValue = $"Options/Options/Text Speed/Label"
+@onready var autoProgressValue = $"Options/Options/Auto Progress Speed/Label"
 
 func _ready() -> void:
 	animPlayer.play("Hidden")
@@ -67,6 +67,10 @@ func toggle_save_prompt() -> void:
 func toggle_load_game() -> void:
 	buttons.visible = !buttons.visible
 	loadGame.visible = !loadGame.visible
+	
+	for save in loadSlotParent.get_children():
+		save.queue_free()
+	
 	var saves = SaveSystem.read_save_data()
 	for save in saves:
 		var image = SaveSystem.read_save_image(save)
@@ -77,8 +81,8 @@ func toggle_load_game() -> void:
 		slot.get_node("TextureRect").texture = image
 		slot.pressed.connect(load_game.bind(save))
 	
-func load_game(name: String):
-	SaveSystem.load_game(name)
+func load_game(saveName: String):
+	SaveSystem.load_game(saveName)
 	get_tree().change_scene_to_file("res://scenes/Stage.tscn")
 	
 func toggle_options() -> void:

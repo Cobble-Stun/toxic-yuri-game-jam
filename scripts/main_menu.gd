@@ -31,8 +31,8 @@ func start_new_game():
 	Globals.load_data()
 	get_tree().change_scene_to_file("res://scenes/Stage.tscn")
 
-func load_game(name: String):
-	SaveSystem.load_game(name)
+func load_game(saveName: String):
+	SaveSystem.load_game(saveName)
 	get_tree().change_scene_to_file("res://scenes/Stage.tscn")
 
 func toggle_load_game():
