@@ -31,9 +31,6 @@ func load_game():
 		if file_name.get_extension() == "json":
 			var currentTimestamp = Time.get_datetime_string_from_unix_time(FileAccess.get_modified_time("user://" + file_name))
 			var recentTimestamp = Time.get_datetime_string_from_unix_time(FileAccess.get_modified_time("user://" + mostRecentSave))
-			print(currentTimestamp)
-			print(recentTimestamp)
-			print(currentTimestamp > recentTimestamp)
 			if (currentTimestamp > recentTimestamp):
 				mostRecentSave = file_name
 			
