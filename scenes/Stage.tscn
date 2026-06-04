@@ -12,11 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://bfh8tqhanj8vs" path="res://gui/main menu/Slider Center.png" id="8_fpdpx"]
 [ext_resource type="Theme" uid="uid://dc3ye336atiph" path="res://gui/main menu/main_menu.tres" id="9_1t720"]
 [ext_resource type="Script" uid="uid://b6k6vsem8bafv" path="res://scripts/text_sound.gd" id="9_vpemh"]
-[ext_resource type="AudioStream" uid="uid://caiyq74swduhi" path="res://audio/sounds/nextdialogue.ogg" id="10_j1tkn"]
-[ext_resource type="AudioStream" uid="uid://c8exbcby5t2ru" path="res://audio/sounds/text1.ogg" id="11_bci3d"]
-[ext_resource type="AudioStream" uid="uid://i11hgsleo5su" path="res://audio/sounds/text2.ogg" id="12_ofuin"]
-[ext_resource type="AudioStream" uid="uid://dehhrxqnpl387" path="res://audio/sounds/text3.ogg" id="13_a6a7j"]
-[ext_resource type="AudioStream" uid="uid://bph33q502x8j2" path="res://audio/sounds/text4.ogg" id="14_sxtb4"]
+[ext_resource type="AudioStream" uid="uid://c4j4dnaaoyymt" path="res://audio/sounds/nextdialogue.wav" id="13_vm6a4"]
+[ext_resource type="AudioStream" uid="uid://f6ncwfn3dx2i" path="res://audio/sounds/text1.wav" id="14_vr4fv"]
+[ext_resource type="AudioStream" uid="uid://cx5k0oxdyjfe7" path="res://audio/sounds/text2.wav" id="15_780hr"]
+[ext_resource type="AudioStream" uid="uid://brdqpon3svm5j" path="res://audio/sounds/text3.wav" id="16_1aivi"]
+[ext_resource type="AudioStream" uid="uid://dp1y2vbpiymfv" path="res://audio/sounds/text4.wav" id="17_fpdpx"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_njov2"]
 content_margin_left = 20.0
@@ -821,14 +821,17 @@ wait_time = 0.25
 
 [node name="Text Sound" type="Node" parent="CanvasLayer" unique_id=1155634173]
 script = ExtResource("9_vpemh")
-nextDialogueSound = ExtResource("10_j1tkn")
-textSounds = Array[AudioStream]([ExtResource("11_bci3d"), ExtResource("12_ofuin"), ExtResource("13_a6a7j"), ExtResource("14_sxtb4")])
+nextDialogueSound = ExtResource("13_vm6a4")
+textSounds = Array[AudioStream]([ExtResource("14_vr4fv"), ExtResource("15_780hr"), ExtResource("16_1aivi"), ExtResource("17_fpdpx")])
 
 [node name="Music Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=96049220]
+bus = &"Music"
 
 [node name="Ambient Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=11722248]
+bus = &"Sound"
 
 [node name="Sound Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=217950561]
+bus = &"Sound"
 
 [connection signal="pressed" from="CanvasLayer/Control/Buttons/Auto" to="CanvasLayer/Control/Buttons" method="auto_toggle"]
 [connection signal="pressed" from="CanvasLayer/Control/Buttons/Skip" to="CanvasLayer/Control/Buttons" method="skip_toggle"]
