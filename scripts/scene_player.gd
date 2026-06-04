@@ -192,6 +192,10 @@ func read_current_script_line():
 				spriteImage = load("res://images/backgrounds/" + image)
 		change_background(spriteImage, float(lineInfo[1]))
 	
+	#sprite effects
+	if line.has("sprite effect"):
+		assign_sprite_effect(line["sprite effect"])
+	
 	#jumping
 	if line.has("goto"):
 		dialogIndex = get_anchor(line["goto"])
@@ -227,6 +231,7 @@ func read_current_script_line():
 			"unhide text":
 				dialogueBox.visible = true
 				gameDialogueBoxHide = false
+				
 	Globals.savedDialogIndex = dialogIndex
 	Globals.savedScene = currentScript
 		
@@ -273,21 +278,29 @@ func change_audio_track(audio : AudioStream, track : AudioStreamPlayer):
 	track.play()
 	
 #sprites
-func sprite_channel(spriteName):
+func sprite_channel(parameters):
 	var spriteImage
-	var imageInfo = spriteName.split(":")
+	var imageInfo = parameters.split(":")
 	for image in DirAccess.open("res://images/foreground sprites/").get_files():
 		if image == imageInfo[0] + ".png" or image == imageInfo[0] + ".jpg":
 			spriteImage = load("res://images/foreground sprites/" + image)
-	change_sprite(spriteImage, imageInfo[1], int(imageInfo[2]), int(imageInfo[3]), float(imageInfo[4]))
+			
+	if imageInfo.size() > 5:
+		change_sprite(spriteImage, imageInfo[1], int(imageInfo[2]), int(imageInfo[3]), float(imageInfo[4]), str_to_var(imageInfo[5]))
+	else:
+		change_sprite(spriteImage, imageInfo[1], int(imageInfo[2]), int(imageInfo[3]), float(imageInfo[4]))
 	
-func change_sprite(sprite: Texture2D, spriteGroup: String, locationX : int = 0, locationY : int = 0, zoom: float = 1.0):
+func change_sprite(sprite: Texture2D, spriteGroup: String, locationX : int = 0, locationY : int = 0, zoom: float = 1.0, flip: bool = false):
 	var spriteHusk = get_tree().get_first_node_in_group(spriteGroup)
 	if spriteHusk != null:
 		spriteHusk.texture = sprite
 		spriteHusk.position.x = locationX
 		spriteHusk.position.y = locationY
 		spriteHusk.scale = spriteHusk.scale * zoom
+		if flip:
+			spriteHusk.flip_h = true
+		else:
+			spriteHusk.flip_h = false
 	else:
 		var newSpriteHusk = spritePrefab.instantiate()
 		get_child(0).add_child(newSpriteHusk)
@@ -298,6 +311,10 @@ func change_sprite(sprite: Texture2D, spriteGroup: String, locationX : int = 0, 
 		newSpriteHusk.scale = newSpriteHusk.scale * zoom
 		newSpriteHusk.add_to_group(spriteGroup)
 		newSpriteHusk.add_to_group("sprites")
+		if flip:
+			newSpriteHusk.flip_h = true
+		else:
+			newSpriteHusk.flip_h = false
 	
 func delete_sprite(spriteGroup: String):
 	if get_tree().get_nodes_in_group(spriteGroup).size() > 0:
@@ -345,6 +362,15 @@ func assign_text(lineInfo):
 func fade():
 	pass
 	
+#sprite effects
+func assign_sprite_effect(parameters):
+	var imageInfo = parameters.split(":")
+	match imageInfo[0]:
+		"sprite bounce":
+			sprite_bounce(imageInfo[1], float(imageInfo[2]), float(imageInfo[3]))
+		"sprite shake":
+			sprite_shake(imageInfo[1], float(imageInfo[2]), float(imageInfo[3]))
+
 func sprite_bounce(spriteGroup: String, time : float, amount : float = 50.0):
 	var tween = create_tween()
 	var sprite = get_tree().get_first_node_in_group(spriteGroup)
@@ -358,6 +384,7 @@ func sprite_shake(spriteGroup: String, time : float, amount : float = 50.0):
 	tween.tween_property(sprite, "position", Vector2(-amount,0)+sprite.position, time/2.0)
 	tween.tween_property(sprite, "position", Vector2(0,0)+sprite.position, time/4.0)
 	
+#anchor
 func get_anchor(anchor: String):
 	for i in range(dialog.size()):
 		if dialog[i].has("anchor") and dialog[i]["anchor"] == anchor:

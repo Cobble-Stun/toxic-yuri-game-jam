@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://bfxjgtgjb4n5i" path="res://gui/main menu/main_menu.png" id="2_1i3ks"]
 [ext_resource type="Texture2D" uid="uid://criyvs0kdta2a" path="res://gui/main menu/alt_main_menu.png" id="3_ism2r"]
 [ext_resource type="Theme" uid="uid://dc3ye336atiph" path="res://gui/main menu/main_menu.tres" id="4_estw7"]
-[ext_resource type="AudioStream" uid="uid://cwg3mi76ehjg6" path="res://audio/music/title.ogg" id="4_ism2r"]
 [ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="5_mslyy"]
 [ext_resource type="Texture2D" uid="uid://bfh8tqhanj8vs" path="res://gui/main menu/Slider Center.png" id="6_im4cs"]
 [ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="7_im4cs"]
@@ -77,9 +76,14 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Background" type="TextureRect" parent="CanvasLayer/Control" unique_id=410995859]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1i3ks")
+expand_mode = 3
 
 [node name="Label" type="Label" parent="CanvasLayer/Control" unique_id=1131306643]
 layout_mode = 1
@@ -94,7 +98,7 @@ offset_right = 294.29596
 offset_bottom = 41.791992
 theme = ExtResource("4_estw7")
 theme_override_font_sizes/font_size = 75
-text = "Scream Harem"
+text = "Parasocial"
 metadata/_edit_use_anchors_ = true
 
 [node name="Primary Menu Buttons" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=1208713362]
@@ -138,7 +142,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_es6bt")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_l3c6x")
 theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_skvia")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ld6kw")
-text = "options"
+text = "Options"
 alignment = 0
 
 [node name="Quit" type="Button" parent="CanvasLayer/Control/Primary Menu Buttons" unique_id=1859607942]
@@ -363,7 +367,6 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_uikcu")
 text = "Back"
 
 [node name="Music" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=1148540266]
-stream = ExtResource("4_ism2r")
 autoplay = true
 bus = &"Music"
 

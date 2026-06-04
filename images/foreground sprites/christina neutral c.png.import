@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctg7fhwrnsyq7"
-path="res://.godot/imported/horizontal_hover_thumb.png-81a08f42aee1a85cf961d3ebe8fe1512.ctex"
+uid="uid://c8m4mwuifu7gi"
+path="res://.godot/imported/christina neutral c.png-e3fee1bd0c5c3be9a5bf2e360e51e0aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gui/scrollbar/horizontal_hover_thumb.png"
-dest_files=["res://.godot/imported/horizontal_hover_thumb.png-81a08f42aee1a85cf961d3ebe8fe1512.ctex"]
+source_file="res://images/foreground sprites/christina neutral c.png"
+dest_files=["res://.godot/imported/christina neutral c.png-e3fee1bd0c5c3be9a5bf2e360e51e0aa.ctex"]
 
 [params]
 

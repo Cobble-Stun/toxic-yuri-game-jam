@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://btxbhtpdn8ce6"
-path="res://.godot/imported/jmh-typewriter.regular.ttf-10aab9cc4a230ebe5cb30600273ec8f3.fontdata"
+uid="uid://momuqevgfdl0"
+path="res://.godot/imported/SwedenSansBold.otf-54cc3ee01ec84e8f94aa0d4734ae647d.fontdata"
 
 [deps]
 
-source_file="res://fonts/jmh-typewriter.regular.ttf"
-dest_files=["res://.godot/imported/jmh-typewriter.regular.ttf-10aab9cc4a230ebe5cb30600273ec8f3.fontdata"]
+source_file="res://fonts/SwedenSansBold.otf"
+dest_files=["res://.godot/imported/SwedenSansBold.otf-54cc3ee01ec84e8f94aa0d4734ae647d.fontdata"]
 
 [params]
 

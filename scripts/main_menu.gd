@@ -2,7 +2,6 @@ extends CanvasLayer
 
 @onready var loadSlotScene = preload("res://prefabs/UI/load_slot.tscn")
 @export var bgs: Array[Texture2D]
-@onready var background = $Control/Background
 @onready var primaryMenuButtons = $"Control/Primary Menu Buttons"
 @onready var options = $Control/Options
 @onready var loadGame = $"Control/Load Game"
@@ -24,7 +23,6 @@ func _ready() -> void:
 	musicVolumeValue.text = str(Globals.musicVolume+72)
 	textSpeedValue.text = str(Globals.textSpeed)
 	autoProgressValue.text = str(Globals.textAutoProgressSpeed)
-	background.texture = bgs[0]
 		
 func start_new_game():
 	SaveSystem.new_game()

@@ -1,8 +1,4 @@
 [
-	{"background": "car:1.0", "ambient": "car", "sprite": "car left hand:left hand:0:0:1.0", "sprite2": "car right hand:right hand:0:0:1.0", "text": "[b]I flutter my eyelids open as I tilt my head up to look at the road.[/b]"},
-	{"text": "I started falling asleep over the wheel again."},
-	{"text": "It's getting so late, and I need to get home."},
-	{"text": "Hmm? A message from mom?"},
-	{"sprite2": "phone:right hand:0:0:1.0", "event": "hide text"},
-	{"event": "unhide text", "text": "\"Where are you? Come home as soon as possible. It's getting dark.\""}
+	{"background": "cabin:1.0", "speaker": "Christina", "text": "Yo what up my waifu.", "sprite": "christina neutral c:christina:200:0:1.0", "sprite2": "pasaya neutral c:pasaya:-200:0:1.0:true"},
+	{"speaker": "Pasaya", "text": "Shiii I flipped.", "sprite": "christina neutral c:christina:-200:0:1.0", "sprite2": "pasaya neutral c:pasaya:200:0:1.0", "sprite effect": "sprite shake:pasaya:0.5:50"}
 ]
