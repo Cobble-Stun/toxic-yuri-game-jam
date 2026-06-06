@@ -833,6 +833,15 @@ bus = &"Sound"
 [node name="Sound Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=217950561]
 bus = &"Sound"
 
+[node name="Fade" type="ColorRect" parent="CanvasLayer" unique_id=119594164]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
 [connection signal="pressed" from="CanvasLayer/Control/Buttons/Auto" to="CanvasLayer/Control/Buttons" method="auto_toggle"]
 [connection signal="pressed" from="CanvasLayer/Control/Buttons/Skip" to="CanvasLayer/Control/Buttons" method="skip_toggle"]
 [connection signal="pressed" from="CanvasLayer/Control/Buttons/QSave" to="CanvasLayer/Control/Buttons" method="save_game"]

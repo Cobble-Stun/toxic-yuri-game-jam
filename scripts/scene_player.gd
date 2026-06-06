@@ -17,6 +17,8 @@ extends CanvasLayer
 @onready var textSpeedTimer = $"Text Speed Timer"
 @onready var textAutoProgressTimer = $"Text Auto Progress Timer"
 @onready var textSkipTimer = $"Text Skip Timer"
+@onready var fadeRect = $Fade
+
 var dialog: Array = []
 var stateHistory: Array[Dictionary] = []
 var is_rolling_back = false
@@ -232,6 +234,10 @@ func read_current_script_line():
 				dialogueBox.visible = true
 				gameDialogueBoxHide = false
 				
+	#transitions
+	if line.has("transition"):
+		fade_transistion()
+				
 	Globals.savedDialogIndex = dialogIndex
 	Globals.savedScene = currentScript
 		
@@ -358,9 +364,11 @@ func assign_text(lineInfo):
 			
 	textRunning = false
 	
-#effects
-func fade():
-	pass
+#transition
+func fade_transistion():
+	var tween = create_tween()
+	tween.tween_property(fadeRect, "color", Color(0,0,0,1), 0.5)
+	tween.tween_property(fadeRect, "color", Color(0,0,0,0), 0.5)
 	
 #sprite effects
 func assign_sprite_effect(parameters):
