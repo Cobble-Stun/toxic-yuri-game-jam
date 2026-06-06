@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlddm2mtnyhb8"
-path="res://.godot/imported/aoonititle.png-448335e36487ed64ff204584705726d3.ctex"
+uid="uid://ckcoohm6lhhgw"
+path="res://.godot/imported/blanche neutral c.png-31d7b36412746920e33950d92fb9714a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gui/main menu/aoonititle.png"
-dest_files=["res://.godot/imported/aoonititle.png-448335e36487ed64ff204584705726d3.ctex"]
+source_file="res://images/foreground sprites/blanche neutral c.png"
+dest_files=["res://.godot/imported/blanche neutral c.png-31d7b36412746920e33950d92fb9714a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ck2br4wn38day"
-path="res://.godot/imported/Bathroom Lights On.png-8093a3e05da2acba68686c4548142217.ctex"
+path="res://.godot/imported/bathroom lights on.png-108cbd07c73d7f0468e216934f67f755.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/backgrounds/Bathroom Lights On.png"
-dest_files=["res://.godot/imported/Bathroom Lights On.png-8093a3e05da2acba68686c4548142217.ctex"]
+source_file="res://images/backgrounds/bathroom lights on.png"
+dest_files=["res://.godot/imported/bathroom lights on.png-108cbd07c73d7f0468e216934f67f755.ctex"]
 
 [params]
 

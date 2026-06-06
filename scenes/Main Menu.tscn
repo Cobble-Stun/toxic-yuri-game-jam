@@ -2,11 +2,13 @@
 
 [ext_resource type="Script" uid="uid://c2k8n3ni4v1oa" path="res://scripts/main_menu.gd" id="1_65kbn"]
 [ext_resource type="Texture2D" uid="uid://bfxjgtgjb4n5i" path="res://gui/main menu/main_menu.png" id="2_1i3ks"]
-[ext_resource type="Texture2D" uid="uid://criyvs0kdta2a" path="res://gui/main menu/alt_main_menu.png" id="3_ism2r"]
 [ext_resource type="Theme" uid="uid://dc3ye336atiph" path="res://gui/main menu/main_menu.tres" id="4_estw7"]
 [ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="5_mslyy"]
 [ext_resource type="Texture2D" uid="uid://bfh8tqhanj8vs" path="res://gui/main menu/Slider Center.png" id="6_im4cs"]
 [ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="7_im4cs"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_15uo5"]
+load_path = "res://.godot/imported/alt_main_menu.png-f4eb92c5487332f7ca8ded86a41f86d5.ctex"
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_estw7"]
 
@@ -65,7 +67,7 @@ expand_margin_bottom = 10.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1508004869]
 script = ExtResource("1_65kbn")
-bgs = Array[Texture2D]([ExtResource("3_ism2r"), ExtResource("2_1i3ks")])
+bgs = Array[Texture2D]([SubResource("CompressedTexture2D_15uo5"), ExtResource("2_1i3ks")])
 
 [node name="Control" type="Control" parent="CanvasLayer" unique_id=1191426241]
 layout_mode = 3
