@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cs5ampied1occ"]
 
 [ext_resource type="Script" uid="uid://bj5diwbto78kv" path="res://scripts/scene_player.gd" id="1_xgc1d"]
-[ext_resource type="Texture2D" uid="uid://bg6skvntjxjf8" path="res://gui/speech/textbox.png" id="2_1t720"]
+[ext_resource type="Texture2D" uid="uid://bmc1ku24yrfcm" path="res://gui/speech/VN_advMode.png" id="2_vm6a4"]
+[ext_resource type="Texture2D" uid="uid://sr1pf0c7cpv0" path="res://gui/speech/VN_gradient.png" id="2_vr4fv"]
 [ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="3_ptht1"]
 [ext_resource type="FontFile" uid="uid://b0rdav5dsu3wg" path="res://fonts/jmh-typewriter.bold.ttf" id="4_vm6a4"]
 [ext_resource type="Script" uid="uid://pi0dlsq68aw3" path="res://scripts/speechbox_buttons.gd" id="5_ptht1"]
@@ -164,18 +165,26 @@ mouse_filter = 2
 mouse_behavior_recursive = 1
 expand_mode = 3
 
+[node name="Gradient" type="TextureRect" parent="CanvasLayer/Control/Background" unique_id=657491922]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 1171.0
+offset_bottom = 883.0
+texture = ExtResource("2_vr4fv")
+expand_mode = 1
+
 [node name="Dialogue Box" type="TextureRect" parent="CanvasLayer/Control" unique_id=1182628965]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -167.0
+offset_top = -652.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
 mouse_behavior_recursive = 1
-texture = ExtResource("2_1t720")
+texture = ExtResource("2_vm6a4")
 expand_mode = 3
 
 [node name="Dialogue" type="PanelContainer" parent="CanvasLayer/Control/Dialogue Box" unique_id=737503451]
@@ -183,9 +192,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 214.77258
-offset_top = 6.0
-offset_right = -215.77258
+offset_left = 165.0
+offset_top = 413.0
+offset_right = -170.0
+offset_bottom = -63.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -198,7 +208,7 @@ layout_mode = 2
 mouse_filter = 2
 mouse_behavior_recursive = 1
 theme = ExtResource("3_ptht1")
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/bold_font = ExtResource("4_vm6a4")
 theme_override_font_sizes/normal_font_size = 32
 theme_override_font_sizes/bold_font_size = 32
@@ -213,10 +223,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 187.77258
-offset_top = 10.0
-offset_right = -187.77258
-offset_bottom = -124.0
+offset_left = 159.0
+offset_top = 420.0
+offset_right = -177.0
+offset_bottom = -193.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -227,7 +237,7 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_2au82")
 layout_mode = 2
 mouse_behavior_recursive = 1
 theme = ExtResource("3_ptht1")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 40
 text = "Name"
 
@@ -249,35 +259,40 @@ history = NodePath("../History")
 [node name="Auto" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=1320014172]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.49747366, 0.49747366, 0.49747366, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0, 1)
 toggle_mode = true
 text = "Auto"
 
 [node name="Skip" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=179013372]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.49747366, 0.49747366, 0.49747366, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0, 1)
 toggle_mode = true
 text = "Skip"
 
 [node name="QSave" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=1153502434]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0, 1)
 text = "Q.Save"
 
 [node name="QLoad" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=1427514672]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0, 1)
 text = "Q.Load"
 
 [node name="History" type="Button" parent="CanvasLayer/Control/Buttons" unique_id=175468333]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0, 1)
 text = "History"
 
 [node name="History" type="Control" parent="CanvasLayer/Control" unique_id=525131787]
@@ -825,6 +840,7 @@ bus = &"Sound"
 bus = &"Sound"
 
 [node name="Fade" type="ColorRect" parent="CanvasLayer" unique_id=119594164]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
