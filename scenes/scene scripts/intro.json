@@ -1,4 +1,0 @@
-[
-	{"background": "bathroom lights on:1.0", "speaker": "Christina", "text": "Yo what up my waifu.", "sprite": "christina neutral c:christina:200:0:1.0", "sprite2": "pasaya neutral c:pasaya:-200:0:1.0:true"},
-	{"background": "bathroom lights off:1.0", "speaker": "Pasaya", "text": "Shiii I flipped.", "sprite": "christina neutral c:christina:-200:0:1.0", "sprite2": "pasaya neutral c:pasaya:200:0:1.0", "sprite effect": "sprite shake:pasaya:0.5:50"}
-]

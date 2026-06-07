@@ -7,7 +7,7 @@ var access: FileAccess
 func new_game() -> void:
 	data = {
 		"saved_dialog_index" : 0,
-		"saved_scene" : "intro",
+		"saved_scene" : "introductionfish",
 	}
 	
 func save_game(fileName: String):

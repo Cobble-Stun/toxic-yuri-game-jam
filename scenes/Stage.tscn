@@ -14,7 +14,6 @@
 [ext_resource type="Theme" uid="uid://dc3ye336atiph" path="res://gui/main menu/main_menu.tres" id="9_1t720"]
 [ext_resource type="Script" uid="uid://b6k6vsem8bafv" path="res://scripts/text_sound.gd" id="9_vpemh"]
 [ext_resource type="AudioStream" uid="uid://c4j4dnaaoyymt" path="res://audio/sounds/nextdialogue.wav" id="13_vm6a4"]
-[ext_resource type="AudioStream" uid="uid://f6ncwfn3dx2i" path="res://audio/sounds/text1.wav" id="14_vr4fv"]
 [ext_resource type="AudioStream" uid="uid://cx5k0oxdyjfe7" path="res://audio/sounds/text2.wav" id="15_780hr"]
 [ext_resource type="AudioStream" uid="uid://brdqpon3svm5j" path="res://audio/sounds/text3.wav" id="16_1aivi"]
 [ext_resource type="AudioStream" uid="uid://dp1y2vbpiymfv" path="res://audio/sounds/text4.wav" id="17_fpdpx"]
@@ -193,9 +192,9 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 165.0
-offset_top = 413.0
+offset_top = 417.75
 offset_right = -170.0
-offset_bottom = -63.0
+offset_bottom = -58.24878
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -233,12 +232,10 @@ mouse_filter = 2
 mouse_behavior_recursive = 1
 theme_override_styles/panel = SubResource("StyleBoxEmpty_2au82")
 
-[node name="Name Text" type="Label" parent="CanvasLayer/Control/Dialogue Box/Name" unique_id=500309995]
+[node name="Name Text" type="RichTextLabel" parent="CanvasLayer/Control/Dialogue Box/Name" unique_id=324342788]
 layout_mode = 2
 mouse_behavior_recursive = 1
 theme = ExtResource("3_ptht1")
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 40
 text = "Name"
 
 [node name="Buttons" type="HBoxContainer" parent="CanvasLayer/Control" unique_id=1341931954 node_paths=PackedStringArray("scenePlayer", "history")]
@@ -828,7 +825,7 @@ wait_time = 0.25
 [node name="Text Sound" type="Node" parent="CanvasLayer" unique_id=1155634173]
 script = ExtResource("9_vpemh")
 nextDialogueSound = ExtResource("13_vm6a4")
-textSounds = Array[AudioStream]([ExtResource("14_vr4fv"), ExtResource("15_780hr"), ExtResource("16_1aivi"), ExtResource("17_fpdpx")])
+textSounds = Array[AudioStream]([ExtResource("15_780hr"), ExtResource("16_1aivi"), ExtResource("17_fpdpx")])
 
 [node name="Music Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=96049220]
 bus = &"Music"

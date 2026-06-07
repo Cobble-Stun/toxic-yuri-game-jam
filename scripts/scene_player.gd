@@ -8,6 +8,9 @@ extends CanvasLayer
 @onready var spritePrefab = preload("res://prefabs/sprite.tscn")
 @onready var choiceMenuButton = preload("res://prefabs/choice_button.tscn")
 
+@onready var narratorFont = preload("res://fonts/Prata-Regular.ttf")
+@onready var regularFont = preload("res://fonts/Mangafont-Regular.ttf")
+
 @onready var controlNode = $Control
 @onready var background = $Control/Background
 @onready var choiceMenu = $"Choice Menu"
@@ -130,6 +133,8 @@ func scene_rollback():
 	
 	nameText.text = last_state["speaker"]
 	dialogueText.text = last_state["text"]
+	
+	change_font(last_state["speaker"])
 	
 	
 	for node in get_tree().get_nodes_in_group("sprites"):
@@ -341,6 +346,7 @@ func assign_speaker_name(lineInfo: String):
 	
 	if lineInfo != null:
 		nameText.text = lineInfo
+		change_font(lineInfo)
 	else:
 		nameText.text = "???"
 	
@@ -365,6 +371,18 @@ func assign_text(lineInfo):
 			await textSpeedTimer.timeout
 			
 	textRunning = false
+	
+func change_font(name):
+	if name == "Narrator":
+			nameText.add_theme_font_override("normal_font", narratorFont)
+			nameText.add_theme_font_size_override("normal_font_size", 20)
+			dialogueText.add_theme_font_override("normal_font", narratorFont)
+			dialogueText.add_theme_font_size_override("normal_font_size", 20)
+	else:
+		nameText.remove_theme_font_override("normal_font")
+		nameText.add_theme_font_size_override("normal_font_size", 32)
+		dialogueText.remove_theme_font_override("normal_font")
+		dialogueText.add_theme_font_size_override("normal_font_size", 32)
 	
 #transition
 func fade_transistion():

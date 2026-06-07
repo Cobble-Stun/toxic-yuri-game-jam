@@ -1,66 +1,56 @@
 [
 	{"background": "TyrestaLake:1.0",
-	 "speaker": "narrator", "text":
-	 "There was an increase of around 2 degrees for the water outside… 10 degrees for you stupid yanks."},
+	 "speaker": "Narrator", "text":
+	 "There was an increase of around 2 degrees for the water outside... 10 degrees for you stupid yanks."},
 	
-	{"speaker": "narrator","text": 	
-	"This will add an unfortunate number of complications for our friends: the fish.
-	These creatures, as close to us as they are, our sustainers, our friends, are assaulted on all sides by parasites."},
+	{"speaker": "Narrator","text": 	
+	"This will add an unfortunate number of complications for our friends: the fish. These creatures, as close to us as they are, our sustainers, our friends, are assaulted on all sides by parasites."},
 	
-	{"speaker": "narrator","text":
-	"Chrisitna always wore earbuds when she was out. To ensure that no one,
-	 absolutely no one had an inkling of an idea that she should be approached."},
+	{"speaker": "Narrator","text":
+	"Christina always wore earbuds when she was out. To ensure that no one, absolutely no one had an inkling of an idea that she should be approached."},
 	
-	{"speaker": "narrator","text":
-	"Even now Blanche can tell that she's been up for hours already at (8 in the morning)
-	 and she can smell that if she had showered in the intervening hours she hadn't done it well enough.
-	 Layer after layer of defense."},
+	{"speaker": "Narrator","text":
+	"Even now Blanche can tell that she's been up for hours already at (8 in the morning) and she can smell that if she had showered in the intervening hours she hadn't done it well enough. Layer after layer of defense."},
 	
-	{"sprite": "blanche neutral c:blanche:400:0:1.0","speaker": "blanche","text":
+	{"sprite": "blanche neutral c:blanche:400:0:1.0","speaker": "Blanche","text":
 	"I'll take the rods and the net."},
 	
-	{"speaker": "blanche","text":
-	"Could you handle the… fishcooler and the bait?"},
+	{"speaker": "Blanche","text":
+	"Could you handle the... fishcooler and the bait?"},
 	
 	 {"sprite": "christina neutral c:christina:-400:0:1.0","speaker": "Christina","text":
-	"Livewell, fish cooler, whatever…"},
+	"Livewell, fish cooler, whatever..."},
 	
 	{"speaker": "Christina","text": 
 	"I'll take it, yeah."},
 	
-	{"speaker": "narrator","text":
-	"Christina sucks her teeth and puts her phone back into her pocket.
-	 She's been watching her favorite v-tuber on the way to the park."},
+	{"speaker": "Narrator","text":
+	"Christina sucks her teeth and puts her phone back into her pocket. She's been watching her favorite v-tuber on the way to the park."},
 	
-	{"speaker": "narrator","text":
-	 "The one benefit of this project was having an excuse to get up at ungodly hours
-	 of the morning when she could just about catch the end of their livestreams."},
+	{"speaker": "Narrator","text":
+	"The one benefit of this project was having an excuse to get up at ungodly hours of the morning when she could just about catch the end of their livestreams."},
 	
-	{"speaker": "narrator","text":
-	"Tyresta National Park wasn’t the ideal place to do our research.
-	They're both science undergrads going to Stockholm University paired together for a project  in a summer course.
-	Unlike Chrisitina, Blanche had truly blossomed during her college years." },
+	{"speaker": "Narrator","text":
+	"Tyresta National Park wasn’t the ideal place to do our research. They're both science undergrads going to Stockholm University paired together for a project  in a summer course. Unlike Chrisitina, Blanche had truly blossomed during her college years." },
 	
-	{"speaker": "narrator","text":
-	"Christina was always flabbergasted why someone like her needed to rush into the disappointments of adulthood.
-	That you'd wish to be free of the university playground and instead fend for themselves as a full-blown working taxpayer …"},
+	{"speaker": "Narrator","text":
+	"Christina was always flabbergasted why someone like her needed to rush into the disappointments of adulthood. That you'd wish to be free of the university playground and instead fend for themselves as a full-blown working taxpayer …"},
 	
-	{"speaker": "blanche","text":
+	{"speaker": "Blanche","text":
 	"Christina!"},
 	
-	{"speaker": "blanche","text":
+	{"speaker": "Blanche","text":
 	"You seem tired.!"},
 	
 	{"speaker": "Christina","text": 
 	"What?!"},
 	
-	{"speaker": "blanche","text":
+	{"speaker": "Blanche","text":
 	"Is that too much for you to carry?!"},
 	
 	{"speaker": "Christina","text": 
 	"I'm just taking my time, it's nice out"},
 	
-	{"speaker": "narrator","text":
-	"They reach the spot and set up the fish cooler and the maggot filled bait box,
-	 TAKE it across the river opening to the sea, and wait for the little fish to bite."},
+	{"speaker": "Narrator","text":
+	"They reach the spot and set up the fish cooler and the maggot filled bait box, take it across the river opening to the sea, and wait for the little fish to bite."},
 ]
