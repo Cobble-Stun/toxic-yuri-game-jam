@@ -8,7 +8,6 @@
 [ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="7_im4cs"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_15uo5"]
-load_path = "res://.godot/imported/alt_main_menu.png-f4eb92c5487332f7ca8ded86a41f86d5.ctex"
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_estw7"]
 
@@ -188,16 +187,16 @@ theme_override_icons/grabber = ExtResource("5_mslyy")
 theme_override_icons/grabber_highlight = ExtResource("5_mslyy")
 theme_override_icons/grabber_disabled = ExtResource("5_mslyy")
 theme_override_styles/slider = SubResource("StyleBoxTexture_chhbp")
-max_value = 80.0
-step = 0.25
-value = 72.0
+max_value = 1.0
+step = 0.01
+value = 0.5
 
 [node name="Label" type="Label" parent="CanvasLayer/Control/Options/Text Volume" unique_id=1535414382]
 layout_mode = 2
 theme = ExtResource("7_im4cs")
 theme_override_colors/font_color = Color(0.65882355, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "100"
+text = "50"
 metadata/_edit_use_anchors_ = true
 
 [node name="SFX Volume" type="HBoxContainer" parent="CanvasLayer/Control/Options" unique_id=1917668955]
@@ -215,16 +214,16 @@ theme_override_icons/grabber = ExtResource("5_mslyy")
 theme_override_icons/grabber_highlight = ExtResource("5_mslyy")
 theme_override_icons/grabber_disabled = ExtResource("5_mslyy")
 theme_override_styles/slider = SubResource("StyleBoxTexture_chhbp")
-max_value = 80.0
-step = 0.25
-value = 72.0
+max_value = 1.0
+step = 0.01
+value = 0.5
 
 [node name="Label" type="Label" parent="CanvasLayer/Control/Options/SFX Volume" unique_id=422579850]
 layout_mode = 2
 theme = ExtResource("7_im4cs")
 theme_override_colors/font_color = Color(0.65882355, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "100"
+text = "50"
 metadata/_edit_use_anchors_ = true
 
 [node name="Music Volume" type="HBoxContainer" parent="CanvasLayer/Control/Options" unique_id=1934272]
@@ -242,16 +241,16 @@ theme_override_icons/grabber = ExtResource("5_mslyy")
 theme_override_icons/grabber_highlight = ExtResource("5_mslyy")
 theme_override_icons/grabber_disabled = ExtResource("5_mslyy")
 theme_override_styles/slider = SubResource("StyleBoxTexture_chhbp")
-max_value = 80.0
-step = 0.25
-value = 72.0
+max_value = 1.0
+step = 0.01
+value = 0.5
 
 [node name="Label" type="Label" parent="CanvasLayer/Control/Options/Music Volume" unique_id=524473765]
 layout_mode = 2
 theme = ExtResource("7_im4cs")
 theme_override_colors/font_color = Color(0.65882355, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "100"
+text = "50"
 metadata/_edit_use_anchors_ = true
 
 [node name="Text Speed" type="HBoxContainer" parent="CanvasLayer/Control/Options" unique_id=1211381369]
@@ -262,7 +261,7 @@ size_flags_horizontal = 0
 layout_mode = 2
 text = "Text Speed"
 
-[node name="SFX Volume Slider" type="HSlider" parent="CanvasLayer/Control/Options/Text Speed" unique_id=1330994122]
+[node name="Text Speed Slider" type="HSlider" parent="CanvasLayer/Control/Options/Text Speed" unique_id=1330994122]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_icons/grabber = ExtResource("5_mslyy")
@@ -379,7 +378,7 @@ bus = &"Music"
 [connection signal="value_changed" from="CanvasLayer/Control/Options/Text Volume/Text Volume Slider" to="CanvasLayer" method="change_text_volume"]
 [connection signal="value_changed" from="CanvasLayer/Control/Options/SFX Volume/SFX Volume Slider" to="CanvasLayer" method="change_sound_volume"]
 [connection signal="value_changed" from="CanvasLayer/Control/Options/Music Volume/Music Volume Slider" to="CanvasLayer" method="change_music_volume"]
-[connection signal="value_changed" from="CanvasLayer/Control/Options/Text Speed/SFX Volume Slider" to="CanvasLayer" method="change_text_speed"]
+[connection signal="value_changed" from="CanvasLayer/Control/Options/Text Speed/Text Speed Slider" to="CanvasLayer" method="change_text_speed"]
 [connection signal="value_changed" from="CanvasLayer/Control/Options/Auto Progress Speed/Auto Progress Speed Slider" to="CanvasLayer" method="change_auto_progress_speed"]
 [connection signal="pressed" from="CanvasLayer/Control/Options/Save Changes" to="CanvasLayer" method="save_changes"]
 [connection signal="pressed" from="CanvasLayer/Control/Options/Back" to="CanvasLayer" method="toggle_options"]

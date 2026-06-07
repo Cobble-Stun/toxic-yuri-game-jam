@@ -126,13 +126,7 @@ expand_margin_bottom = 10.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xgc1d"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1t720"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ptht1"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vm6a4"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vr4fv"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_780hr"]
 
@@ -637,14 +631,14 @@ theme_override_icons/grabber = ExtResource("7_1aivi")
 theme_override_icons/grabber_highlight = ExtResource("7_1aivi")
 theme_override_icons/grabber_disabled = ExtResource("7_1aivi")
 theme_override_styles/slider = SubResource("StyleBoxTexture_80npy")
-max_value = 80.0
-step = 0.25
-value = 72.0
+max_value = 1.0
+step = 0.01
+value = 0.5
 
 [node name="Label" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Text Volume" unique_id=1098672806]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
-text = "100"
+text = "50"
 metadata/_edit_use_anchors_ = true
 
 [node name="SFX Volume" type="HBoxContainer" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=2081407246]
@@ -662,14 +656,14 @@ theme_override_icons/grabber = ExtResource("7_1aivi")
 theme_override_icons/grabber_highlight = ExtResource("7_1aivi")
 theme_override_icons/grabber_disabled = ExtResource("7_1aivi")
 theme_override_styles/slider = SubResource("StyleBoxTexture_80npy")
-max_value = 80.0
-step = 0.25
-value = 72.0
+max_value = 1.0
+step = 0.01
+value = 0.5
 
 [node name="Label" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/SFX Volume" unique_id=2078646691]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
-text = "100"
+text = "50"
 metadata/_edit_use_anchors_ = true
 
 [node name="Music Volume" type="HBoxContainer" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=670619543]
@@ -687,14 +681,14 @@ theme_override_icons/grabber = ExtResource("7_1aivi")
 theme_override_icons/grabber_highlight = ExtResource("7_1aivi")
 theme_override_icons/grabber_disabled = ExtResource("7_1aivi")
 theme_override_styles/slider = SubResource("StyleBoxTexture_80npy")
-max_value = 80.0
-step = 0.25
-value = 72.0
+max_value = 1.0
+step = 0.01
+value = 0.5
 
 [node name="Label" type="Label" parent="CanvasLayer/Pause Menu/Options/Options/Music Volume" unique_id=330748400]
 layout_mode = 2
 theme = ExtResource("3_ptht1")
-text = "100"
+text = "50"
 metadata/_edit_use_anchors_ = true
 
 [node name="Text Speed" type="HBoxContainer" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=1052395174]
@@ -705,7 +699,7 @@ size_flags_horizontal = 0
 layout_mode = 2
 text = "Text Speed"
 
-[node name="SFX Volume Slider" type="HSlider" parent="CanvasLayer/Pause Menu/Options/Options/Text Speed" unique_id=240210000]
+[node name="Text Speed Slider" type="HSlider" parent="CanvasLayer/Pause Menu/Options/Options/Text Speed" unique_id=240210000]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_icons/grabber = ExtResource("7_1aivi")
@@ -750,22 +744,19 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Save Changes" type="Button" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=1159225715]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.21230483, 0.21230483, 0.21230483, 1)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_xgc1d")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_1t720")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_ptht1")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_vm6a4")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_vr4fv")
 text = "Save Changes
 "
+alignment = 0
 
 [node name="Back" type="Button" parent="CanvasLayer/Pause Menu/Options/Options" unique_id=1828114413]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.21176471, 0.21176471, 0.21176471, 1)
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxEmpty_k07xo")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_gm34k")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_fn7yj")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_xdyba")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_b1ed2")
 text = "Back
 "
 alignment = 0
@@ -861,7 +852,7 @@ color = Color(0, 0, 0, 0)
 [connection signal="value_changed" from="CanvasLayer/Pause Menu/Options/Options/Text Volume/Text Volume Slider" to="CanvasLayer/Pause Menu" method="change_text_volume"]
 [connection signal="value_changed" from="CanvasLayer/Pause Menu/Options/Options/SFX Volume/SFX Volume Slider" to="CanvasLayer/Pause Menu" method="change_sound_volume"]
 [connection signal="value_changed" from="CanvasLayer/Pause Menu/Options/Options/Music Volume/Music Volume Slider" to="CanvasLayer/Pause Menu" method="change_music_volume"]
-[connection signal="value_changed" from="CanvasLayer/Pause Menu/Options/Options/Text Speed/SFX Volume Slider" to="CanvasLayer/Pause Menu" method="change_text_speed"]
+[connection signal="value_changed" from="CanvasLayer/Pause Menu/Options/Options/Text Speed/Text Speed Slider" to="CanvasLayer/Pause Menu" method="change_text_speed"]
 [connection signal="value_changed" from="CanvasLayer/Pause Menu/Options/Options/Auto Progress Speed/Auto Progress Speed Slider" to="CanvasLayer/Pause Menu" method="change_auto_progress_speed"]
 [connection signal="pressed" from="CanvasLayer/Pause Menu/Options/Options/Save Changes" to="CanvasLayer/Pause Menu" method="save_changes"]
 [connection signal="pressed" from="CanvasLayer/Pause Menu/Options/Options/Back" to="CanvasLayer/Pause Menu" method="toggle_options"]

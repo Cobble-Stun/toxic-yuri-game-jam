@@ -12,6 +12,11 @@ extends Control
 var saveName: String
 @onready var scenePlayer = get_parent()
 
+@onready var textVolumeSlider = $"Options/Options/Text Volume/Text Volume Slider"
+@onready var sfxVolumeSlider = $"Options/Options/SFX Volume/SFX Volume Slider"
+@onready var musicVolumeSlider = $"Options/Options/Music Volume/Music Volume Slider"
+@onready var textSpeedSlider = $"Options/Options/Text Speed/Text Speed Slider"
+@onready var autoProgressSlider = $"Options/Options/Auto Progress Speed/Auto Progress Speed Slider"
 @onready var textVolumeValue = $"Options/Options/Text Volume/Label"
 @onready var sfxVolumeValue = $"Options/Options/SFX Volume/Label"
 @onready var musicVolumeValue = $"Options/Options/Music Volume/Label"
@@ -20,6 +25,7 @@ var saveName: String
 
 func _ready() -> void:
 	animPlayer.play("Hidden")
+	reset_settings()
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("PauseMenu"):
@@ -31,6 +37,11 @@ func _process(_delta: float) -> void:
 			animPlayer.play("Idle")
 			return
 		if visible == true:
+			buttons.visible = true
+			savePrompt.visible = false
+			saveGame.visible = false
+			options.visible = false
+			loadGame.visible = false
 			animPlayer.play("Hide")
 			await animPlayer.animation_finished
 			scenePlayer.preventTextProgress = false
@@ -88,6 +99,8 @@ func load_game(saveName: String):
 func toggle_options() -> void:
 	buttons.visible = !buttons.visible
 	options.visible = !options.visible
+	if options.visible:
+		reset_settings()
 	
 func _on_quit_to_menu_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/Main Menu.tscn")
@@ -96,27 +109,39 @@ func _on_quit_game_pressed() -> void:
 	get_tree().quit()
 
 func change_text_volume(value: float) -> void:
-	Globals.textVolume = value-72
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Text"), Globals.textVolume)
-	textVolumeValue.text = str(value)
+	textVolumeValue.text = str(value * 100)
 	
 func change_music_volume(value: float):
-	Globals.musicVolume = value-72
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), Globals.musicVolume)
-	musicVolumeValue.text = str(value)
+	musicVolumeValue.text = str(value * 100)
 	
 func change_sound_volume(value: float):
-	Globals.sfxVolume = value-72
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), Globals.sfxVolume)
-	sfxVolumeValue.text = str(value)
+	sfxVolumeValue.text = str(value * 100)
 
 func change_text_speed(value: float):
-	Globals.textSpeed = value
 	textSpeedValue.text = str(value)
 	
 func change_auto_progress_speed(value: float):
-	Globals.textAutoProgressSpeed = value
 	autoProgressValue.text = str(value)
 	
+func reset_settings():
+	textVolumeSlider.value = Globals.textVolume
+	sfxVolumeSlider.value = Globals.sfxVolume
+	musicVolumeSlider.value = Globals.musicVolume
+	textSpeedSlider.value = Globals.textSpeed
+	autoProgressSlider.value = Globals.textAutoProgressSpeed
+	textVolumeValue.text = str(Globals.textVolume * 100)
+	sfxVolumeValue.text = str(Globals.sfxVolume * 100)
+	musicVolumeValue.text = str(Globals.musicVolume * 100)
+	textSpeedValue.text = str(Globals.textSpeed)
+	autoProgressValue.text = str(Globals.textAutoProgressSpeed)
+	
 func save_changes():
+	Globals.textVolume = float(textVolumeValue.text)/100
+	Globals.musicVolume = float(musicVolumeValue.text)/100
+	Globals.sfxVolume = float(sfxVolumeValue.text)/100
+	Globals.textSpeed = float(textSpeedValue.text)
+	Globals.textAutoProgressSpeed = float(autoProgressValue.text)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Text"), linear_to_db(Globals.textVolume))
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(Globals.musicVolume))
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), linear_to_db(Globals.sfxVolume))
 	SaveSystem.save_settings()

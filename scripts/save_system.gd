@@ -60,6 +60,8 @@ func read_save_data() -> Dictionary:
 		var openedFile = FileAccess.open(path + file_name, FileAccess.READ)
 		if openedFile != null and file_name.get_extension() == "json":
 			saveData = JSON.parse_string(openedFile.get_as_text())
+			if file_name.get_basename() == "settings":
+				continue
 			saves[file_name.get_basename()] = saveData
 	return saves
 	

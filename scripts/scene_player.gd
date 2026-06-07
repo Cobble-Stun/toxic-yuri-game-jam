@@ -17,6 +17,7 @@ extends CanvasLayer
 @onready var textSpeedTimer = $"Text Speed Timer"
 @onready var textAutoProgressTimer = $"Text Auto Progress Timer"
 @onready var textSkipTimer = $"Text Skip Timer"
+@onready var buttons = $Control/Buttons
 @onready var fadeRect = $Fade
 
 var dialog: Array = []
@@ -244,6 +245,7 @@ func read_current_script_line():
 
 func toggle_dialogue_box(removeText : bool):
 	dialogueBox.visible = !dialogueBox.visible
+	buttons.visible = !buttons.visible
 	if removeText == true:
 		nameText.text = ""
 		dialogueText.text = ""
