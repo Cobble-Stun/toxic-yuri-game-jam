@@ -14,9 +14,12 @@ extends CanvasLayer
 @onready var controlNode = $Control
 @onready var background = $Control/Background
 @onready var choiceMenu = $"Choice Menu"
-@onready var dialogueBox = $"Control/Dialogue Box"
-@onready var nameText = $"Control/Dialogue Box/Name/Name Text"
-@onready var dialogueText = $"Control/Dialogue Box/Dialogue/Dialogue Text"
+@onready var advDialogueBox = $"Control/Adventure Dialogue Box"
+@onready var nvlDialogueBox = $"Control/Novel Dialogue Box"
+@onready var nameText = $"Control/Adventure Dialogue Box/Name/Name Text"
+@onready var nameText2 = $"Control/Novel Dialogue Box/Name/Name Text"
+@onready var dialogueText = $"Control/Adventure Dialogue Box/Dialogue/Dialogue Text"
+@onready var dialogueText2 = $"Control/Novel Dialogue Box/Dialogue/Dialogue Text"
 @onready var textSpeedTimer = $"Text Speed Timer"
 @onready var textAutoProgressTimer = $"Text Auto Progress Timer"
 @onready var textSkipTimer = $"Text Skip Timer"
@@ -35,6 +38,8 @@ var preventTextProgress = false
 
 var skipping = false
 var auto = false
+
+var novel = false
 
 func _ready() -> void:
 	textSpeedTimer.wait_time = Globals.textSpeed
@@ -67,7 +72,7 @@ func _process(_delta: float) -> void:
 	
 	if Input.is_action_just_pressed("ToggleDialogueBox") and preventToggleDialogueBox == false:
 		toggle_dialogue_box(false)
-	if !dialogueBox.visible and gameDialogueBoxHide == false:
+	if !advDialogueBox.visible and !nvlDialogueBox.visible and gameDialogueBoxHide == false:
 		return
 	if preventTextProgress == true:
 		return
@@ -92,6 +97,7 @@ func prepare_script(jsonFile):
 func complete_text_instantly():
 	textRunning = false
 	dialogueText.text = dialog[dialogIndex]["text"]
+	dialogueText2.text = dialog[dialogIndex]["text"]
 	
 func capture_scene_state():
 	var snapshot = {
@@ -103,7 +109,7 @@ func capture_scene_state():
 		"bg_scale": background.scale,
 		"speaker": nameText.text,
 		"text": dialogueText.text,
-		"sprites": [] 
+		"sprites": [],
 	}
 	
 	for child in controlNode.get_children():
@@ -123,6 +129,14 @@ func scene_rollback():
 		
 	textRunning = false
 	
+	if dialog[dialogIndex].has("event"):
+		if dialog[dialogIndex]["event"] == "novel":
+			novel = false
+			update_dialogue_box_type()
+		if dialog[dialogIndex]["event"] == "adventure":
+			novel = true
+			update_dialogue_box_type()
+	
 	var last_state = stateHistory.pop_back()
 	
 	if last_state["scene"] != currentScript:
@@ -132,13 +146,14 @@ func scene_rollback():
 	dialogIndex = last_state["index"]
 	
 	nameText.text = last_state["speaker"]
+	nameText2.text = last_state["speaker"]
 	dialogueText.text = last_state["text"]
+	dialogueText2.text = last_state["text"]
 	
 	change_font(last_state["speaker"])
 	
-	
 	for node in get_tree().get_nodes_in_group("sprites"):
-		node.queue_free()
+		node.free()
 	
 	background.texture = null
 	
@@ -161,6 +176,19 @@ func scene_rollback():
 		newSprite.scale = s["scale"]
 		newSprite.add_to_group(s["group"])
 		newSprite.add_to_group("sprites")
+	
+	#checking for non-stored info like sprite effects and events
+	var line = dialog[last_state["index"]]
+	if line.has("sprite effect"):
+		assign_sprite_effect(line["sprite effect"])
+	if line.has("event"):
+		assign_event(line)
+	else:
+		update_dialogue_box_type()
+	if line.has("transition"):
+		assign_transition(line)
+	
+	
 	
 func read_current_script_line():
 	var line = dialog[dialogIndex]
@@ -232,28 +260,24 @@ func read_current_script_line():
 		
 	#event
 	if line.has("event"):
-		match line["event"]:
-			"hide text":
-				dialogueBox.visible = false
-				gameDialogueBoxHide = true
-			"unhide text":
-				dialogueBox.visible = true
-				gameDialogueBoxHide = false
+		assign_event(line)
 				
 	#transitions
 	if line.has("transition"):
-		fade_transistion()
+		assign_transition(line)
 				
 	Globals.savedDialogIndex = dialogIndex
 	Globals.savedScene = currentScript
 		
 
 func toggle_dialogue_box(removeText : bool):
-	dialogueBox.visible = !dialogueBox.visible
+	advDialogueBox.visible = !advDialogueBox.visible
 	buttons.visible = !buttons.visible
 	if removeText == true:
 		nameText.text = ""
+		nameText2.text = ""
 		dialogueText.text = ""
+		dialogueText2.text = ""
 	
 #choices
 func display_choices(choices: Array):
@@ -342,13 +366,16 @@ func assign_speaker_name(lineInfo: String):
 	#char name
 	if lineInfo == "":
 		nameText.text = ""
+		nameText2.text = ""
 		return
 	
 	if lineInfo != null:
 		nameText.text = lineInfo
+		nameText2.text = lineInfo
 		change_font(lineInfo)
 	else:
 		nameText.text = "???"
+		nameText2.text = "???"
 	
 func assign_text(lineInfo):
 	textRunning = true
@@ -356,6 +383,7 @@ func assign_text(lineInfo):
 	var lineChars = lineInfo.split()
 	var ignoreChars = false
 	dialogueText.text = ""
+	dialogueText2.text = ""
 	for c in lineChars:
 		if textRunning == false:
 			return
@@ -365,6 +393,7 @@ func assign_text(lineInfo):
 			ignoreChars = false
 			
 		dialogueText.text += c
+		dialogueText2.text += c
 		if ignoreChars == false:
 			textSound.typing_sounds()
 			textSpeedTimer.start()
@@ -376,15 +405,28 @@ func change_font(name):
 	if name == "Narrator":
 			nameText.add_theme_font_override("normal_font", narratorFont)
 			nameText.add_theme_font_size_override("normal_font_size", 20)
+			nameText2.add_theme_font_override("normal_font", narratorFont)
+			nameText2.add_theme_font_size_override("normal_font_size", 20)
 			dialogueText.add_theme_font_override("normal_font", narratorFont)
 			dialogueText.add_theme_font_size_override("normal_font_size", 20)
+			dialogueText2.add_theme_font_override("normal_font", narratorFont)
+			dialogueText2.add_theme_font_size_override("normal_font_size", 20)
 	else:
 		nameText.remove_theme_font_override("normal_font")
 		nameText.add_theme_font_size_override("normal_font_size", 32)
+		nameText2.remove_theme_font_override("normal_font")
+		nameText2.add_theme_font_size_override("normal_font_size", 32)
 		dialogueText.remove_theme_font_override("normal_font")
 		dialogueText.add_theme_font_size_override("normal_font_size", 32)
+		dialogueText2.remove_theme_font_override("normal_font")
+		dialogueText2.add_theme_font_size_override("normal_font_size", 32)
 	
 #transition
+func assign_transition(line):
+	match line["transition"]:
+		"fade":
+			fade_transistion()
+
 func fade_transistion():
 	var tween = create_tween()
 	tween.tween_property(fadeRect, "color", Color(0,0,0,1), 0.5)
@@ -419,3 +461,28 @@ func get_anchor(anchor: String):
 			return i
 	print("errrmmm anchor error: " + anchor)
 	return null
+	
+#events
+func assign_event(line):
+	match line["event"]:
+		"hide text":
+			advDialogueBox.visible = false
+			nvlDialogueBox.visible = false
+			gameDialogueBoxHide = true
+		"unhide text":
+			update_dialogue_box_type()
+		"novel":
+			novel = true
+			update_dialogue_box_type()
+		"adventure":
+			novel = false
+			update_dialogue_box_type()
+	
+func update_dialogue_box_type():
+	if novel:
+		nvlDialogueBox.visible = true
+		advDialogueBox.visible = false
+	elif !novel:
+		nvlDialogueBox.visible = false
+		advDialogueBox.visible = true
+	gameDialogueBoxHide = false

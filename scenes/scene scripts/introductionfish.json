@@ -1,24 +1,25 @@
 [
 	{"background": "TyrestaLake:1.0",
-	 "speaker": "Narrator", "text":
+	 "speaker": "Narrator", "event": "novel", "text":
 	 "There was an increase of around 2 degrees for the water outside... 10 degrees for you stupid yanks."},
 	
 	{"speaker": "Narrator","text": 	
 	"This will add an unfortunate number of complications for our friends: the fish. These creatures, as close to us as they are, our sustainers, our friends, are assaulted on all sides by parasites."},
 	
-	{"speaker": "Narrator","text":
+	{"speaker": "Narrator", "text":
 	"Christina always wore earbuds when she was out. To ensure that no one, absolutely no one had an inkling of an idea that she should be approached."},
 	
 	{"speaker": "Narrator","text":
 	"Even now Blanche can tell that she's been up for hours already at (8 in the morning) and she can smell that if she had showered in the intervening hours she hadn't done it well enough. Layer after layer of defense."},
 	
-	{"sprite": "blanche neutral c:blanche:400:0:1.0","speaker": "Blanche","text":
+	{"sprite": "blanche neutral c:blanche:400:0:1.0",
+	"speaker": "Blanche", "event": "adventure", "text":
 	"I'll take the rods and the net."},
 	
 	{"speaker": "Blanche","text":
 	"Could you handle the... fishcooler and the bait?"},
 	
-	 {"sprite": "christina neutral c:christina:-400:0:1.0","speaker": "Christina","text":
+	 {"sprite": "christina neutral c:christina:-400:0:1.0","speaker": "Christina", "text":
 	"Livewell, fish cooler, whatever..."},
 	
 	{"speaker": "Christina","text": 

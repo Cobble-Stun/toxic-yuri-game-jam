@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://bu0oglgq237js" path="res://scripts/pause_menu.gd" id="5_vr4fv"]
 [ext_resource type="Texture2D" uid="uid://c2g35syaxhf1k" path="res://gui/pause menu/main_menu.png" id="6_780hr"]
 [ext_resource type="Texture2D" uid="uid://byd2gj8qy4cw6" path="res://gui/main menu/game_menu.png" id="6_vm6a4"]
+[ext_resource type="Texture2D" uid="uid://dn48veyafqi3g" path="res://gui/speech/VN_NvlMode.png" id="6_vr4fv"]
 [ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="7_1aivi"]
 [ext_resource type="Texture2D" uid="uid://bfh8tqhanj8vs" path="res://gui/main menu/Slider Center.png" id="8_fpdpx"]
 [ext_resource type="Theme" uid="uid://dc3ye336atiph" path="res://gui/main menu/main_menu.tres" id="9_1t720"]
@@ -172,7 +173,7 @@ offset_bottom = 883.0
 texture = ExtResource("2_vr4fv")
 expand_mode = 1
 
-[node name="Dialogue Box" type="TextureRect" parent="CanvasLayer/Control" unique_id=1182628965]
+[node name="Adventure Dialogue Box" type="TextureRect" parent="CanvasLayer/Control" unique_id=1182628965]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -186,7 +187,7 @@ mouse_behavior_recursive = 1
 texture = ExtResource("2_vm6a4")
 expand_mode = 3
 
-[node name="Dialogue" type="PanelContainer" parent="CanvasLayer/Control/Dialogue Box" unique_id=737503451]
+[node name="Dialogue" type="PanelContainer" parent="CanvasLayer/Control/Adventure Dialogue Box" unique_id=737503451]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -201,7 +202,7 @@ mouse_filter = 2
 mouse_behavior_recursive = 1
 theme_override_styles/panel = SubResource("StyleBoxEmpty_njov2")
 
-[node name="Dialogue Text" type="RichTextLabel" parent="CanvasLayer/Control/Dialogue Box/Dialogue" unique_id=1328541999]
+[node name="Dialogue Text" type="RichTextLabel" parent="CanvasLayer/Control/Adventure Dialogue Box/Dialogue" unique_id=1328541999]
 clip_contents = false
 layout_mode = 2
 mouse_filter = 2
@@ -217,7 +218,7 @@ theme_override_font_sizes/mono_font_size = 32
 bbcode_enabled = true
 text = "Insert text here"
 
-[node name="Name" type="PanelContainer" parent="CanvasLayer/Control/Dialogue Box" unique_id=1542671256]
+[node name="Name" type="PanelContainer" parent="CanvasLayer/Control/Adventure Dialogue Box" unique_id=1542671256]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -232,7 +233,76 @@ mouse_filter = 2
 mouse_behavior_recursive = 1
 theme_override_styles/panel = SubResource("StyleBoxEmpty_2au82")
 
-[node name="Name Text" type="RichTextLabel" parent="CanvasLayer/Control/Dialogue Box/Name" unique_id=324342788]
+[node name="Name Text" type="RichTextLabel" parent="CanvasLayer/Control/Adventure Dialogue Box/Name" unique_id=324342788]
+layout_mode = 2
+mouse_behavior_recursive = 1
+theme = ExtResource("3_ptht1")
+text = "Name"
+
+[node name="Novel Dialogue Box" type="TextureRect" parent="CanvasLayer/Control" unique_id=1960479756]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.555542
+offset_top = -652.0
+offset_right = 3.555542
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+mouse_behavior_recursive = 1
+texture = ExtResource("6_vr4fv")
+expand_mode = 3
+
+[node name="Dialogue" type="PanelContainer" parent="CanvasLayer/Control/Novel Dialogue Box" unique_id=916173807]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 165.0
+offset_top = 41.0
+offset_right = -170.0
+offset_bottom = -137.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_behavior_recursive = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_njov2")
+
+[node name="Dialogue Text" type="RichTextLabel" parent="CanvasLayer/Control/Novel Dialogue Box/Dialogue" unique_id=1368896327]
+clip_contents = false
+layout_mode = 2
+mouse_filter = 2
+mouse_behavior_recursive = 1
+theme = ExtResource("3_ptht1")
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/bold_font = ExtResource("4_vm6a4")
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+bbcode_enabled = true
+text = "Insert text here"
+
+[node name="Name" type="PanelContainer" parent="CanvasLayer/Control/Novel Dialogue Box" unique_id=681090284]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 159.0
+offset_top = 45.0
+offset_right = -177.0
+offset_bottom = -528.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_behavior_recursive = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_2au82")
+
+[node name="Name Text" type="RichTextLabel" parent="CanvasLayer/Control/Novel Dialogue Box/Name" unique_id=1574524409]
 layout_mode = 2
 mouse_behavior_recursive = 1
 theme = ExtResource("3_ptht1")
@@ -837,7 +907,6 @@ bus = &"Sound"
 bus = &"Sound"
 
 [node name="Fade" type="ColorRect" parent="CanvasLayer" unique_id=119594164]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
