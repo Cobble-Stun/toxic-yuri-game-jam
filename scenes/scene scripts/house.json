@@ -1,0 +1,173 @@
+[
+	{"speaker": "Narrator", "event": "novel", "text":
+	 "	Blanche is dreading to refill the day's petrol bill; she'll have to clean the car for the smell of fish, vomit, and other excretions, and what have you, but she’ll be rid of Christina for a few days. 
+	
+	She reaches the address on her navigation, all the way in the armpit of a suburb of Stockholm, outside of a featureless block of apartment buildings. Some ruffians were loitering outside.
+	
+	She turns down the metal; it’s a song about time travelers going back in time to save Julian at Ctesiphon. It's not quite as good as the Mamluks."},
+	
+	{"speaker": "Blanche", "event": "adventure", "text":
+	"Oh look Christina, it’s your place."},
+	
+	{"speaker": "Blanche", "text":
+	"I’ll take care of most of the lab work since you’re feeling so sick."},
+	
+	{"speaker": "Blanche", "text":
+	"Just focus on resting, okay?"},
+	
+	{"speaker": "Christina", "text":
+	"Alright..."},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	 "Christina begins to cough hard, and grimaces from the effort."},
+	
+	{"speaker": "Christina", "event": "adventure", "text":
+	"Fuck, we’re here."},
+	
+	{"speaker": "Christina", "text":
+	"I’ll see you on Monday?"},
+	
+	{"speaker": "Blanche", "text":
+	"Tuesday."},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	 "Christina nods and continues to cough."},
+	
+	{"speaker": "Christina", "event": "adventure", "text":
+	"Thanks for the ride, I’ll see you."},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"	Blanche watches Christina limp her way up the footpath to where one of the hoodlums opens the door for her. Another one seems to walk her inside before she disappears from view..
+	
+    Christina’s stomach inverts on the ride up from floor 1 to 6, practically forcing her to the back of the elevator. Everything feels like it wants to come out of her, but there’s nothing there. 
+	
+	Just the air in her lungs. Ferocious coughing for what seems to be an hour as the elevator ticks up one floor after another."},
+	
+	{"speaker": "Narrator", "text":
+	"She collapses on the floor, trying to sit in a way that it’ll make the pain a little bit less intense.
+	
+	On floor six, she sees the feet of one of her neighbours and pushes herself out of the elevator."},
+	
+	{"speaker": "Pasaya", "event": "adventure", "text":
+	"Pasaya lore: Okay, on my home planet... my drones worshiped me too, just like you in chat!"},
+	
+	{"speaker": "Pasaya", "text":
+	"There’s a whole religion where they bring me offerings of human flesh and sacrifice their larvae in front of me."},
+	
+	{"speaker": "Pasaya", "text":
+	"I drew it in a comic on the website if you wanna see it or whatever."},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"	Christina’s apartment was really a relative of hers, Uncle Mangus on her father’s side, a tech guy. 
+	
+	He semi-officially gave her the place (so long as she paid rent) when his company moved him to the US with a big raise to fit. 
+	
+	His laissez-faire attitude was a godsend for her; if he saw what his place had turned into in the intervening years, he’d almost consider giving up rent control to avoid fixing it up."},
+	
+	{"speaker": "Pasaya", "event": "adventure", "text":
+	"I main him because he’s big, I don’t want to look at  a guy unless he’s fucking..."},
+	
+	{"speaker": "Pasaya", "text":
+	"Oh, watch this."},
+	
+	{"speaker": "Pasaya", "text":
+	"Clap, clap, throw... goodbye, bitch!"},
+	
+	{"speaker": "Pasaya", "text":
+	"Don’t talk to me unless you’re literally twice my size, okay?"},
+	
+	{"speaker": "Pasaya", "text":
+	"Uh, anyone 13 to 20 feet tall or higher in chat, tell me."},
+	
+	{"speaker": "Pasaya", "text":
+	"Okay, so what I'm seeing is that  all of them, every single person in here, are total frauds!"},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"	Christina fumbles with her keys in the apartment door for a minute before she realizes that she had forgotten to lock the door earlier. 
+	
+	She re-unlocks the door and enters. The smell, she had forgotten to take out the garbage from two days ago, so it’s been sitting there by the door, festering in the relative heat.
+	
+	\"Whatever,\" she thinks. She heads back into the bedroom to sleep. She is too tired to realize her still muddy boots are on as he walks across the carpet."},
+	
+	{"speaker": "Narrator", "text":
+	"	She passes by her computer, where the autoplay has been left on.
+	
+	It’s Pasaya playing a video game. She can’t make it out, flopping down on the side of the bed that’s been cleared of junk for sleeping, and closes her eyes
+	
+	A video compilation titled \"Pasaya’s Most Questionable Sounds?!?!?!?!?!\", one that she made herself in her dedicated Pasaya playlist, is going off in her ears as her eyes close."},
+	
+	{"speaker": "Narrator", "text":
+	"	She can remember taking the timestamps for each utterance fondly while she places a hand in her mouth and sucks. She passes out. Her clothes, hair, and bed are all wet.
+	
+	When she wakes up, she sees that her sheets have been ruined and the playlist is still going."},
+
+	{"background": "bathroom lights on:1.0",
+	"speaker": "Narrator", "text":
+	"She takes off her boots and drops them in the designated walkable area of her bedroom. She carefully tiptoes around the assorted junk accumulated on the floor."},
+	
+	{"speaker": "Pasaya", "event": "adventure", "text":
+	"Drone CT_576, thank you for inviting me to your island."},
+	
+	{"speaker": "Pasaya", "text":
+	"However, your home is not fit for a queen like me."},
+	
+	{"speaker": "Pasaya", "text":
+	"This shit is embarrassing. Did you even play the game before you asked me to come on?"},
+	
+	{"speaker": "Pasaya", "text":
+	"That's the default wallpaper, come on now!"},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"	Christina takes out her earbuds; it’s the (Animal Crossing) Island invasion series. She had been persistent enough to actually get Pasaya herself to visit. 
+	
+	She even slapped her avatar in the head a dozen times for how ugly her house had been."},
+	
+	{"background": "bathroom shower:1.0",
+	"sound": "shower",
+	"speaker": "Narrator", "text":
+	"	Christina enters her walk-in shower and turns the nozzle. She had to be quick since the water bill was the one thing her uncle could wake up for.
+	
+	She takes her 3 in one shampoo, conditioner, and body wash, and runs it through her hair. 
+	
+	Closing her eyes, but In her mind, she can see Pasaya with a hand on her breast and another underneath her skirt. Her eyes are tracking hers as if she were staring at her."},
+	
+	{"speaker": "Christina", "event": "adventure", "text":
+	"Oh, Pasaya..."},
+	
+	{"speaker": "Christina", "text":
+	"I-if I’m fast enough?"},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"	She bites the inside of her cheek and slides a hand down the left side of her body, guiding it to her crotch. Two fingers walk inside her pussy.
+	
+	\"Pasaya...\" The sounds of the shower aren’t enough to cover the slinking of Chrstina or or her heavy breaths.
+	
+	Pasaya’s masturbation picks up, and Christina tries to synchronize with her, pretending as if her idol is the one in there playing with her. She feels it coming."},
+	
+	{"speaker": "Pasaya", "event": "adventure", "text":
+	"Ah..."},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"Christina comes, and the mess soon gets washed away. But then, she hears something she can't believe."},
+	
+	{"speaker": "Pasaya", "event": "adventure", "text":
+	"My larvae Chrsitina..."},
+	
+	{"speaker": "Christina", "text":
+	"She said my name..."},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"One after another caterpillar plops down from underneath Pasya’s skirt."},
+	
+	{"speaker": "Pasaya", "event": "adventure", "text":
+	"“Can't you feel them?"},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"Christina feels an itching feeling inside of her and opens her eyes. She turns off the shower and feels her pussy again."},
+	
+	{"speaker": "Christina", "text":
+	"Ok, ok, everything’s fine."},
+	
+	{"speaker": "Christina", "text":
+	"Fuck."},
+]

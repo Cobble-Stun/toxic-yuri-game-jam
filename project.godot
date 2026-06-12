@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 Globals="*uid://dtgnpnid607q0"
 SaveSystem="*uid://cla3r0mor6qgo"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 NextDialogue={

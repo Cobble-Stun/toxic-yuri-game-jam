@@ -206,7 +206,7 @@ func read_current_script_line():
 	
 	if line.has("sound"):
 		play_audio("res://audio/sounds/", line["sound"], soundPlayer)
-	
+		
 	#sprites
 	if line.has("sprite"):
 		sprite_channel(line["sprite"])
@@ -307,6 +307,10 @@ func play_audio(dir: String, jsonKey: String, audioPLayer: AudioStreamPlayer):
 	var sound
 	for track in DirAccess.open(dir).get_files():
 		if track == jsonKey + ".ogg":
+			sound = load(dir + track)
+		if track == jsonKey + ".wav":
+			sound = load(dir + track)
+		if track == jsonKey + ".mp3":
 			sound = load(dir + track)
 	if sound == null:
 		change_audio_track(null, audioPLayer)

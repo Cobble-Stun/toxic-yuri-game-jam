@@ -144,4 +144,6 @@ func save_changes():
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Text"), linear_to_db(Globals.textVolume))
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(Globals.musicVolume))
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), linear_to_db(Globals.sfxVolume))
+	scenePlayer.textSpeedTimer.wait_time = Globals.textSpeed
+	scenePlayer.textAutoProgressTimer.wait_time = Globals.textAutoProgressSpeed
 	SaveSystem.save_settings()
