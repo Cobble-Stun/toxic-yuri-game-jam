@@ -271,7 +271,10 @@ func read_current_script_line():
 		
 
 func toggle_dialogue_box(removeText : bool):
-	advDialogueBox.visible = !advDialogueBox.visible
+	if !novel:
+		advDialogueBox.visible = !advDialogueBox.visible
+	if novel:
+		nvlDialogueBox.visible = !nvlDialogueBox.visible
 	buttons.visible = !buttons.visible
 	if removeText == true:
 		nameText.text = ""
