@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="5_mslyy"]
 [ext_resource type="Texture2D" uid="uid://bfh8tqhanj8vs" path="res://gui/main menu/Slider Center.png" id="6_im4cs"]
 [ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="7_im4cs"]
+[ext_resource type="AudioStream" uid="uid://cslj5wue2et1v" path="res://audio/music/Parasocial.ogg" id="7_mslyy"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_15uo5"]
 
@@ -368,6 +369,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_uikcu")
 text = "Back"
 
 [node name="Music" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=1148540266]
+stream = ExtResource("7_mslyy")
 autoplay = true
 bus = &"Music"
 
