@@ -1,37 +1,42 @@
 [
+	{"speaker": "Narrator", "event": "novel", "text":
+    "    A dried and refreshed Christina walks into her bedroom and picks some clothes from the clean pile. The smell isn’t too bad.
 
-	{"speaker": "Narrator","event": "novel", "text":
-	"A dried and refreshed Christina walks into her bedroom and picks some clothes from the clean pile. The smell isn’t too bad."},
+    She sits down at her computer. The desk is covered in Pasaya merch. The laptop’s got a few stickers taped to the front and back. 
 
-	{"speaker": "Narrator","text":
-	"She sits down at her computer. The desk is covered in Pasaya merch. The laptop’s got a few stickers taped to the front and back. Her mouse is resting on a genuine Pasaya boobpad. A fan she met online made a super deformed Pasaya metamorphosis set with a larva, pupa, and adult for her as a favor after saving the video of the rare overtuned jiggle physics avatar. She even had the special Pasaya honeydew candy, made with her ambigously designated 'nectar', whatever that was."},
-	
-	{"speaker": "Narrator","text":
-	"About half of the pile was the printouts of various diseases affecting the common roach in the brackish waters connected to the Baltic Sea in the vicinity of Stockholm during the warmer months of the year; the other half was split between old coursework and mail."},
-	
-	{"speaker": "Narrator","text":
-	"She sat down in the grease-stained armchair she repurposed from the living room and popped a hard candy into her mouth. She opens up Pasaya's page to see if she was following through on the early morning weekend streams this time. It was always a crapshoot whether or not she'd follow through."},
+    Her mouse is resting on a genuine Pasaya boobpad. 
+
+	A fan she met online made a super deformed Pasaya metamorphosis set with a larva, pupa, and adult for her as a favor after saving the video of the rare overtuned jiggle physics avatar."},
+
+	{"speaker": "Narrator", "text":
+    "    She even had the special Pasaya honeydew candy, made with her “nectar,” whatever that was.
+
+    About half of the pile were printouts of various diseases affecting the common roach in the brackish waters connected to the Baltic Sea around Stockholm during the warmer months of the year.
+
+    The other half was split between old coursework and mail. She sat down in the grease-stained armchair she repurposed from the living room and popped a hard candy into her mouth. 
+
+	She opens up Pasaya's page to see if she was following through on the early morning weekend streams this time. It was always a crapshoot whether or not she'd follow through."},
 
 	{"speaker": "Christina","event": "adventure", "text":
 	"No!"},
 
 	{"speaker": "Christina","text":
-	"She promised she’d be doing a full week…"},
+	"She promised she’d be doing a full week..."},
 
 	{"speaker": "Christina","text":
-	"To the playlists again, why do you let the drones starve Pasaya…"},
+	"To the playlists again, why do you let the drones starve Pasaya..."},
 
 	{"speaker": "Christina","text":
 	"E-mail, Blanche. A few hundred fish pics and a detailed set of notes in 5 or so different formats."},
 
 	{"speaker": "Christina","text":
-	"Fuck me, the typos alone will take the whole weekend…"},
+	"Fuck me, the typos alone will take the whole weekend,,,"},
 
 	{"speaker": "Pasaya","text":
 	"I've never seen handwriting like this before in a game, devs."},
 
 	{"speaker": "Pasaya","text":
-	"You think I have calligraphy… cartography… a letter reading… Help me out here, hive."},
+	"You think I have calligraphy,,, cartography,,, a letter reading,,, Help me out here, hive."},
 
 	{"speaker": "Christina","text":
 	"I remember how badly she struggled this playthrough."},
@@ -49,19 +54,20 @@
 	"Right wright left, up, down, centered."},
 
 	{"speaker": "Pasaya","text":
-	"Right, wight, weft… UGH!"},
+	"Right, wight, weft... UGH!"},
 
 	{"speaker": "Christina","text":
-	"That wonderful lisp…"},
+	"That wonderful lisp,,,"},
 
 	{"speaker": "Narrator","event": "novel", "text":
-	"Blanche had, of course, written her notes in an inscrutable mixture of Swedish, English, and shorthand of both. Much of it is misspelled in both languages. Some of which she was kind enough to type up on her phone, for spellcheck ruined prose and more typos. The rest: handwritten, photographed from an awful angle, and saved with the title '-OCR'.",
+	"	Blanche had, of course, written her notes in an inscrutable mixture of Swedish, English, and shorthand of both. Much of it is misspelled in both languages. 
+	Some of which she was kind enough to type up on her phone, for spellcheck ruined prose and more typos. The rest: handwritten, photographed from an awful angle, and saved with the title '-OCR'.",
 
 	"speaker": "Narrator","text":
 	"Then there were the pictures. Blanche performed the remarkable feat of making a phone with a 4k camera produce an image that was blurry, out of focus, and off-center, while consistently doing so in the wrong orientation."},
 
 	{"speaker": "Christina","event": "adventure", "text":
-	"Hold on…"},
+	"Hold on..."},
 
 	{"speaker": "Christina","text":
 	"Then she dissected one?"},
@@ -73,94 +79,130 @@
 	"That thing wasn't living in the head."},
 
 	{"speaker": "Narrator","event": "novel", "text":
-	"'DesiccatedFish1' The first image Christina saw of the parasite outside of the fish. She couldn't begin to tell what kind of creature had been extracted from the insides of the fish. The segmented body of an annelid has tentacle-like appendages, some of which seem to have intertwined themselves with various organs of the fish. It was also distressingly long. Long enough to wrap around the entire length and width of the fish it lived inside."},
+	"The segmented body of an annelid has tentacle-like appendages, some of which seem to have intertwined themselves with various organs of the fish. It was also distressingly long. 
+	
+	Long enough to wrap around the entire length and width of the fish it lived inside."},
+	
 	{"speaker": "Christina","event": "adventure", "text":
-	"If I can decipher the hieroglyphs, maybe I'll get a better understanding of what…"},
+	"If I can decipher the hieroglyphs, maybe I'll get a better understanding of what..."},
+	
 	{"speaker": "Christina","text":
-	"Oh, cringe…."},
+	"Oh, cringe..."},
 
 	{"speaker": "Narrator","event": "novel", "text":
 	"One of the few good shots Blanche had gotten contained a vibrant image of a white appendage peeking out from the fish's underside."},
+	
 	{"speaker": "Christina","event": "adventure", "text":
 	"It's in the eye and the ass at the same time?"},
+	
 	{"speaker": "Pasaya","text":
-	"Look how the long bastard is…"},
+	"Look how the long bastard is,,,"},
 
 	{"speaker": "Pasaya","text":
 	"What do you think it's eating in there?"},
+	
 	{"speaker": "Christina","text":
-	"Parasites are nasty buggers, evolving to be as efficient as possible in nourishing themselves…"},
+	"Parasites are nasty buggers, evolving to be as efficient as possible in nourishing themselves,,,"},
+	
 	{"speaker": "Christina","text":
 	"Well, we don't know if this is an obligate parasite or some kind of parasitoid, very rare in the water."},
+	
 	{"speaker": "Christina","text":
-	"Is it the adult, the child, an in-between stage…"},
+	"Is it the adult, the child, an in-between stage,,,"},
+	
 	{"speaker": "Christina","text":
 	"I'm going to actually need to go through her notes."},
 
 	{"speaker": "Pasaya","text":
 	"Well, I think it's an adult worm."},
+	
 	{"speaker": "Christina","text":
-	"What the fuck would you know about Parasitology…"},
+	"What the fuck would you know about Parasitology,,,"},
+	
 	{"speaker": "Christina","text":
 	"..."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
 	"Christina swallows the peach-flavored piece of candy in her mouth and nearly gags. She switches windows to her running Pasaya playlist. It'd been automatically paused for inactivity. For how long, it hadn't really occurred to her. It might not have even started."},
 
 	{"speaker": "Christina","event": "adventure", "text":
 	"I-I've been hallucinating again, haven't I."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
 	"She puts another piece of candy in her mouth and sets up one of the 12-hour compilations of Pasaya laddering in her favorite fighting game. Pasaya made it her specialty to use high-risk, low-reward characters for the love volatility. There was nothing more satisfying than pulling out a win through the pure skill of execution, against the meta, against all conventional wisdom, against the world."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
 	"For Christina, this meant that her avatar made the most movements in her excited moments. It was particularly adorable when you could see that the woman behind the character had already gotten up from their chair to pace around their room. That and the noises, of course. This session had already been mined. She could see that her comment, highlighting the precise session that she screamed like a braying horse, had gotten dozens of thumbs up since the last time she saw it."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
 	"She takes a deep breath and goes back to work. Deciphering Blanche's work is hard, but there are insights to be found amongst the chicken scratch. She had, in fact, learned something in the several years spent at uni."},
 
 	{"speaker": "Narrator","event": "novel", "text":
 	"What Blanche could say definitively is that it is, in fact, an animal and not some kind of plant, or fungus, or whatever, in her own words. Fairly useless to Chrutina, but a start. She could see that the worm, tentatively, would take much more time to specify it was a true worm, a crustacean, an arthropod of another kind, a misshapen fish, mollusk, at least contained one brain, a highly developed one."},
+	
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"Feel that, that's the feeling of the heel pressing through the back of your skull, whelp."},
+	
 	{"speaker": "Pasaya","text":
 	"Isn't it sharp? Do you want me to force it harder? Just say so, jackass!"},
+	
 	{"speaker": "Christina","text":
 	"heh."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"Blanche goes further, and Christinia is surprised she knows how to read as well as write. She cites a paper she found about convergent evolution in the forms of parasitic life forms in the brackish waters of the Baltic Sea tributaries in and around Swedish coasts, that described a cruder form of a similar parasite described by a monk founding a colony of sorts…"},
+	"Blanche goes further, and Christinia is surprised she knows how to read as well as write. She cites a paper she found about convergent evolution in the forms of parasitic life forms in the brackish waters of the Baltic Sea tributaries in and around Swedish coasts, that described a cruder form of a similar parasite described by a monk founding a colony of sorts,,,"},
+	
 	{"speaker": "Christina","event": "adventure", "text":
 	"Inside of the corpse of a woman who was drowned for her participation in mass poisonings and Satanic rituals."},
+	
 	{"speaker": "Christina","text":
-	"Impressive…"},
+	"Impressive,,,"},
+	
 	{"speaker": "Pasaya","text":
-	"…"},
+	",,,"},
+	
 	{"speaker": "Pasaya","text":
-	"You underestimated me, didn't you… You, in your ignorance, could never measure my strength…"},
+	"You underestimated me, didn't you,,, You, in your ignorance, could never measure my strength,,,"},
+	
 	{"speaker": "Pasaya","text":
-	"Larval runts like you… I devour them, wholly, every day… effortlessly."},
+	"Larval runts like you,,, I devour them, wholly, every day,,, effortlessly."},
+	
 	{"speaker": "Pasaya","text":
-	"You're so easy…"},
+	"You're so easy,,,"},
 
 	{"speaker": "Narrator","event": "novel", "text":
-	"Christina takes a hard bite on her peach candy. It's unclear when she became attracted to cartoon characters. She wasn't particularly into animanga until one of her high school girlfriends forced her to watch some movies. She told herself she wasn't a furry or a bugfucker, even if she found the… interesting."},
+	"Christina takes a hard bite on her peach candy. It's unclear when she became attracted to cartoon characters. She wasn't particularly into animanga until one of her high school girlfriends forced her to watch some movies. She told herself she wasn't a furry or a bugfucker, even if she found the,,, interesting."},
+	
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"That's your mix-up?"},
+	
 	{"speaker": "Pasaya","text":
-	"Pulling that shit on me, the queen of this world…"},
+	"Pulling that shit on me, the queen of this world,,,"},
+	
 	{"speaker": "Christina","text":
 	"Hmmm."},
+	
 	{"speaker": "Pasaya","text":
 	"You're unworthy of being my toy."},
+	
 	{"speaker": "Christina","text":
 	"God, why?"},
+	
 	{"speaker": "Pasaya","text":
-	"All you are fit for is being food, not for me… my larvae…"},
+	"All you are fit for is being food, not for me,,, my larvae,,,"},
 
 	{"speaker": "Narrator","event": "novel", "text":
 	"Christina's candy shatters between her teeth, and she takes one hand off the keyboard and onto her crotch."},
+	
 	{"speaker": "Pasaya","event": "adventure", "text":
-	"I'll fill you, I'll fill you with enough eggs to make your body swollen… I'll watch…"},
+	"I'll fill you, I'll fill you with enough eggs to make your body swollen,,, I'll watch,,,"},
+	
 	{"speaker": "Pasaya","text":
-	"I'll watch as my children eat your organs slowly…"},
+	"I'll watch as my children eat your organs slowly,,,"},
+	
 	{"speaker": "Pasaya","text":
 	"You'll live long enough to see them emerge from the hollowed husk of a body so that I can."},
+	
 	{"speaker": "Christina","text":
-	"I-I shouldn't do this here…"},
+	"I-I shouldn't do this here,,,"},
 ]

@@ -233,4 +233,6 @@
 	
 	{"speaker": "Christina","text": 
 	"I'm fine."},
+	
+	{"next_scene": "car"}
 ]

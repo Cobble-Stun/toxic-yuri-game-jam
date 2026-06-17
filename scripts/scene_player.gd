@@ -188,8 +188,6 @@ func scene_rollback():
 	if line.has("transition"):
 		assign_transition(line)
 	
-	
-	
 func read_current_script_line():
 	var line = dialog[dialogIndex]
 	
