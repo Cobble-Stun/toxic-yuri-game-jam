@@ -1,5 +1,5 @@
 [
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "BackSeats_sketch:1.0", "speaker": "Narrator","event": "novel", "text":
 	"Everything’s been packed into the car. Blanche takes her seat on the right, and in a vain attempt to hide from eyeline, Christina’s state is such that she’s slumped over the fish in the back seat."},
 
 	{"speaker": "Blanche","text":
@@ -17,7 +17,7 @@
 	{"speaker": "Narrator","event": "novel", "text":
 	"Christina feels something coming up her throat and forces it down with a loud, audible gulp!"},
 
-	{"speaker": "Christina","text":
+	{"background": "countryroad:1.0","speaker": "Christina","text":
 	"Thank you, it must be a big burden on you to drive me home... Blanche!"},
 
 	{"speaker": "Christina","text":
@@ -61,7 +61,7 @@
 	{"speaker": "Pasaya","text":
 	"It’s almost 5 in the fucking morning hive time!"},
 
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "cityhighway:1.0","speaker": "Narrator","event": "novel", "text":
 	"Christina leaned closer to her phone. From the driver’s seat, all Blanche could see was a woman dangling over her seatbelt, breathing as if she had run a Marathon, broken up only by intense fits of coughing!"}, 
 
 	{"speaker": "Blanche","text":
@@ -93,7 +93,7 @@
 	{"speaker": "Narrator","event": "novel", "text":
 	"She couldn’t abandon her to the streets; her grade depended on her at least surviving long enough for her to hit send on the assignment and graduate. At least a C. She was certain that Christina would find some excuse for her to pay for an emergency room visit, coverage or not. So, for now, her best bet was to slow down and stop somewhere and close her eyes and ears!"},
 
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "bikelane:1.0","speaker": "Narrator","event": "novel", "text":
 	"There was a patch of greenery, a park, with a trash can. A few kids are kicking a ball around with a little dog joining in the fun. She stops in the bike lane. Christina, holding her mouth in one hand, frantically pulls open the door of her sedan, sees a bush, and releases with a hearty ‘blech’."},
 
 	{"speaker": "Narrator", "text":
@@ -102,7 +102,7 @@
 	{"speaker": "Christina","text":
 	"Oh. My bad!"},
 
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "car_open:1.0","speaker": "Narrator","event": "novel", "text":
 	"Christina brushes it off her face and leaves it on the bush. Slowly, she hobbles back to the car and sits down again, resting her head against the cooler filled with fish!"},
 
 	{"speaker": "Blanche","text":
@@ -120,11 +120,10 @@
 	{"speaker": "Christina","text":
 	"Hah!"},
 
-
 	{"speaker": "Blanche","text":
 	"She’s fucking with me, or she’s already gone deaf with those damned earphones!"}, 
 
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "car_radio:1.0","speaker": "Narrator","event": "novel", "text":
 	"Blanche turns on the radio with force. It’s already dialed into the good metal station where a song about the Battle of Ain Jalut just at the point where the Egyptian Mamluks start beating the Mongols ass!"},
 
 	{"speaker": "Blanche","text":
