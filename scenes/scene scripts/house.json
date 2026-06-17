@@ -170,4 +170,6 @@
 	
 	{"speaker": "Christina", "text":
 	"Fuck."},
+	
+	{"next_scene": "working", "transition": "fade"}
 ]

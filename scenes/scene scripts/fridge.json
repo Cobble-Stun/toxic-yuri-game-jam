@@ -10,7 +10,6 @@
 	"speaker": "Narrator", "text":
 	"She hadn't done the dishes in a few days. But she could salvage something in a moment. Then another revelation."},
 
-
 	{"speaker": "Christina", "text":
 	"I left something in the microwave... for how long?"},
 
@@ -27,10 +26,18 @@
 	"Do I even have any fucking food?"},
 
 	{"speaker": "Narrator", "event": "novel", "text":
-	"She opens up the refrigerator. Some of the items here have been there since Uncle Magnus left several years ago and are therefore inedible. Leaving the rest. Week-old coffee with a ring of scum on top. Bagel and lox sandwich, sniffed and found to be spoiled. Half-eaten kebab that has now become so desiccated as to resemble a lump of coal resting on a bed of rice topped with delectable frosting of mold. She had gotten some fresh fruits from a sale at the university, but she couldn't remember how long ago that was."},
+	"	She opens up the refrigerator. Some of the items here have been there since Uncle Magnus left several years ago and are therefore inedible. 
+	
+	Leaving the rest. Week-old coffee with a ring of scum on top. Bagel and lox sandwich, sniffed and found to be spoiled. 
+	
+	Half-eaten kebab that has now become so desiccated as to resemble a lump of coal resting on a bed of rice topped with delectable frosting of mold. 
+	
+	She had gotten some fresh fruits from a sale at the university, but she couldn't remember how long ago that was."},
 
 	{"speaker": "Narrator", "text":
-	"She opens the lower drawer and sees the bag she left the produce in, still disorganized. Some of the items have managed to survive in a way, though they have managed to live by floating about the swamp of mush."},
+	"	She opens the lower drawer and sees the bag she left the produce in, still disorganized. 
+	
+	Some of the items have managed to survive in a way, though they have managed to live by floating about the swamp of mush."},
 
 	{"background": "red:1.0",
 	"speaker" : "Pasaya", "event": "adventure","text":
@@ -50,7 +57,7 @@
 	"There's this really overpriced place that's a quick drive away from my uh... planet?"},
 
 	{"speaker" : "Christina", "text":
-	"I don't like hamburgers, and there's the ..."},
+	"I don't like hamburgers, and there's the..."},
 
 	{"speaker" : "Pasaya", "text":
 	"Please, I'm starving... your Queen is wasting away!"},

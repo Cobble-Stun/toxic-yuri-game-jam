@@ -7,13 +7,20 @@
 	"This will add an unfortunate number of complications for our friends: the fish. These creatures, as close to us as they are, our sustainers, our friends, are assaulted on all sides by parasites."},
 	
 	{"speaker": "Narrator","text":
-	"Parasites; You might only consider them as the vampiric creatures that suck blood, such as ticks or mosquitoes. In ecological science, we consider anything that harms others to be a parasite. Even we, the human race, are ultimately parasites."},
+	"	Parasites; You might only consider them as the vampiric creatures that suck blood, such as ticks or mosquitoes. 
+	
+	We humans like to consider anything that harms others to be a parasite, though even we the human race, are ultimately parasites."},
 	
 	{"speaker": "Narrator", "text":
-	"Christina, a young woman whose love of fish and fish parasites has been barely enough to get her through several years of grinding university work. She is joined by an acquaintance and classmate, Blanche, who seemed to be the only one in her class who wasn't scared off by her intimadating aura."},
+	"	Christina, a young woman whose love of fish and fish parasites has been barely enough to get her through several years of grinding university work. 
+	
+	She is joined by an acquaintance and classmate, Blanche, who seemed to be the only one in her class who wasn't scared off by her intimadating aura."},
 	
 	{"speaker": "Narrator","text":
-	"Christina always wore earbuds when she was out. To ensure that no one, absolutely no one, had an inkling of an idea that she should be approached. Even now, Blanche can tell that she's been up for hours already at 8 in the morning, and she can smell that if she had showered in the intervening hours, she hadn't done it well enough. Layer after layer of defense."},
+	"	Christina always wore earbuds when she was out. To ensure that no one, absolutely no one, had an inkling of an idea that she should be approached. 
+	Even now, Blanche can tell that she's been up for hours already at 8 in the morning, and she can smell that if she had showered in the intervening hours, she hadn't done it well enough. 
+	
+	Layer after layer of defense."},
 	
 	{"sprite": "blanche neutral c:blanche:400:0:1.0",
 	"speaker": "Blanche", "event": "adventure", "text":
@@ -30,25 +37,29 @@
 	"I'll take it, yeah."},
 	
 	{"speaker": "Narrator", "event": "novel","text":
-	"Christina sucks her teeth and puts her phone back into her pocket. She's been watching her favorite v-tuber on the way to the park. The one benefit of this project was having an excuse to get up at ungodly hours of the morning when she could just about catch the end of their livestreams."},
+	"	Christina sucks her teeth and puts her phone back into her pocket. She's been watching her favorite v-tuber on the way to the park. 
+	
+	The one benefit of this project was having an excuse to get up at ungodly hours of the morning when she could just about catch the end of their livestreams."},
 	
 	{"speaker": "Narrator", "text":
-	"Tyresta National Park wasn’t the ideal place to do our research. They're both science undergrads enrolled at Stockholm University, where they are paired together for a project in a summer course. Unlike Christina, Blanche had truly blossomed during her college years."},
+	"	Tyresta National Park wasn’t the ideal place to do our research. They're both science undergrads enrolled at Stockholm University, where they are paired together for a project in a summer course. 
+	
+	Unlike Christina, Blanche had truly blossomed during her college years."},
 	
 	{"speaker": "Narrator","text":
-	"Christina was always flabbergasted that someone like her needed to rush into the disappointments of adulthood. That you'd wish to be free of the university playground and instead fend for themselves as a full-blown working taxpayer..."},
+	"Christina was always surprised of the disappointments of adulthood. That you'd wish to be free of the university playground but still have to fend for themselves as a full-blown working taxpayer."},
 	
 	{"speaker": "Blanche","event": "adventure","text":
-	"Christina!"},
+	"Christina."},
 	
 	{"speaker": "Blanche","text":
 	"You seem tired."},
 	
 	{"speaker": "Christina","text": 
-	"What?!"},
+	"What?"},
 	
 	{"speaker": "Blanche","text":
-	"Is that too much for you to carry?!"},
+	"Is that too much for you to carry?"},
 	
 	{"speaker": "Christina","text": 
 	"I'm just taking my time, it's nice out!"},
@@ -69,49 +80,52 @@
 	"Oh, a bite!"},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"They needed to study something that would be exposed to pathogens in both salt and fresh water, wasn’t particularly valuable to industry, and, above all else, Christina found to be a little cute. Mort, the common roach. A  little fish that hides among the underwater plants in fresh, brackish, or ocean waters, unable to decide whether it prefers the sea or the river. It is tasteless to everyone but the Finns."},
+	"	They needed to study something that would be exposed to pathogens in both salt and fresh water, didn't have value to industry, and, above all else, something Christina found to be a little cute. 
+	
+	The common roach. A little fish that hides among the underwater plants in fresh, brackish, or ocean waters, unable to decide whether it prefers the sea or the river. 
+	
+	It is tasteless to everyone but the Finns."},
 	
 	{"speaker": "Blanche","event": "adventure", "text":
 	"You of all people should know, we have plenty of examples already living at the aquarium to measure against."},
 	
 	{"speaker": "Christina","text": 
-	"A pampered creature with no notion of the struggle of everyday life cannot be used as a real control in a proper study."},
+	"A pampered creature with no idea of the struggle of living in nature can't be used as a real control in a proper study."},
 	
 	{"speaker": "Blanche","text":
-	"Oh, oh, I suppose so!"},
-	
-	{"speaker": "Christina","text": 
-	"There's the fucker!"},
+	"Oh, oh, I guess so!"},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"First fish, healthy on the outside, quite clean as if it knew of hygiene, as much as a fish could. Blanche has stepped into the water herself. The two of them catch fish after fish. About half of them are as perfect a specimen of roach as could be. Shiny, healthy, happy. The other half..."},
+	"	First fish, healthy on the outside, quite clean as if it knew of hygiene, as much as a fish could. Blanche has stepped into the water herself. 
+	
+	The two of them catch fish after fish. About half of them are as perfect a specimen of roach as could be: shiny, healthy, happy. The other half..."},
 	
 	{"speaker": "Blanche", "event": "adventure", "text":
-	"These... uh creeps?"},
+	"These... uh look creepy."},
 	
 	{"speaker": "Christina","text": 
-	"Creeps, are you afraid of fish now?"},
+	"Creepy? Are you afraid of fish now?"},
 	
 	{"speaker": "Blanche","text":
 	"..."},
 	
 	{"speaker": "Blanche","text":
-	"Some of these fish have been infested with a parasite in the eye, haven't you noticed?"},
+	"Some of these fish have been infested with a parasite in their eyes, haven't you noticed?"},
 	
 	{"speaker": "Christina","text": 
-	"What looks like rapid eye movements in the pupil seems to be the work of another creature that's living within the fish's eyes."},
+	"\"What looks like rapid eye movements in the pupil seems to be the work of another creature that's living within the fishs' eyes.\""},
 	
 	{"speaker": "Christina","text": 
 	"Something I wrote down about 15 minutes ago, what took you so long?"},
 	
 	{"speaker": "Blanche","text":
-	"[wave]Let's catch more fish~.[wave]"},
+	"Let's catch more fish."},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
 	"Another round of fish caught. Some of the catch in the livewell have regained their composure, darting around in the water."},
 	
 	{"speaker": "Christina", "event": "adventure", "text": 
-	"I'm thinking..."},
+	"I've got an idea, but it might be bad..."},
 	
 	{"speaker": "Blanche","text":
 	"Oh, Miss Christina Nobel has an idea, please enlighten me!"},
@@ -123,10 +137,10 @@
 	"[i]Oh, a podcast?[/i]"},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"Blanche scoffs as she murmurs to herself in annoyance."},
+	"Blanche scoffs as she murmurs to herself in playful annoyance. Christina shrugs and continues with her thought."},
 	
 	{"speaker": "Christina","event": "adventure", "text": 
-	"We're throwing back the healthy ones and leaving the sick. We'll never catch enough to do a proper study anyway."},
+	"I'm throwing back the some of healthy ones and leaving the sick. It'll reduce the sample size for the control group but I don't think we have enough room for all of them."},
 	
 	{"speaker": "Blanche","text":
 	"So we'll do what I wanted us to do from the very start?"},
@@ -143,41 +157,44 @@
 	{"speaker": "Christina","text": 
 	"Shouldn’t be an issue."},
 	
-	{"speaker": "Christina","text": 
-	"Even the predators here don’t take much interest in mammals small enough for them to eat."},
-	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"Chrisina bravely separates the fish. Carefully observing the eye and other areas for signs of disease and freeing them. Then, something quite odd happens. I feel healthy. With boldness, she drives her hand into the fish-filled cooler and clamps down on the roach. Until, with her hand below the water, she felt something. Not just the warmth of the water, not just the fish. Christina screams."},
+	"	Chrisina separates the fish. Carefully observing the eye and other areas for signs of disease and freeing the healthy ones. 
+	
+	Her hand moves under the water to grasp the very last roach to be examined and sorted. Then, something quite odd happens.
+	
+	With her hand below the water, she felt something. It was not just the warmth of the water, not just the fish, something else."},
 	
 	{"speaker": "Christina","event": "adventure", "text": 
 	"AGH!"},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"Blanche drops the roach between her fingers. "},
+	"Christina drops the roach between her fingers."},
 	
 	{"speaker": "Blanche","event": "adventure", "text":
-	"What happened?"},
-	
-	{"speaker": "Blanche","text":
-	"There's no telling what kind of disease is in the water, are you okay?"},
+	"What happened? Are you okay?"},
 	
 	{"speaker": "Christina","text": 
 	"I think so."},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"She flashes her hand at Blanche, which seems untouched. The urge to jokingly flip off Blanche crossed her mind but she ultimately decided not to. Everything looks fine."},
+	"	She flashes her hand at Blanche, which seems untouched. Her knuckles are facing towards Blance which gave her the urge to jokingly flip off Blanche, but she decided not to. 
+	
+	She looks back to the fish she just dropped and examined it. It was healthy although limp now. Everything looks fine."},
 	
 	{"speaker": "Christina","event": "adventure", "text": 
-	"They're all healthy, baby smooth too."},
+	"Healthy, baby smooth too."},
+	
+	{"speaker": "Christina", "text": 
+	"It must've thrashed against my hand when I grabbed it."},
 	
 	{"speaker": "Blanche","text":
-	"We'll see."},
+	"Hmm."},
 	
 	{"speaker": "Blanche","text":
-	"Sigh, we don't need that many more fish; we’ll just wrap up earlier than we expected today."},
+	"We don't need that many more fish; we’ll just wrap up earlier than we expected today."},
 	
 	{"speaker": "Christina","text": 
-	"Good, I  have other things to attend to."},
+	"Good, I have other things to attend to."},
 	
 	{"speaker": "Blanche","text":
 	"A job?"},
@@ -186,13 +203,19 @@
 	"It's more important than that."},
 	
 	{"speaker": "Christina","text": 
-	"Mmmf."},
+	"Uh huh."},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"Christina winces from pain. On the tip of her finger, she can feel something, writhing inside that small pinhole. The slight saltiness of the water surrounding the wound stung. She thinks to herself that she can cope with the pain if she had some alone time to herself. Pasaya could make her feel better, she's probably live right now."},
+	"	Christina winces from pain. On the tip of her finger, she can feel something, writhing inside. The slight saltiness of the water surrounding her fingertip stung badly. 
+	
+	She thinks to herself that she can cope with the pain if she had some alone time to herself. Pasaya could make her feel better, she's probably live right now."},
 	
 	{"speaker": "Narrator", "text":
-	"They finished gathering the Mort. About 80% were relatively normal, and 20%  were creeps. Christina can still feel it. Something is crawling up through her veins, brushing up against the walls of her bloodstream clumsily. As if a child were running their hand down the wooden walls of an old house. It’s getting harder to breathe."},
+	"	They finished gathering the fish. About 40% were relatively normal, and 60% were Infected. 
+	
+	Christina can still feel it. A wave of heat worms through her veins, brushing up against the walls of her bloodstream clumsily. 
+	
+	As if a child were running their hand down the wooden walls of an old house. She also notices it’s getting harder to breathe."},
 	
 	{"speaker": "Christina","event": "adventure", "text": 
 	"Hahh, hahh."},
@@ -201,7 +224,9 @@
 	"Good... work..."},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"Moving the livewell was harder now that it was filled with fish water. Christina can feel something wrong as she takes one omninous step towards the car park. Blanche sees her sweating. It was hard to tell what was drenched by the river and what was drowned out by perspiration."},
+	"	Moving the livewell was harder now that it was filled with fish water. Christina can feel something wrong as she takes one omninous step towards the car park. 
+	
+	Blanche sees her sweating. It was hard to tell what was drenched by the river and what was drowned out by perspiration."},
 	
 	{"speaker": "Blanche","event": "adventure", "text":
 	"You were lively earlier today, but now I can see the maggots getting to you in a week."},
