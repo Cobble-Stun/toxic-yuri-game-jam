@@ -169,7 +169,7 @@ expand_mode = 3
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_right = 1171.0
-offset_bottom = 883.0
+offset_bottom = 676.0
 texture = ExtResource("2_vr4fv")
 expand_mode = 1
 
@@ -240,7 +240,6 @@ theme = ExtResource("3_ptht1")
 text = "Name"
 
 [node name="Novel Dialogue Box" type="TextureRect" parent="CanvasLayer/Control" unique_id=1960479756]
-visible = false
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -255,6 +254,29 @@ mouse_filter = 2
 mouse_behavior_recursive = 1
 texture = ExtResource("6_vr4fv")
 expand_mode = 3
+
+[node name="Gradient" type="TextureRect" parent="CanvasLayer/Control/Novel Dialogue Box" unique_id=938481227]
+modulate = Color(0, 0, 0, 1)
+show_behind_parent = true
+layout_mode = 0
+offset_left = 1197.1897
+offset_top = 1116.0083
+offset_right = 2408.1196
+offset_bottom = 2256.0833
+rotation = 3.1415927
+texture = ExtResource("2_vr4fv")
+expand_mode = 1
+
+[node name="Gradient" type="TextureRect" parent="CanvasLayer/Control/Novel Dialogue Box/Gradient" unique_id=1688516030]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 1197.1897
+offset_top = 1550.0082
+offset_right = 2408.1196
+offset_bottom = 2690.083
+rotation = 3.1415927
+texture = ExtResource("2_vr4fv")
+expand_mode = 1
 
 [node name="Dialogue" type="PanelContainer" parent="CanvasLayer/Control/Novel Dialogue Box" unique_id=916173807]
 layout_mode = 1
