@@ -4,10 +4,10 @@ const path = "user://"
 var data: Dictionary
 var access: FileAccess
 
-func new_game() -> void:
+func load_scene(scene: String) -> void:
 	data = {
 		"saved_dialog_index" : 0,
-		"saved_scene" : "introductionfish",
+		"saved_scene" : scene,
 	}
 	
 func save_game(fileName: String):

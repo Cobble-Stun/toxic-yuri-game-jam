@@ -1,5 +1,7 @@
 [
 	{"background": "BackSeats_sketch:1.0", 
+	"delete_sprite": "christina",
+	"delete_sprite2": "blanche",
 	"speaker": "Narrator","event": "novel", "text":
 	"Everything’s been packed into the car. Blanche takes her seat on the right. In a vain attempt to hide from Blanche's eyeline, Christina slumps over the fish cooler in the back seat."},
 
@@ -75,7 +77,7 @@
 	{"speaker": "Narrator","event": "novel", "text":
 	"Christina's words are interrupted with a flurry of hacks, gasps, and wheezes. She tries to speak again, but only a strained breathless voice exits her body."},
 
-	{"speaker": "Christina","text":
+	{"speaker": "Christina","event": "adventure","text":
 	"[shake]Oh god, pull over, pull over.[/shake]"},
 
 	{"speaker": "Blanche","text":
@@ -131,4 +133,6 @@
 	"	The music rocks on for an hour or so as the car continues its journey.
 	
 	Blanche hates driving to her place. It makes her feel like she's driving to Helsinki with how far it is, among other reasons."},
+	
+	{"next_scene": "house"}
 ]

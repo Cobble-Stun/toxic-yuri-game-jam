@@ -217,6 +217,12 @@ func read_current_script_line():
 	
 	if line.has("delete_sprite"):
 		delete_sprite(line["delete_sprite"])
+	if line.has("delete_sprite2"):
+		delete_sprite(line["delete_sprite2"])
+	if line.has("delete_sprite3"):
+		delete_sprite(line["delete_sprite3"])
+	if line.has("delete_sprite4"):
+		delete_sprite(line["delete_sprite4"])
 		
 	if line.has("background"):
 		var lineInfo = line["background"].split(":")
@@ -246,6 +252,9 @@ func read_current_script_line():
 		dialog = prepare_script(line["next_scene"])
 		dialogIndex = 0
 		read_current_script_line()
+	
+	if line.has("minigame"):
+		get_tree().change_scene_to_file("res://scenes/" + line["minigame"] + ".tscn")
 		
 	#text
 	if line.has("speaker"):
