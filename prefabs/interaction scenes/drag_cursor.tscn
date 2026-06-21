@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://ceuxrty46xugc"]
 
-[ext_resource type="Texture2D" uid="uid://b6joktcs728g7" path="res://temporary assets/interactive scenes/temp/groping mechanic/Cursor-PNG-Image-Background.png" id="1_yb4sk"]
+[ext_resource type="Texture2D" uid="uid://b6joktcs728g7" path="res://images/interactive scenes/Cursor.png" id="1_yb4sk"]
 [ext_resource type="Script" uid="uid://cdno3aaya10" path="res://scripts/interaction scenes/drag_cursor.gd" id="2_fj467"]
-[ext_resource type="Texture2D" uid="uid://dqpc5ceyicg1j" path="res://temporary assets/interactive scenes/temp/groping mechanic/Cursor-Transparent-Image.png" id="3_uw2bw"]
+[ext_resource type="Texture2D" uid="uid://dqpc5ceyicg1j" path="res://images/interactive scenes/Cursor Hover.png" id="3_uw2bw"]
 
 [node name="Cursor" type="Sprite2D" unique_id=1454325550 groups=["Cursor"]]
 scale = Vector2(0.078125, 0.078125)

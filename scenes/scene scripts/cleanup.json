@@ -1,63 +1,75 @@
 [
 	{"speaker": "Christina","text":
 	"I'm fucking losing it."},
+	
 	{"speaker": "Christina","text":
 	"I-I've got to clean up in here."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"One look at the assorted piles of rubbish dissuades Christina from that idea. Instead, she bargains that a focused attack on her project will relieve most of the stress weighing down on her. She turns on the livestream."},
-	{"speaker": "Narrator","event": "novel", "text":
-	"Pasaya's just started, and as always, she's pontificating on the nature of things in our reality. There was a traditional belief amongst the 'hive' that this was her way of allowing fans to prepare themselves in lobbies ahead of time for her multiplayer sessions. That or the other theory that she had a bad habit of switching her chosen game at the last minute. Either way, Christina didn't have it in her to waste an evening on a vain chance to game with Pasaya. Even if she really, really wanted to."},
-	{"speaker": "Pasaya","text":
+	"	One look at the assorted piles of rubbish dissuades Christina from that idea. Instead, she bargains that a focused attack on her project will relieve most of the stress weighing down on her. 
+	
+	She turns on the livestream."},
+	
+	{"speaker": "Narrator","text":
+	"	Pasaya's just started, and as always, she's pontificating on the nature of things in our reality. 
+	
+	This was her way of allowing fans to prepare themselves in lobbies ahead of time for her multiplayer sessions. Either that or she's sorting out some technical difficulties. 
+	
+	Either way, Christina didn't have it in her to waste an evening on a vain chance to game with Pasaya. Even if she really, really wanted to."},
+	
+	{"speaker": "Pasaya","event": "adventure","text":
 	"Okay, everyone can see this?"},
+	
 	{"speaker": "Pasaya","text":
 	"I'm not worried about the claim, ya'll save these shits anyway, just upload it on one of those channels."},
+	
 	{"speaker": "Pasaya","text":
 	"This is precisely the point where they ran out of manga-"},
+	
 	{"speaker": "Pasaya","text":
 	"I know the dude was a freak, I'm not saying you should give that guy any of your money."},
 
 	{"speaker": "Narrator","event": "novel", "text":
-	"She thumbs through more of Blanche's notes. Copying some of the most useful and least legible parts of the data onto her own documents. Through this, she uncovered more interesting details about the parasite afflicting the fish."},
-	{"speaker": "Pasaya","text":
+	"	She thumbs through more of Blanche's notes. Copying some of the most useful parts of the data onto her own documents. 
+	
+	Through this, she uncovered more interesting details about the parasite afflicting the fish."},
+	
+	{"speaker": "Pasaya","event": "adventure","text":
  	"I'm apologizing in advance, my chat-drones."},
+	
 	{"speaker": "Pasaya","text":
 	"For the first few hours today I am locking in on a..."},
+	
 	{"speaker": "Pasaya","text":
 	"Fighting game."},
+	
 	{"speaker": "Pasaya","text":
  	"If you want me to beat you in any way, you're gonna hafta get ready now.."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"Blanche reiterates at several points that the creature's nervous system is sophisticated in a way that resembles the most advanced cephalopods. Further muddying the waters of what exactly this thing is, she notes that the creature's main form of survival involves..."},
-	{"speaker": "Christina","text":
-	"Attaching itself to the brain,,,"},
-	{"speaker": "Christina","text":
-	"Dangling its long body down the length of the fish and using its tentacles to intertwine itself with the organs of the host creature."},
-	{"speaker": "Narrator","event": "novel", "text":
-	"At the end of its body is what counts as a second mouth capable of taking nutrients from or sharing with the host body. It's capable of expanding and contracting itself to allow for easier digestion of the host's food."},
-	{"speaker": "Christina","text":
-	"Other researchers in previous studies have noted that in warm periods these worms are unable to bond with a variety of species..."},
-	{"speaker": "Narrator","event": "novel", "text":
-	"Fish, bird, or mammal with little distinction. She further notes that,,,:"},
-	{"speaker": "Blanche","text":
-	"This shit was so fucking disgusting, I couldn't bring myself to photograph it."},
-	{"speaker": "Blanche","text":
-	"One fish's entire digestive system had been bypassed by the parasite."},
-	{"speaker": "Blanche","text":
-	"The first sign of this is clear signs of..."},
-	{"speaker": "Blanche","text":
-	"When I pried it out of the fish's corpse, I had incidentally removed the brain and spine with surgical precision."},
-	{"speaker": "Blanche","text":
-	"There were signs that the creature's tentacles had ingratiated themselves deep within the puny rain of the roach."},
-	{"speaker": "Blanche","text":
-	"Particularly in the areas controlling.."},
-	{"speaker": "Christina","text":
-	"Sensory information."},
-	{"speaker": "Christina","text":
-	"Spatial awareness."},
-	{"speaker": "Christina","text":
-	"Sex."},
+	"	Blanche reiterates at several points that the creature's nervous system is sophisticated in a way that is comparable to the most intelligent cephalopods.
+	
+	It further muddies the waters of what exactly this thing is, she notes that the creature's main form of survival involves attaching itself to the brain."},
+	
+	{"speaker": "Narrator", "text":
+	"	\"It dangles down the length of the fish and uses tendrils extended from its body to intertwine itself with the organs of the host creature.
+	
+	At the end of its body is what seems to be a second mouth capable of taking nutrients from or sharing with the host body. 
+	
+	It's capable of expanding and contracting itself to allow for easier digestion of the host's food.\""},
+	
+	{"speaker": "Narrator", "text":
+	"	\"After examining one particular fish it had proboscises rooted into its flesh reminiscent of that of the ribbon worm  
+	
+	There were capillary-like wounds left behind after its tendrils were pulled out of the fish's dorsal. 
+	
+	It seemed that they had grown out and mainly wrapped around key parts of its nervous system such as the vagus nerve and the brain's hypothalamus.\""},
+	
 	{"speaker": "Christina","text":
 	"..."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"Like a switch being flipped in her mind, Christina was jolted by a sharp pain in her stomach. Pulling her down out of her grease-stained chair. Stewing on the floor in pain."},
+	"Like a switch being flipped in her mind, Christina jolted up after a sharp pain in her stomach. It pulled her down out of her grease-stained chair, writhing on the floor in pain."},
+	
+	{"next_scene": "crawling"}
 ]

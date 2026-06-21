@@ -9,32 +9,30 @@
 	"Host?"},
 
 	{"speaker": "Christina","text":
-	"HAHAHAHAHAHAHAHA!"},
-
+	"[shake]Hahahahahaha![/shake]"},
 
 	{"speaker": "Christina","text":
 	"Fuck me, there's a worm inside my brain."},
-
 
 	{"speaker": "Christina","text":
 	"Are you a worm, do you even have an idea of what you are and whatever the fuck you're doing?"},
 
 	{"speaker": "Pasaya","text":
-	"I'm just trying to survive."},
+	"I'm just trying to ensure the survival of my species."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"It was then that Christina understood something: ultimately, no matter what this worm could do to her, it was ultimately dependent on her. Subservient to her. In a way, it could provide something to her that she'd so far only imagined."},
-
+	"	It was then that Christina understood something, no matter what this worm could do to her, it was dependent on her, subservient to her. 
+	
+	In a way, it could provide something to her that she'd so far only imagined."},
 
 	{"speaker": "Christina","event": "adventure", "text":
 	"I've decided."},
 
-
+	{"speaker": "Christina","text":
+	"	I'll head to the university, have some of the med students peek into my skull and get famous for being the girl who discovered a unique form of whatever the fuck you are."},
 
 	{"speaker": "Christina","text":
-	"I'll head to the university, have some of the med students peek into my skull and get famous for being the girl who discovered a unique form of whatever the fuck you are."},
-
-	{"speaker": "Christina","text":
-	"I'll get rich, and I'll be rid of you forever..."},
+	"Maybe I'll get you removed and named after me?"},
 
 	{"speaker": "Pasaya","text":
 	"You'd kill me!"},
@@ -43,7 +41,7 @@
 	"Maybe."},
 
 	{"speaker": "Christina","text":
-	"From up there... how much of what I see can you see?"},
+	"From up there, how much of what I see can you see?"},
 
 	{"speaker": "Pasaya","text":
 	"Everything."},
@@ -61,80 +59,69 @@
 	"How?"},
 
 	{"speaker": "Pasaya","text":
-	"Wait... like this."},
+	"Like this."},
 
 	{"speaker": "Christina","text":
-	"Huh!"},
+	"Agh!"},
+	
 	{"speaker": "Narrator","text":
 	"Christina's body begins to shake."},
 
 	{"speaker": "Christina","text":
 	"I wanna see the whole thing."},
 
-	{"speaker": "Pasaya","text":
-	"This is all there is of the model!"},
-
 	{"speaker": "Christina","text":
-	"Do you want me to starve myself so that we both end up rotting to death in this apartment?"},
-	{"speaker": "Pasaya","text":
-	"No!"},
-
-	{"speaker": "Christina","text":
-	"Reference the comics she drew and the leaked prototype, the one with the skirt!"},
-	{"speaker": "Pasaya","text":
-	"Yes, okay, I'll do it."},
-
-	{"speaker": "Christina","text":
-	"Christina places her hand on the face of the facsimile of Pasaya."},
+	"Christina places her hand on the face of the figure in front of her. She was an exact facsimile of Pasaya."},
 
 	{"speaker": "Christina","text":
 	"I need you to act, this isn't a doll, this is a person I'm playing with."},
 
 	{"speaker": "Christina","text":
-	" I want to really feel the roughness of the carapace and the softness of the joints in between."},
+	"I want to really feel the roughness of her carapace."},
 
 	{"speaker": "Christina","text":
 	"The breasts and other areas need to be soft as well."},
 
 	{"speaker": "Christina","text":
 	"Understand?"},
+	
 	{"speaker": "Pasaya","text":
 	"Okay!"},
 
-
 	{"speaker": "Narrator","text":
-	"Christina feels the face and slides her hands down to Pasaya's ample bosom. She puts both hands on each tit and squeezes. The firmness, the tension, all of it is exactly as she imagined. She then plants her face directly in between her cleavage."},
+	"	Christina feels the face and slides her hands down to Pasaya's ample bosom. She puts both hands on each tit and squeezes. The firmness, the tension, all of it is exactly as she imagined. 
+	
+	She then plants her face directly in between her cleavage."},
 
 	{"speaker": "Christina","text":
 	"Pasaya!"},
 
 	{"speaker": "Christina","text":
 	"Hug me, worm!"},
+	
 	{"speaker": "Pasaya","text":
-	"Sure?"},
+	"Okay?"},
 
 	{"speaker": "Christina","text":
-	"Act like the real Pasya too!"},
+	"Act like the real Pasaya too!"},
 
 	{"speaker": "Pasaya","text":
 	"Like I'm streaming?"},
 
 	{"speaker": "Christina","text":
-	"The interstellar, insectoid, alien, empress from the lore..."},
-
-	{"speaker": "Christina","text":
-	"Today."},
+	"The interstellar, insectoid, alien, empress from the lore."},
 
 	{"speaker": "Christina","text":
 	"Now put your arms around me and feel up my back."},
+	
 	{"speaker": "Pasaya","text":
 	"Like this?"},
 
 	{"speaker": "Christina","text":
-	"MMM yes..."},
+	"Mmm yes..."},
 
-	{"speaker": "Christina","text":
-	"Pathetic human, you've been enthralled by my pheromone?"},
+	{"speaker": "Pasaya","text":
+	"Pathetic human, you've been enthralled by my pheromones?"},
 
 	{"speaker": "Christina","text":
 	"Yes, good start."},
@@ -149,10 +136,7 @@
 	"My queen, you've already overwhelmed my feeble mind."},
 
 	{"speaker": "Christina","text":
-	"I am your... slave!"},
-
-	{"speaker": "Pasaya","text":
-	"..."},
+	"I am your slave!"},
 
 	{"speaker": "Pasaya","text":
 	"Drone, is it your first duty to pleasure me?"},
@@ -164,11 +148,14 @@
 	"The other end of the parasite wriggles forth through her body and exits from her."},
 
 	{"speaker": "Pasaya","text":
-	"Caress me in that-"},
+	"Caress me there."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
 	"Christina jams her fingers in Pasaya's wriggling worm pussy. The flagella normally used to traverse her insides, covered in gunk, feel just like a woman's cunt filled with worms."},
+	
 	{"speaker": "Narrator","text":
 	"Just like she imagined Pasaya feeling."},
+	
 	{"speaker": "Narrator","text":
 	"The worm rocks itself forward and backwards like a saw, rubbing its tentacles around."},
 
@@ -176,15 +163,13 @@
 	"Ah~."},
 
 	{"speaker": "Christina","text":
-	"OH~."},
+	"Oh~."},
+	
 	{"speaker": "Narrator","text":
 	"The two come together. Christina's fluid lubricates the massive worm."},
 
 	{"speaker": "Christina","text":
 	"Oh God!"},
-
-	{"speaker": "Christina","text":
-	"Lie down with me... Pasaya."},
 
 	{"speaker": "Pasaya","text":
 	"As your Queen, I demand that you hold me and lie down with me."},
@@ -193,10 +178,7 @@
 	"It's really you, Pasaya."},
 
 	{"speaker": "Christina","text":
-	"Or close enough."},
-
-	{"speaker": "Christina","text":
-	"With  this parasite, it's as if I have a 24-hour personal stream with my Pasaya."},
+	"With this parasite, it's as if I have a 24-hour personal stream with my Pasaya."},
 
 	{"speaker": "Christina","text":
 	"And you'll give it to me, won't you?"},
@@ -205,7 +187,7 @@
 	"You do as I say or we both jump like a cricket into a swimming pool."},
 
 	{"speaker": "Christina","text":
-	"Need I reiterate..."},
+	"Need I reiterate."},
 
 	{"speaker": "Christina","text":
 	"My queen."},
@@ -215,5 +197,6 @@
 
 	{"speaker": "Pasaya","text":
 	"You will be a most obedient slave."},
-
+	
+	{"next_scene": "school"}
 ]

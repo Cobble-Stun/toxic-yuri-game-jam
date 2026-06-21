@@ -3,13 +3,10 @@
 	"So you're telling me there's a worm inside my body?"},
 	
 	{"speaker": "Doctor","text":
-	"Whatever in creation that got into you isn’t just one worm, it's like an entire world of worms."},
+	"There isn’t just one worm, there's a few. From what it seems, I believe that it may be a simple roundworm infection."},
 	
 	{"speaker": "Doctor","text":
-	"You're infested like a dog with heartworms."},
-	
-	{"speaker": "Doctor","text":
-	"Were you so ill that you couldn't get a ride to a hospital?"},
+	"Why didn't you come sooner?"},
 	
 	{"speaker": "Blanche","text":
 	"I was distracted."},
@@ -18,32 +15,19 @@
 	"We had so much fun together."},
 	
 	{"speaker": "Blanche","text":
-	"What should I do, doctor."},
+	"What should I do doctor?"},
 	
 	{"speaker": "Doctor","text":
 	"Get this filled."},
 	
 	{"speaker": "Doctor","text":
-	"Please, take this."},
+	"And please take this praziquantel."},
 	
 	{"speaker": "Doctor","text":
-	"With an infestation that severe it's a miracle you haven't exploded into Flying Jacob right here."},
-	
-	{"speaker": "Doctor","text":
-	"Got it!"},
+	"Got it?"},
 	
 	{"speaker": "Blanche","text":
 	"Yes, I understand."},
 	
-	{"speaker": "Blanche","text":
-	"Who are you calling?"},
-	
-	{"speaker": "Blanche","text":
-	"Christina, I think."},
-	
-	{"speaker": "Blanche","text":
-	"I just want to say..."},
-	
-	{"speaker": "Blanche","text":
-	"Thank you~"},
+	{"next_scene": "grade"}
 ]

@@ -117,28 +117,43 @@
 	"Well, I think it's an adult worm."},
 	
 	{"speaker": "Christina","text":
-	"What the fuck would you know about Parasitology,,,"},
-	
-	{"speaker": "Christina","text":
-	"..."},
+	"What the fuck would you know about Parasitology?"},
 	
 	{"speaker": "Narrator","event": "novel", "text":
-	"Christina swallows the peach-flavored piece of candy in her mouth and nearly gags. She switches windows to her running Pasaya playlist. It'd been automatically paused for inactivity. For how long, it hadn't really occurred to her. It might not have even started."},
+	"	Christina swallows the peach-flavored piece of candy in her mouth and nearly gags. She switches windows to her running Pasaya playlist. It'd been automatically paused for inactivity. 
+	
+	For how long, it hadn't really occurred to her. It might not have even started."},
 
 	{"speaker": "Christina","event": "adventure", "text":
 	"I-I've been hallucinating again, haven't I."},
 	
 	{"speaker": "Narrator","event": "novel", "text":
-	"She puts another piece of candy in her mouth and sets up one of the 12-hour compilations of Pasaya laddering in her favorite fighting game. Pasaya made it her specialty to use high-risk, low-reward characters for the love volatility. There was nothing more satisfying than pulling out a win through the pure skill of execution, against the meta, against all conventional wisdom, against the world."},
+	"	She puts another piece of candy in her mouth and sets up one of the 12-hour compilations of Pasaya laddering in her favorite fighting game. 
+	
+	Pasaya made it her specialty to use high-risk, low-reward characters for the love volatility. 
+	
+	There was nothing more satisfying than pulling out a win through the pure skill of execution, against the meta, against all conventional wisdom, against the world."},
 	
 	{"speaker": "Narrator","event": "novel", "text":
-	"For Christina, this meant that her avatar made the most movements in her excited moments. It was particularly adorable when you could see that the woman behind the character had already gotten up from their chair to pace around their room. That and the noises, of course. This session had already been mined. She could see that her comment, highlighting the precise session that she screamed like a braying horse, had gotten dozens of thumbs up since the last time she saw it."},
+	"	For Christina, this meant that her avatar made the most movements in her excited moments. 
+	
+	It was particularly adorable when you could see that the woman behind the character had already gotten up from their chair to pace around their room. That and the noises, of course. 
+	
+	This session had already been mined. She could see that her comment, it highlighted the precise session that she screamed like a braying horse. 
+	
+	She had gotten dozens of likes since the last time she saw it."},
 	
 	{"speaker": "Narrator","event": "novel", "text":
-	"She takes a deep breath and goes back to work. Deciphering Blanche's work is hard, but there are insights to be found amongst the chicken scratch. She had, in fact, learned something in the several years spent at uni."},
+	"	She takes a deep breath and goes back to work. Deciphering Blanche's work is hard, but there are insights to be found amongst the chicken scratch. 
+	
+	She had, in fact, learned something in the several years spent at uni."},
 
 	{"speaker": "Narrator","event": "novel", "text":
-	"What Blanche could say definitively is that it is, in fact, an animal and not some kind of plant, or fungus, or whatever, in her own words. Fairly useless to Chrutina, but a start. She could see that the worm, tentatively, would take much more time to specify it was a true worm, a crustacean, an arthropod of another kind, a misshapen fish, mollusk, at least contained one brain, a highly developed one."},
+	"	What Blanche could say definitively is that it is, in fact, an animal and not some kind of plant, or fungus, or whatever, in her own words. Fairly useless to Chrutina, but a start. 
+	
+	She could see that the worm, tentatively, would take much more time to specify if it was a true worm, a crustacean, a misshapen fish, mollusk, or an arthropod of any kind. 
+	
+	At least contained one brain, a highly developed one."},
 	
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"Feel that, that's the feeling of the heel pressing through the back of your skull, whelp."},
@@ -150,34 +165,39 @@
 	"heh."},
 	
 	{"speaker": "Narrator","event": "novel", "text":
-	"Blanche goes further, and Christinia is surprised she knows how to read as well as write. She cites a paper she found about convergent evolution in the forms of parasitic life forms in the brackish waters of the Baltic Sea tributaries in and around Swedish coasts, that described a cruder form of a similar parasite described by a monk founding a colony of sorts,,,"},
+	"Blanche goes further, and Christinia is surprised she knows how to read as well as write. 
+	
+	She cites a paper she found about convergent evolution in the forms of parasitic life forms in the waters of the Baltic Sea tributaries in and around Swedish coasts. 
+	
+	It described a cruder form of a similar parasite described by a monk founding a colony of sorts,,,"},
 	
 	{"speaker": "Christina","event": "adventure", "text":
 	"Inside of the corpse of a woman who was drowned for her participation in mass poisonings and Satanic rituals."},
 	
 	{"speaker": "Christina","text":
-	"Impressive,,,"},
+	"Impressive."},
 	
 	{"speaker": "Pasaya","text":
-	",,,"},
+	"You underestimated me, didn't you,,, You, in your ignorance, could never measure my strength."},
 	
 	{"speaker": "Pasaya","text":
-	"You underestimated me, didn't you,,, You, in your ignorance, could never measure my strength,,,"},
+	"Larval runts like you, I devour them, wholly, every day, effortlessly."},
 	
 	{"speaker": "Pasaya","text":
-	"Larval runts like you,,, I devour them, wholly, every day,,, effortlessly."},
-	
-	{"speaker": "Pasaya","text":
-	"You're so easy,,,"},
+	"You're so easy,"},
 
 	{"speaker": "Narrator","event": "novel", "text":
-	"Christina takes a hard bite on her peach candy. It's unclear when she became attracted to cartoon characters. She wasn't particularly into animanga until one of her high school girlfriends forced her to watch some movies. She told herself she wasn't a furry or a bugfucker, even if she found the,,, interesting."},
+	"	Christina takes a hard bite on her peach candy. It's unclear when she became attracted to cartoon characters. 
+	
+	She wasn't particularly into animanga until one of her high school girlfriends forced her to watch some movies. 
+	
+	She told herself she wasn't a furry or a bugfucker, even if she found it interesting."},
 	
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"That's your mix-up?"},
 	
 	{"speaker": "Pasaya","text":
-	"Pulling that shit on me, the queen of this world,,,"},
+	"Pulling that shit on me, the queen of this world."},
 	
 	{"speaker": "Christina","text":
 	"Hmmm."},
@@ -189,20 +209,22 @@
 	"God, why?"},
 	
 	{"speaker": "Pasaya","text":
-	"All you are fit for is being food, not for me,,, my larvae,,,"},
+	"All you are fit for is being food, not for me. my larvae."},
 
 	{"speaker": "Narrator","event": "novel", "text":
 	"Christina's candy shatters between her teeth, and she takes one hand off the keyboard and onto her crotch."},
 	
 	{"speaker": "Pasaya","event": "adventure", "text":
-	"I'll fill you, I'll fill you with enough eggs to make your body swollen,,, I'll watch,,,"},
+	"I'll fill you, I'll fill you with enough eggs to make your body swollen, I'll watch."},
 	
 	{"speaker": "Pasaya","text":
-	"I'll watch as my children eat your organs slowly,,,"},
+	"I'll watch as my children eat your organs slowly."},
 	
 	{"speaker": "Pasaya","text":
 	"You'll live long enough to see them emerge from the hollowed husk of a body so that I can."},
 	
 	{"speaker": "Christina","text":
-	"I-I shouldn't do this here,,,"},
+	"I-I shouldn't do this here."},
+	
+	{"next_scene": "six"}
 ]

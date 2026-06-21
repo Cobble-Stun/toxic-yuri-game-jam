@@ -1,34 +1,23 @@
 [
-	{"speaker": "Girl","event": "adventure", "text":
-	"I can get you a tray,,, if you want."},
-	{"speaker": "Girl","text":
-	"You can eat here, where I can see you, if you want."},
-
-	{"speaker": "Christina","text":
-	"Haha, you're funny."},
-
-	{"speaker": "Pasaya","text":
-	"Aren't you starving..."},
-
-	{"speaker": "Christina","text":
-	"Sure, give it to me."},
+	{"speaker": "Narrator", "event": "novel", "text":
+	"Christina rushes out of the building. Taking a moment to glance back at the register girl, she can see her smiling at her again, but this time her smile feels off."},
 	
-	{"speaker": "Narrator","event": "novel", "text":
-	"Christina tries to find a seat out of the register girl's eyeline. She can't find it. She angles her back to the register. She knows that someone is watching her, waiting to corner the moment she stands up to leave."},
+	{"speaker": "Narrator", "text":
+	"She eventually makes it back home and decided to eat her lunch in the living room."},
 	
 	{"speaker": "Narrator","text":
-	"She takes out her food from the bag. A burger, fries, chicken, and an overload of sauces and napkins. Everything was fresh, steaming with heat from the grill and fryer. Salted to perfection."},
+	"She takes out her food from the bag. A burger, fries, some sauces, and a soda. The food was still hot, and salted to perfection."},
 
 	{"speaker": "Narrator","text":
-	"Christina starts with the sandwich, pulling it. up to her mouth opening, and shoving it in. Chewing it vigorously. This had been the most substantial thing she'd eaten in a week. She loved the taste of every bite. But then, when she attempted to swallow, she gagged."},
+	"	Christina starts with the sandwich, pulling it. up to her mouth opening, and shoving it in. Chewing it vigorously. This had been the most substantial thing she'd eaten in a week. 
+	
+	She loved the taste of every bite. But then, when she attempted to swallow, she gagged."},
 
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"Wash it down with something."},
 
 	{"speaker": "Pasaya","text":
 	"How can you expect a girl to take all that at once?"},
-
-
 
 	{"speaker": "Christina","text":
 	"Yes, Pasaya."},
@@ -41,6 +30,7 @@
 	
 	{"speaker": "Pasaya","text":
 	"Hmmm."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
 	"Something scrambles up Christina's esophagus. Its small hands tickle Christina on their way up to her mouth."},
 
@@ -50,14 +40,11 @@
 	{"speaker": "Christina","text":
 	"Yes, Pasaya."},
 
-	{"speaker": "Christina","text":
-	"Gulp!"},
+	{"speaker": "Narrator","event": "novel", "text":
+	"Christina gags on the food, she throws up a little in her mouth from how much food she just stuffed into her mouth."},
 
 	{"speaker": "Pasaya","text":
 	"Hmmm."},
-
-	{"speaker": "Pasaya","text":
-	"Blech."},
 
 	{"speaker": "Pasaya","text":
 	"It's still too much, Christina."},
@@ -66,7 +53,7 @@
 	"What should I do?"},
 
 	{"speaker": "Pasaya","text":
-	"Drones, have you ever watched a fly eat?"},
+	"Have you ever watched a fly eat?"},
 
 	{"speaker": "Pasaya","text":
 	"C'mon, I know you've all been that bored before."},
@@ -75,7 +62,7 @@
 	"The way that they-"},
 
 	{"speaker": "Christina","text":
-	"I can't..."},
+	"I can't."},
 
 	{"speaker": "Christina","text":
 	"Pasaya, my saliva isn't acidic enough to do something that."},
@@ -85,44 +72,47 @@
 
 	{"speaker": "Christina","text":
 	"You have an idea?"},
+	
 	{"speaker": "Pasaya","text":
-	"Chew now, drone..."},
+	"Chew now, drone."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"Christina huddles over her tray of food. She stuffs as much of everything on her tray into her mouth at a time and masticates. Her cheeks are engorged to the point where it takes as much effort to keep herself from choking as it takes to break down the mush. She draws her head over the oversized cup of cola and spews."},
-
-
+	"	Christina huddles over her tray of food. She stuffs as much of everything on her tray into her mouth at a time and masticates. 
+	
+	Her cheeks are engorged to the point where it takes as much effort to keep herself from choking as it takes to break down the mush. 
+	
+	She draws her head over the oversized cup of cola and spews."},
 
 	{"speaker": "Christina","event": "adventure", "text":
 	"Is that enough?"},
 
-
 	{"speaker": "Pasaya","text":
 	"Stop when I tell you to stop, drone."},
 
-
 	{"speaker": "Narrator","event": "novel", "text":
-	"Christina continues to gorge herself. Holding on as the tingling sensation runs down her throat into her stomach. Something inside her is dangling inside, rubbing up against her inner lining as it wiggles."},
-
-
+	"	Christina continues to gorge herself. Holding on as the tingling sensation runs down her throat into her stomach. 
+	
+	Something inside her is dangling inside, rubbing up against her inner lining as it wiggles."},
 
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"Spit."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
 	"She releases. The cup is nearly filled with regurgitated food. Christina feels the wriggling ascend up from her stomach through her esophagus, into her mouth. She can hardly stand to breathe."},
 	
 	{"speaker": "Pasaya","text":
 	"Close your mouth, the taste might be more bitter than you can handle."},
 
-
 	{"speaker": "Christina","text":
 	"I'll hold it in."},
 
-
 	{"speaker": "Christina","text":
 	"I swear."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"That distinctive taste of peach candy has been mixed with the bitterness of her own stomach acid. The flavor is hard enough to stand, but the burning, the searing pain fills her mouth. Sloshing around her gums, dropping on her tongue."},
-
+	"	That distinctive taste of peach candy has been mixed with the bitterness of her own stomach acid. The flavor is hard enough to stand, but the burning, the searing pain fills her mouth. 
+	
+	Sloshing around her gums, dropping on her tongue."},
 
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"I'll help a little too."},
@@ -130,29 +120,20 @@
 	{"speaker": "Narrator","text":
 	"A soft spray of viscous goop hits the back of her teeth."},
 
-
 	{"speaker": "Pasaya","text":
 	"Gargle."},
-
 
 	{"speaker": "Pasaya","text":
 	"Let it out slowly."},
 
-
 	{"speaker": "Christina","text":
 	"Ah~."},
-
 
 	{"speaker": "Narrator","event": "novel", "text":
 	"The liquid drips slowly from her tongue onto the damp mass of food in her cup. Swirling the trail of saliva around as it seeps deeper."},
 
-
-
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"You’ve served me perfectly,  precious drone."},
-
-
-
-	{"speaker": "Narrator","event": "novel", "text":
-	"Christina caps the sledge and runs out of the building. Taking a moment to glance back at the register girl. She can see the excitement on her face when she looks back at her. The way her tongue flashes out from her mouth."},
+	
+	{"next_scene": "drinking"}
 ]

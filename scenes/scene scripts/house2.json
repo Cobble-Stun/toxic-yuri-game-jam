@@ -44,9 +44,11 @@
 	"Okay, so what I'm seeing is that  all of them, every single person in here, are total frauds!"},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"	Christina fumbles with her keys in the apartment door for a minute before she realizes that she had forgotten to lock the door earlier. 
+	"Christina fumbles with her keys to the keyhole of her apartment door before she opens it and stumbles inside."},
 	
-	She re-unlocks the door and enters. The smell, she had forgotten to take out the garbage from two days ago, so it’s been sitting there by the door, festering in the relative heat.
+	{"background": "bedroom light on:1.0",
+	"speaker": "Narrator", "text":
+	"	The smell, she had forgotten to take out the garbage from two days ago, so it’s been sitting there by the door, festering in the relative heat.
 	
 	\"Whatever,\" she thinks. She heads back into the bedroom to sleep. She is too tired to realize her still muddy boots are on as he walks across the carpet."},
 	

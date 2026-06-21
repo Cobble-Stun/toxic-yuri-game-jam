@@ -1,40 +1,40 @@
 [
 	{"speaker": "Blanche","text":
-	"*Cough*"},
-	
-	{"speaker": "Blanche","text":
 	"Everything's fucking damp."},
 
 	{"speaker": "Narrator","event": "novel", "text":
-	"Blanche takes a look at Christina, lying on the floor with her pants undone and a wet splotch on her underwear. She's sleeping like a baby. She was so innocent, so pure looking. She could hold her to her chest and..."},
+	"	Blanche takes a look at Christina, lying on the floor with her pants undone and a wet splotch on her underwear. She's sleeping like a baby. She was so innocent, so pure looking. 
 	
-	{"speaker": "Christina","event": "adventure", "text":
-	"Yawn"},
+	She could hold her to her chest and yawn."},
 
-	{"speaker": "Narrator","event": "novel", "text":
-	"She woke up. The look in her eyes was the same dull look she had remembered from a Christina that refused to be a person. But, knowing that somewhere inside of her was that. She felt a new desire to learn about her."},
+	{"speaker": "Narrator", "text":
+	"	She woke up. The look in her eyes was the same dull look she had remembered from a Christina that refused to be a person. But, knowing that somewhere inside of her was that. 
+	
+	She felt a new desire to learn about her."},
 	
 	{"speaker": "Blanche","text":
-	"I knew you were an... animal..."},
+	"I knew you were an animal."},
 	
 	{"speaker": "Blanche","text":
 	"But, I've never been fucked like that before."},
 	
 	{"speaker": "Christina","text":
-	"Something about you just brought out the best in me..."},
+	"Something about you just brought out the best in me."},
 
 	{"speaker": "Blanche","text":
 	"Really?"},
 	
 	{"speaker": "Blanche","text":
-	"..."},
+	"Yeah."},
 	
 	{"speaker": "Blanche","text":
 	"Will you stick around for some coffee, we'll discuss your progress on the project."},
+	
 	{"speaker": "Christina","text":
 	"That's why you invited me?"},
 
 	{"speaker": "Blanche","text":
-	"I guess..."},
+	"I guess so."},
 
+	{"next_scene": "bus"}
 ]

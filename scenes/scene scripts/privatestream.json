@@ -1,18 +1,18 @@
 [
 	{"speaker": "Pasaya","text":
-	"This is a part of my cycle, drone..."},
+	"This is a part of my cycle, drone."},
 
 	{"speaker": "Pasaya","text":
-	 "My body is failing me, I need a new form worthy of conquering this dirty mud rock."},
+	 "My body is failing me, I need a new vessel to spread my kin."},
 
 	{"speaker": "Pasaya","text":
 	 "Your body is suitable."},
 
 	{"speaker": "Christina","text":
-	"I'm never giving up my... body...."},
+	"I don't want to give up my body."},
 
 	{"speaker": "Pasaya","text":
-	"My pheromones have already eroded that peanut brain of yours, from this moment forward you will do precisely as I command."},
+	"My pheromones have already eroded that tiny peanut brain of yours, from this moment forward you will do precisely as I command."},
 
 	{"speaker": "Christina","text":
 	"Yes, my queen."},
@@ -21,10 +21,10 @@
 	"Tell me!"},
 
 	{"speaker": "Pasaya","text":
-	"Do you want me to finish the degree... worm!"},
+	"Do you want me to finish the degree? Worm!?"},
 
 	{"speaker": "Christina","text":
-	"Yeah... my queen."},
+	"Yes, my queen."},
 
 	{"speaker": "Pasaya","text":
 	"It is a pointless bit of human pretention that values the incomplete knowledge of a world I hold in my hand by birthright!"},
@@ -38,10 +38,8 @@
 	{"speaker": "Christina","text":
 	"This place belonged to my brave uncle Magnus, he'll reclaim it from you no matter what happens."},
 
-
 	{"speaker": "Pasaya","text":
 	"I-I'm going to need to throw out most of your wardrobe."},
-
 
 	{"speaker": "Pasaya","text":
 	"You've taken such awful care of everything and that's just what fits."},
@@ -49,10 +47,8 @@
 	{"speaker": "Christina","text":
 	"Burn it all, my Queen, all of my possessions are yours..."},
 
-
 	{"speaker": "Pasaya","text":
 	"Such a pathetic tribute fits you."},
-
 
 	{"speaker": "Pasaya","text":
 	"Perhaps after you I'll enthrall your entire family, if they're as weak as this."},
@@ -65,13 +61,16 @@
 
 	{"speaker": "Pasaya","text":
 	"Yeah, Christina."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"Christina begins twitching on the floor. Pasaya's making the final configurations she needs to take control of her body. Unnecessary connections in the brain need to be thrown out and rewired. Chunks of flesh are ripped from her insides to facilitate easier movement of the limbs. All of this waste trickles out of Christina's orifices. Red flesh is blown out of the mouth..."},
-
+	"	Christina begins twitching on the floor. Pasaya's making the final configurations she needs to take control of her body. 
+	
+	Unnecessary connections in the brain need to be thrown out and rewired. Chunks of flesh are ripped from her insides to facilitate easier movement of the limbs. 
+	
+	All of this waste trickles out of Christina's orifices. Red flesh is blown out of the mouth..."},
 
 	{"speaker": "Pasaya","text":
 	"The conversion process is moving with such speed!"},
-
 
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"This human shell will leave the world defenseless at my approach."},
@@ -79,19 +78,17 @@
 	{"speaker": "Pasaya","text":
 	"Such beauty was being wasted on you, drone!"},
 
-
-	{"speaker": "Pasaya","text":
-	"..."},
-
 	{"speaker": "Pasaya","text":
 	"Did you want this to hurt, Christina?"},
 
 	{"speaker": "Christina","text":
-	"I want it to hurt... a little."},
+	"I want it to hurt a little."},
 
 	{"speaker": "Christina","text":
 	"Keep tearing, death should be painful."},
 
 	{"speaker": "Pasaya","text":
-	"What arrogance for a drone..."},
+	"What arrogance for a drone."},
+	
+	{"next_scene": "checkup"}
 ]

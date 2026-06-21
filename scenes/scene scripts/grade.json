@@ -1,49 +1,80 @@
 [
 	{"speaker": "Narrator", "event": "novel","text":
-	"It was the end of the semester. Blanche and Christina are sitting in the office of their professor and advisor for fisheries sciences. She had been curious about how the pair's work would coalesce. There were concerns about Blanche's ability to stay on topic; she had already switched majors several times over the course of her education. There were larger concerns on the visible mental deterioration of Christina."},
+	"	It was near the end of the semester. Blanche and Christina are meeting with their marine biology professor during office hours. 
+	
+	She had been curious about how they could improve the project considering one aspect that may affect their synergy, Blanche had been undecided until recently over the course of her education.
+	
+	Additionally, there were larger concerns on the apparent mental deterioration of Christina."},
+	
 	{"speaker": "Narrator","text":
-	"There stood two beaming students, Christina especially had changed into an audacious dress and makeup that reflected her confidence. Blanche was intensely focused on her partner. The professor could tell that these two were barely holding it together in the room."},
+	"	There stood two beaming students, Christina especially had changed into an audacious dress and makeup that reflected her confidence. 
+	
+	Blanche was intensely focused on her partner. The professor could tell that these two were barely holding it together in the room."},
 
 	{"speaker": "Narrator","text":
 	"You passed, in fact, you've received the 3rd highest score this semester!"},
+	
 	{"speaker": "Blanche","event": "adventure", "text":
-	"Baby."},
+	"Fuck yeah!"},
+	
 	{"speaker": "Christina","text":
 	"Blanche, please!"},
+	
 	{"speaker": "Professor","text":
-	"I'm glad to see that whate ver you two did over the break has brought the shine back into your face, Christina."},
+	"I'm glad to see that whatever you two did over the break has brought the shine back into your face, Christina."},
+	
 	{"speaker": "Professor","text":
 	"I was worried about you, that you'd never get out of that pandemic depression."},
+	
 	{"speaker": "Christina","text":
 	"I had a lot of help."},
+	
 	{"speaker": "Christina","text":
 	"Going out into the field with a partner, someone you can really trust."},
+	
 	{"speaker": "Professor","text":
 	"Doing it the proper way for once."},
+	
 	{"speaker": "Blanche","text":
 	"Very important, the fishing laws..."},
+	
 	{"speaker": "Professor","text":
 	"Yes."},
+	
 	{"speaker": "Professor","text":
 	"My major criticism isn't necessarily the conclusions of your work."},
+	
 	{"speaker": "Professor","text":
 	"From what you've presented, at least."},
+	
 	{"speaker": "Professor","text":
 	"There simply isn't enough corroborating studies to make this, um, A grade material."},
+	
 	{"speaker": "Professor","text":
 	"I hope that you continue these studies in your futures."},
+	
 	{"speaker": "Professor","text":
 	"Perhaps together?"},
+	
 	{"speaker": "Blanche","text":
 	"Oh you noticed?"},
+	
 	{"speaker": "Christina","text":
 	"We'll have more help in the future."},
+	
 	{"speaker": "Christina","text":
 	"Don't worry about it."},
+	
 	{"speaker": "Professor","text":
 	"Good to hear."},
+	
 	{"speaker": "Professor","text":
 	"Enjoy the rest of your Summer!"},
+	
 	{"speaker": "Narrator", "event": "novel","text":
-	"The two girls help each other up. Christina embraces Blanche, smothering her in her chest. A new, healthy, clean, Christina. A perfect one for her. She returns the hug, knowing that their futures are settled. In Science and in love."},
+	"	The two girls help each other up. Christina embraces Blanche, smothering her in her chest. A new, healthy, clean, Christina. A perfect one for her. 
+	
+	She returns the hug, knowing that their futures are settled. In Science and in love."},
+	
+	{"next_scene": "dinnertime"}
 ]

@@ -1,26 +1,23 @@
 [
 	{"background": "red:1.0",
 	"speaker": "Narrator", "event": "novel", "text":
-	 "All Christina needed to clear her mind was to fill her stomach with some food. She walked into the kitchen and made her first realization:"},
+	 "All Christina needed to clear her mind was to fill her stomach with some food. She walked into the kitchen and made her first realization."},
 
 	{"speaker": "Christina","event": "adventure","text":
 	 "Shit, the dishes."},
 
 	{"background": "messysink:1.0",
-	"speaker": "Narrator", "text":
-	"She hadn't done the dishes in a few days. But she could salvage something in a moment. Then another revelation."},
+	"speaker": "Narrator", "event": "novel", "text":
+	"She hadn't done the dishes in a few days. But she could salvage something in a moment. Then another thought."},
 
-	{"speaker": "Christina", "text":
+	{"speaker": "Christina", "event": "adventure", "text":
 	"I left something in the microwave... for how long?"},
 
 	{"speaker": "Christina", "text":
-	"Oh God... for how long?"},
+	"Oh God..."},
 
 	{"speaker": "Christina", "text":
 	"At least a week!"},
-
-	{"speaker": "Narrator", 
-	"text":"Then she made the last realization."},
 
 	{"speaker": "Christina", "text":
 	"Do I even have any fucking food?"},
@@ -41,46 +38,48 @@
 
 	{"background": "red:1.0",
 	"speaker" : "Pasaya", "event": "adventure","text":
-	"Ok, I'm wrapping up for dinner, but hive, I want your takes..."},
+	"Ok, I'm wrapping up for dinner, but I want your takes on this chat..."},
 
-	{"speaker" : "Pasaya",
-	"text": "Where's the best place to get a burger in your State, country, planet..."},
-
-	{"speaker" : "Pasaya","text":
-	"You're in the hivemind, you know what I mean."},
+	{"speaker" : "Pasaya", "text": 
+	"Where's the best place to get a burger in your country?"},
 
 	{"speaker" : "Pasaya", "text":
 	"Tell me!"},
 
 	{"background": "purple:1.0",
 	"speaker" : "Christina", "text":
-	"There's this really overpriced place that's a quick drive away from my uh... planet?"},
+	"There's this overpriced place that's a quick walk away from my place I think?"},
 
 	{"speaker" : "Christina", "text":
-	"I don't like hamburgers, and there's the..."},
+	"I don't like hamburgers, and there's the-"},
 
 	{"speaker" : "Pasaya", "text":
-	"Please, I'm starving... your Queen is wasting away!"},
+	"Please, I'm starving! Your queen is wasting away!"},
 
 	{"speaker" : "Christina", "text":
-	"I'm not dressed, my phone isn't charged, my deodorant isn't working, and I really gotta scratch my damn puppa..."},
+	"But, I'm not dressed, my phone isn't charged, I ran out of deodorant, and my hair is all messed up!"},
 
 	{"speaker" : "Pasaya", "text":
-	"I'll die... Do you want your queen, your Pasaya to die?"},
+	"I'll die. Do you want your queen, your Pasaya to die?"},
 
 	{"speaker" : "Christina", "text":
 	 "No!"},
+	
+	{"speaker" : "Pasaya", "text":
+	"Then do as I say."},
+	
+	{"speaker" : "Christina", "text":
+	 "Fine."},
 
+	{"speaker" : "Christina", "text":
+	 "I've got a Max around me, but their burgers can get kinda get soggy."},
+	
 	{"background": "messysink:1.0",
 	"speaker" : "Pasaya", "text":
-	 "All you guys in the hive delivering great choices tonight!"},
-
+	 "All you guys in the hive are making great choices tonight."},
+	
 	{"speaker" : "Pasaya", "text":
-	 "I've got Matt's around me, but that cheese in the middle of the patty bullshit is the nastiest thing that ever, and I mean ever, came out of my home... planet."},
-
-	{"speaker" : "Pasaya", "text":
-	 "It'll ruin your clothes the first time you try it."},
-
-	{"speaker" : "Pasaya", "text":
-	 "Trust me!"},
+	"I bet that's a wonderful place to eat. Why don't you go there?"},
+	
+	{"next_scene": "hamburger"}
 ]

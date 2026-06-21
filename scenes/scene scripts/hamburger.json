@@ -1,92 +1,102 @@
 [
 	{"speaker": "Narrator", "event": "novel","text":
-	"Sidewalks are packed with adults, children, and street vendors alike, bustling around in the pleasant summer weather. Christina's paranoia kicks in. She can tell that all of them are keenly aware of her presence; they all must be. She sees young men staring at her midriff. She sees the kids turning away at her smell. She knows it. She keeps her head down and speedwalks to the burger place on the corner."},
+	"	The sidewalks are packed with adults and children bustling in this nice springtime weather. However, here walks Christina, a shambling mess compared to everyone else around her. 
+	
+	Christina's paranoia starts to kick in. They all must keenly aware of her presence, she knows it.
+	
+	She sees young men shooting glances at her midriff. She sees the kids walking around her at the smell of her. She keeps her head down and speedwalks towards her destination."},
 	
 	{"speaker": "Narrator", "text":
-	"It's a local Swedish place, slightly too upscale for her taste and majorly out of her budget. That's not quite the reason why she's avoided coming here for a year or so. There was the young woman who started working at the restaurant. Dark hair tied up and stuffed underneath her cap, a friendly smile slightly stained by coffee, a true beauty."},
+	"	Max was like the Swedish equivalent to Mcdonald's or Burger King. They almost shut down last year from severe food safety violations, but somehow they recovered from the scandal. 
+	
+	That's not quite the reason why she's avoided coming here though, She once had a crush on one of the cashiers that worked there. 
+	
+	It was like an angel was smiling brightly as Christina walked through those front doors. She had dark brunette hair tied up and stuffed with a bun underneath her cap, truly a beauty."},
 	
 	{"speaker": "Narrator", "text":
-	"Christina's attempts to approximate human posture have created something as conspicuously awkward as an octopus on land. She, with her head up and her nose angled to the right, to best avoid eye contact, approaches the cash register. Her crush is there staring at the keys on the register, waiting for her to speak. It seems like Christina hasn't been recognized."},
+	"	Christina becomes flustered from her gaze and she rushes over to the self service terminals away from sight. Unfortunately, she found them all of them were found to be busted.
+
+	She's front to confront the cashier at the desk. Christina straightens her back in a vain attempt to mimic normal human posture but instead resembles an octopus fresh out of water. 
+	
+	She looks to her right, to avoid eye contact with the cashier."},
 	
 	{"speaker": "Girl","event": "adventure","text":
-	"Oh, it's uh you."},
+	"Hi and welcome to Max, what would you like to order? Oh, it's you!"},
 
 	{"speaker": "Girl","text":
-	"Welcome back. I've seen you walking back and forth from the metro sometimes."},
+	"Welcome back. I think I've seen you around before!"},
 	
 	{"speaker": "Christina", "text":
-	"Hello, how are you doing today?"},
-	
-	{"speaker": "Christina", "text":
-	"(Next time I say a word in English, it’ll be when I’m flying off the side of a-."},
+	"Hahah, oh uh... thanksyoutoo!"},
 	
 	{"speaker": "Girl","text":
-	"What do you want?"},
-
+	"What?"},
 
 	{"speaker": "Christina", "text":
-	"J-just get me a-uh."},
-	{"speaker": "Christina", "text":
-	"Large meal, extra fries, cola."},
+	"Ahem, I mean... J-just get me the uh... Cheeseburger combo meal?"},
+	
  	{"speaker": "Christina", "text":
-	"and make it t-takeaway."},
-	{"speaker": "girl", "text":
-	"That's a lot of..."},
-
+	"Make it t-takeaway."},
 
 	{"speaker": "Narrator","event": "novel", "text":
-	"The woman at the register begins to sweat. Something emanating from Christina is overwhelming her senses. She's losing herself in her."},
-	{"speaker": "girl","event": "adventure", "text":
+	"The cashier girl catches a whiff of a strange scent. It's something emanating from Christina, and it's overwhelming her senses. If endearment was an aroma, this would be it."},
+	
+	{"speaker": "Girl","event": "adventure", "text":
 	"That'll be..."},
-	{"speaker": "girl","text":
-	"What... what are you wearing... by the way?"},
+	
+	{"speaker": "Girl","text":
+	"[wave]Uh, Are you wearing a fragrance by the way?[/wave]"},
  	
 	{"speaker": "Christina", "text":
-	"How much is the food?"},
-	{"speaker": "Christina", "text":
-	"(Noooo... nononononononononoonon noooooooo)"},
+	"No. How much is the food?"},
 
-	{"speaker": "girl","text":
-	"Sorry, 187 Kr."},
+	{"speaker": "Girl","text":
+	"Sorry, it's 150 kronor."},
  	
 	{"speaker": "Christina", "text":
-	"Alright, here it is..."},
-	{"speaker": "girl","text":
-	"Here's.."},
-	{"speaker": "Narrator","text":
+	"Alright, here it is."},
+	
+	{"speaker": "Girl","text":
+	"Could you stay for a second?"},
+	
+	{"speaker": "Narrator", "event": "novel","text":
 	"She takes a pen out of her pocket and scribbles something on her receipt."},
-	{"speaker": "girl","text":
+	
+	{"speaker": "Girl", "event": "adventure","text":
 	"This is for you."},
+	
+	{"speaker": "Narrator", "event": "novel","text":
+	"When Christina reaches for the receipt, the girl suddenly latches onto her hand and gently caresses her thumb."},
 	
 	{"speaker": "Christina", "text":
 	"Hey, let go of my hand!"},
+	
 	{"speaker": "Blanche","text":
-	"It's not your body, it's your... mouth..."},
-	{"speaker": "girl","text":
-	"What's inside you?"},
-	{"speaker": "girl","text":
-	"Breathe out..."},
-	{"speaker": "girl","text":
-	"I wonder what your other parts smell like..."},
+	"[wave]It's not your body, it's your mouth.[/wave]"},
+	
+	{"speaker": "Girl","text":
+	"[wave]What's inside you?[/wave]"},
+	
+	{"speaker": "Girl","text":
+	"[wave]I wonder what your other parts smell like~[/wave]"},
  	
  	{"speaker": "Christina", "text":
 	"Let go!"},
 	
 	{"speaker": "Girl","text":
-	"It's so sweet..."},
+	"[shake]It's so sweet.[/shake]"},
 
 	{"speaker": "Narrator", "event": "novel", "text":
-	"Christina walks to a table to wait for her order. She opens the scrunched-up receipt for her food, seeing that she's paid far too much for her dinner and that the cashier girl has scribbled out her phone number. Christina breathes into her hand and sniffs. The fragrance of the peach hard candies has fermented in her mouth, becoming intoxicating to her nose."},
+	"Christina grits her teeth and shoves the cashier's arm away with all her might. She just barely backs off panting before she could grab her again. 
+	
+	Christina realizes in horror that she's meanmugging her crush and slows her breathing. She looks around the restaurant to see the strange looks being are giving. 
+	
+	The cashier seems to have snapped back to reality, they both don't say anything. It's too awkward to. She shuffles to the side and waits for her order to be complete. 
+	
+	She takes the time to unfold for her receipt, it's the cashier's number. Christina pressess her nose against the receipt and sniffs. It smells like peach hard candies."},
 
-	{"speaker": "Christina","event": "adventure", "text":
-	"(I needed a dentist as much as she needs a fucking psychiatrist.)"},
-
-	{"speaker": "Christina", "text":
-	"Who'd even want this?"},
-	{"speaker": "Christina", "text":
-	"You never know who's relying on you, Chr-"},
-	{"speaker": "girl","text":
-	"Christina S-"},
-	{"speaker": "Christina", "text":
-	"That was fast."},
+	{"speaker": "Narrator", "text":
+	"Before long, her order is finished being prepared. Luckily or unluckily, a different employee hands the bag to Christina instead of her crush."},
+	
+	{"next_scene": "eating"}
 ]

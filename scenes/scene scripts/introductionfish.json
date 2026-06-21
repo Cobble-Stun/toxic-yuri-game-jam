@@ -1,18 +1,18 @@
 [
 	{"background": "TyrestaLake:1.0",
 	 "speaker": "Narrator", "event": "novel", "text":
-	 "There was an increase of around 2 degrees for the water outside, 10 degrees for you stupid yanks."},
+	 "It was a fine evening on this particular day in Tyresta National Park. The lake's temperature had increased by 2 degrees since noon making it 16 degrees celsius, 60 degrees for you stupid yanks."},
 	
 	{"speaker": "Narrator","text":
-	"This will add an unfortunate number of complications for our friends: the fish. These creatures, as close to us as they are, our sustainers, our friends, are assaulted on all sides by parasites."},
+	"An unfortunate infestation has been plaguing our aquatic friends in the lake, the fish. These creatures that sustain us are assaulted by parasites on all sides."},
 	
 	{"speaker": "Narrator","text":
-	"	Parasites; You might only consider them as the vampiric creatures that suck blood, such as ticks or mosquitoes. 
+	"	You may know Parasites as the vampire creatures that suck blood, like ticks or mosquitoes.
 	
-	We humans like to consider anything that harms others to be a parasite, though even we the human race, are ultimately parasites."},
+	We humans like to consider anything that harms others for their own gain to be a parasite, though even we the human race, are ultimately parasites."},
 	
 	{"speaker": "Narrator", "text":
-	"	Christina, a young woman whose love of fish and fish parasites has been barely enough to get her through several years of grinding university work. 
+	"	Christina was a young woman had a love of fish and their parasites. Her interest in the subject had barely been enough to get her through several years of grinding university work. 
 	
 	She had been a delinquent in her upper secondary school years which scared off a bunch of classmates from being friends with her.
 	
@@ -21,9 +21,7 @@
 	{"speaker": "Narrator","text":
 	"	Christina always wore earbuds when she was out. To ensure that no one, absolutely no one, had an inkling of an idea that she should be approached. 
 	
-	Even now, Blanche can tell that she's been up for hours already at 8 in the morning, and she can smell that if she had showered in the intervening hours, she hadn't done it well enough. 
-	
-	Layer after layer of defense."},
+	Even now, Blanche can tell that she's been up for hours already at 8 in the morning, and she can smell that if she had showered in the intervening hours, she hadn't done it well enough."},
 	
 	{"sprite": "blanche neutral c:blanche:400:0:1.0",
 	"speaker": "Blanche", "event": "adventure", "text":
@@ -32,11 +30,11 @@
 	{"speaker": "Blanche","text":
 	"Could you handle the... fishcooler and the bait?"},
 	
-	 {"sprite": "christina neutral c:christina:-400:0:1.0",
+	 {"sprite": "christina diagonal c:christina:-400:0:1.0",
 	"speaker": "Christina", "text":
 	"Livewell, fish cooler, whatever..."},
 	
-	{"speaker": "Blanche","text": 
+	{"speaker": "Christina","text": 
 	"I'll take it, yeah."},
 	
 	{"speaker": "Narrator", "event": "novel","text":
@@ -62,7 +60,7 @@
 	"What?"},
 	
 	{"speaker": "Blanche","text":
-	"Is that too much for you to carry?"},
+	"Is that livewell too much for you to carry?"},
 	
 	{"speaker": "Christina","text": 
 	"I'm just taking my time, it's nice out!"},
@@ -110,9 +108,6 @@
 	"Creepy? Are you afraid of fish now?"},
 	
 	{"speaker": "Blanche","text":
-	"..."},
-	
-	{"speaker": "Blanche","text":
 	"Some of these fish have been infested with a parasite in their eyes, haven't you noticed?"},
 	
 	{"speaker": "Christina","text": 
@@ -122,10 +117,13 @@
 	"Something I wrote down about 15 minutes ago, what took you so long?"},
 	
 	{"speaker": "Blanche","text":
+	"..."},
+	
+	{"speaker": "Blanche","text":
 	"Let's catch more fish."},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"Another round of fish caught. Some of the catch in the livewell have regained their composure, darting around in the water."},
+	"Another round of fish was caught. Some of the catch in the livewell have regained their composure, darting around in the water."},
 	
 	{"speaker": "Christina", "event": "adventure", "text": 
 	"I've got an idea, but it might be bad..."},
@@ -218,7 +216,7 @@
 	
 	Christina can still feel it. A wave of heat worms through her veins, brushing up against the walls of her bloodstream clumsily. 
 	
-	As if a child were running their hand down the wooden walls of an old house. She also notices it’s getting harder to breathe."},
+	It was as if a child was inside her finger running their hand down the wooden walls of an old house. She also notices it’s getting harder to breathe."},
 	
 	{"speaker": "Christina","event": "adventure", "text": 
 	"Hahh, hahh."},
@@ -227,12 +225,12 @@
 	"Good... work..."},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"	Moving the livewell was harder now that it was filled with fish water. Christina can feel something wrong as she takes one omninous step towards the car park. 
+	"	Moving the livewell was harder now that it was filled with fish and water. Christina can feel something wrong as she takes one omninous step towards the car park. 
 	
 	Blanche sees her sweating. It was hard to tell what was drenched by the river and what was drowned out by perspiration."},
 	
 	{"speaker": "Blanche","event": "adventure", "text":
-	"You were lively earlier today, but now I can see the maggots getting to you in a week."},
+	"You were lively earlier today, but now I can see maggots getting to you in a week."},
 	
 	{"speaker": "Christina","text": 
 	"I'm fine."},

@@ -13,13 +13,22 @@
 
 	{"speaker": "Narrator","event": "novel", "text":
 	"Despite her condition, she can't help but feel patronized. In her mind she still feels she is capable of walking."},
+	
+	{"speaker": "Christina","event": "adventure","text":
+	"I'm fine... really."},
 
 	{"speaker": "Narrator", "text":
-	"Christina feels something coming up her throat and she forces it down, creating a loud, audible gulp."},
+	"Christina feels something coming up her throat and she forces it down, creating a loud, audible gulp. Blanche sighs."},
 
 	{"background": "countryroad:1.0",
-	"speaker": "Christina", "event": "adventure", "text":
-	"Thank you, it must be a big burden on you to drive me home... Blanche..."},
+	"speaker": "Blanche","event": "adventure","text":
+	"Listen, I'm no fool, I know you're sick back there. You're in no condition to go back to the university. I'll drop you off at your place and bring the fish back for study."},
+	
+	{"speaker": "Christina", "text":
+	"..."},
+	
+	{"speaker": "Christina", "text":
+	"Thanks, it must be a big burden on you to drive me home... Blanche..."},
 
 	{"speaker": "Christina","text":
 	"Especially... with the cost of p-petrol these days... and the... traffic..."},
@@ -28,13 +37,13 @@
 	"It's times like these that I'm happy that my parents raised me to be so kind to the unfortunate."},
 
 	{"speaker": "Christina","text":
-	"Mmph."},
+	"Mm hmm."},
 
 	{"speaker": "Pasaya","text":
-	"Okay, ahem. That'll be all Chatterpillars!"},
+	"Okay, ahem. [wave]That'll be all Chatterpillars![/wave]"},
 	
 	{"speaker": "Narrator","event": "novel", "text":
-	"A sad, long grunt is forced out from Christina’s throat. From the corner of her eye, Blanche can see the distress in Christina’s body as she languidly reaches into her pocket and pulls out her phone."},
+	"A long groan is forced out from Christina’s throat. From the corner of her eye, Blanche can see the distress in Christina’s body as she languidly reaches into her pocket and pulls out her phone."},
 	
 	{"speaker": "Narrator", "text":
 	"	She weakly handles her phone while her head slumps over onto the screen. Whether it’s the residual water from the river or her sweat, drops of something are falling on the image of Pasaya. 
@@ -55,7 +64,9 @@
 	
 	{"background": "cityhighway:1.0",
 	"speaker": "Narrator","event": "novel", "text":
-	"Christina leaned closer to her phone. From the driver’s seat, all Blanche could see was a woman dangling over her seatbelt, breathing as if she had run a Marathon. The visage periodically gets broken up by intense fits of coughing."}, 
+	"	Christina leaned closer to her phone. From the driver’s seat, all Blanche could see was Christina dangling over her seatbelt, breathing as if she had run a Marathon. 
+	
+	The visage periodically gets broken up by intense fits of coughing."}, 
 
 	{"speaker": "Blanche", "event": "adventure", "text":
 	"You better not be dying in my car back there!"},

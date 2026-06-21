@@ -1,40 +1,68 @@
 [
 	{"speaker": "Narrator","event": "novel", "text":
-	"Blanche was in a panic. She had spent the whole day scrounging the area for everything she needed for a flying jakob casserole with rice. If things turned out well, there'd be a dessert, kreme made with all the leftover dairy her mother had left in the refrigerator."},
-	{"speaker": "Narrator","event": "novel", "text":
-	"With the fateful knock at the door, Blanche looks at Christina. She remembers the feeling of hands on her body and how deep that tongue seemed to go. There was a certain danger in just being around her."},
-	{"speaker": "Christina","text":
+	"	Blanche was in a panic. She had spent the whole day scrounging the area for everything she needed for a Flying Jacob casserole with rice. 
+	
+	If things turned out well, there'd be a dessert, cream made with all the leftover dairy her mother had left in the refrigerator."},
+	
+	{"speaker": "Narrator","text":
+	"	With a fateful knock at the door, Blanche looks at Christina. She remembers the feeling of hands on her body and how deep that tongue seemed to go. 
+	
+	There was a certain danger in just being around her."},
+	
+	{"speaker": "Christina","event": "adventure","text":
  	"Hello."},
+	
 	{"speaker": "Blanche","text":
 	"There's some food at the table."},
+	
 	{"speaker": "Christina","text":
 	"You know-"},
+	
 	{"speaker": "Blanche","text":
 	"I want to talk over dinner first."},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"Blanche serves a helping of famous flying jakob alongside steaming hot rice from her imported Thai rice cooker. That and a cup of the finest Thai coffee. The two girls sit down across from each other, fighting between their desire to make ye contact and their fear of what follows that. Furthermore, Christina picks at her food as if she's being forced to eat a fried boot."},
-	{"speaker": "Pasaya","text":
+	"	Blanche serves a helping of Flying Jacob alongside steaming hot rice from her imported Thai rice cooker. That and a cup of the finest Thai coffee. 
+	
+	The two girls sit down across from each other, afraid of making eye contact. Christina picks at her food as if she's being forced to eat a fried boot."},
+	
+	{"speaker": "Pasaya","event": "adventure","text":
 	"I can't eat this!"},
+	
 	{"speaker": "Christina","text":
 	"I'll chew it and swallow it just like I always did!"},
+	
 	{"speaker": "Pasaya","text":
 	"You'll choke to death without me."},
+	
 	{"speaker": "Pasaya","text":
 	"I am your body, you will listen to me."},
+	
 	{"speaker": "Christina","text":
 	"It's one bite."},
+	
 	{"speaker": "Pasaya","text":
 	"I can't trust you to take care of yourself."},
+	
 	{"speaker": "Blanche","text":
-	"I know you've had this before..."},
+	"I know you've had this before."},
+	
 	{"speaker": "Blanche","text":
 	"I mean, I'm not the best cook in the world, but is it so unappealing that you won't take a bite?"},
+	
 	{"speaker": "Pasaya","text":
 	"This is all theater!"},
+	
 	{"speaker": "Narrator","event": "novel", "text":
 	"Christina puts down the fork. She lifts up the plate and tosses it aside, shattering it on the ground. Pasaya took full control of Christina's body."},
-	{"speaker": "Blanche","text":
-	"Are you a child!"},
+	
+	{"speaker": "Blanche","event": "adventure","text":
+	"What is wrong with you?!"},
+	
 	{"speaker": "Narrator","event": "novel", "text":
-	"Blanche gets up and stands over Christina, placing her hand on Christina's attempting to drag her out of her seat and her home. But she soon realizes something. Christina stands up seemingly unaware of the effort Blanche is putting on her body. She stands well above her. In fact, she barely reaches the level of her breasts. Christina pushes her down quite easily."},
+	"	Blanche gets up and storms over to Christina, grabs her by the arm in a attempt to drag her out of the house. But she gets caught off guard that Christina doesn't even budge. 
+	
+	Christina stands up seemingly unaware of the effort Blanche is putting on her body. Christina pushes her down quite easily."},
+	
+	{"next_scene": "floor"}
 ]

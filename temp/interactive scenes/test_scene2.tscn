@@ -16,9 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://7upwwd125rb8" path="res://temp/interactive scenes/temp/groping mechanic/test sprites/LBSouthEast.png" id="17_ee88e"]
 [ext_resource type="Texture2D" uid="uid://b445kplpkrk6u" path="res://temp/interactive scenes/temp/groping mechanic/test sprites/LBSouthWest.png" id="18_yvxgo"]
 [ext_resource type="Texture2D" uid="uid://c1dnkcwu2qddr" path="res://temp/interactive scenes/temp/groping mechanic/test sprites/LBNorthEast.png" id="19_mfhbo"]
-[ext_resource type="Texture2D" uid="uid://b6joktcs728g7" path="res://temp/interactive scenes/temp/groping mechanic/Cursor-PNG-Image-Background.png" id="27_s224f"]
+[ext_resource type="Texture2D" uid="uid://b6joktcs728g7" path="res://images/interactive scenes/Cursor.png" id="27_s224f"]
 [ext_resource type="Script" uid="uid://cdno3aaya10" path="res://scripts/interaction scenes/drag_cursor.gd" id="28_dvp5u"]
-[ext_resource type="Texture2D" uid="uid://dqpc5ceyicg1j" path="res://temp/interactive scenes/temp/groping mechanic/Cursor-Transparent-Image.png" id="29_um2uu"]
+[ext_resource type="Texture2D" uid="uid://dqpc5ceyicg1j" path="res://images/interactive scenes/Cursor Hover.png" id="29_um2uu"]
 
 [node name="Test2" type="Node2D" unique_id=1523811058]
 
