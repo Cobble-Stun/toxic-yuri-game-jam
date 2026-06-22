@@ -8,6 +8,7 @@ func load_scene(scene: String) -> void:
 	data = {
 		"saved_dialog_index" : 0,
 		"saved_scene" : scene,
+		"wormCollectableAmount" : 0
 	}
 	
 func save_game(fileName: String):
@@ -16,6 +17,7 @@ func save_game(fileName: String):
 	data["date_and_time"] = str(dateTime.year) + "-" + "%02d" % dateTime.month + "-" + "%02d" % dateTime.day + " " + "%02d" % dateTime.hour + ":" + "%02d" % dateTime.minute
 	data["saved_dialog_index"] = Globals.savedDialogIndex
 	data["saved_scene"] = Globals.savedScene
+	data["wormCollectableAmount"] = Globals.wormCollectableAmount
 	
 	access = FileAccess.open(path + fileName + ".json", FileAccess.WRITE)
 	access.store_string(JSON.stringify(data))

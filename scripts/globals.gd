@@ -3,6 +3,7 @@ extends Node
 #save data
 var savedDialogIndex = 0
 var savedScene: String
+var wormCollectableAmount: int = 0
 
 #settings
 var textVolume = 0.5

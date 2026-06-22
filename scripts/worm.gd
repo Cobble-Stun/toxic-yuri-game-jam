@@ -9,6 +9,8 @@ var mousePos = Vector2.ZERO
 var dead = false
 
 func _ready():
+	collected = Globals.wormCollectableAmount
+	update_worm_length()
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	if points.size() < 2:
 		points = PackedVector2Array([Vector2.ZERO, Vector2.ZERO])
@@ -77,4 +79,7 @@ func update_collision_positions():
 
 func collect_thing():
 	collected += 1
-	segment_length += 0.5
+	update_worm_length()
+	
+func update_worm_length():
+	segment_length = 5.0 + collected * 0.5
