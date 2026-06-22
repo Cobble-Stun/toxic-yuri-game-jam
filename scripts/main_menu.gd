@@ -17,12 +17,43 @@ extends CanvasLayer
 @onready var musicVolumeValue = $"Control/Options/Music Volume/Label"
 @onready var textSpeedValue = $"Control/Options/Text Speed/Label"
 @onready var autoProgressValue = $"Control/Options/Auto Progress Speed/Label"
+@onready var windowModeDropdown = $"Control/Options/Window Mode/OptionButton"
+@onready var resolutionDropdown = $"Control/Options/Resolution/OptionButton"
+
+var resolutions: Dictionary = {"3840x2160":Vector2i(3840,2160),
+								"2560x1440":Vector2i(2560,1080),
+								"1920x1080":Vector2i(1920,1080),
+								"1366x768":Vector2i(1366,768),
+								"1536x864":Vector2i(1536,864),
+								"1280x720":Vector2i(1280,720),
+								"1440x900":Vector2i(1440,900),
+								"1600x900":Vector2i(1600,900),
+								"1024x600":Vector2i(1024,600),
+								"800x600": Vector2i(800,600)}
 
 func _ready() -> void:
 	SaveSystem.load_settings()
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Text"), Globals.textVolume)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), Globals.musicVolume)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), Globals.sfxVolume)
+	var Current_Resolution = get_window().get_size()
+	var ID = 0
+	
+	for r in resolutions:
+		resolutionDropdown.add_item(r, ID)
+		
+		if resolutions[r] == Current_Resolution:
+			resolutionDropdown.select(ID)
+		
+		ID += 1
+	get_window().set_size(resolutions[resolutionDropdown.get_item_text(Globals.resolutionIndex)])
+	match Globals.windowMode:
+		0:
+			get_window().set_mode(Window.MODE_EXCLUSIVE_FULLSCREEN)
+		1:
+			get_window().set_mode(Window.MODE_FULLSCREEN)
+		2:
+			get_window().set_mode(Window.MODE_WINDOWED)
 	reset_settings()
 		
 func start_new_game():
@@ -71,6 +102,12 @@ func change_text_speed(value: float):
 func change_auto_progress_speed(value: float):
 	autoProgressValue.text = str(value)
 	
+func select_window_mode(index: int) -> void:
+	Globals.windowMode = index
+		
+func select_resolution(index: int) -> void:
+	Globals.resolutionIndex = index
+	
 func reset_settings():
 	textVolumeSlider.value = Globals.textVolume
 	sfxVolumeSlider.value = Globals.sfxVolume
@@ -82,6 +119,8 @@ func reset_settings():
 	musicVolumeValue.text = str(Globals.musicVolume * 100)
 	textSpeedValue.text = str(Globals.textSpeed)
 	autoProgressValue.text = str(Globals.textAutoProgressSpeed)
+	windowModeDropdown.selected = Globals.windowMode
+	resolutionDropdown.selected = Globals.resolutionIndex
 	
 func save_changes():
 	Globals.textVolume = float(textVolumeValue.text)/100
@@ -92,5 +131,12 @@ func save_changes():
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Text"), linear_to_db(Globals.textVolume))
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(Globals.musicVolume))
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), linear_to_db(Globals.sfxVolume))
+	match Globals.windowMode:
+		0:
+			get_window().set_mode(Window.MODE_EXCLUSIVE_FULLSCREEN)
+		1:
+			get_window().set_mode(Window.MODE_FULLSCREEN)
+		2:
+			get_window().set_mode(Window.MODE_WINDOWED)
+	get_window().set_size(resolutions[resolutionDropdown.get_item_text(Globals.resolutionIndex)])
 	SaveSystem.save_settings()
-	

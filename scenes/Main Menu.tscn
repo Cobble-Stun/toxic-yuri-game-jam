@@ -309,6 +309,36 @@ theme_override_font_sizes/font_size = 32
 text = "100"
 metadata/_edit_use_anchors_ = true
 
+[node name="Window Mode" type="HBoxContainer" parent="CanvasLayer/Control/Options" unique_id=207734366]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/Options/Window Mode" unique_id=1565002686]
+layout_mode = 2
+text = "Window Mode"
+
+[node name="OptionButton" type="OptionButton" parent="CanvasLayer/Control/Options/Window Mode" unique_id=1269631131]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Fullscreen"
+popup/item_0/id = 0
+popup/item_1/text = "Windowed Fullscreen"
+popup/item_1/id = 1
+popup/item_2/text = "Windowed"
+popup/item_2/id = 2
+
+[node name="Resolution" type="HBoxContainer" parent="CanvasLayer/Control/Options" unique_id=1862429811]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/Options/Resolution" unique_id=929958592]
+layout_mode = 2
+text = "Resolution"
+
+[node name="OptionButton" type="OptionButton" parent="CanvasLayer/Control/Options/Resolution" unique_id=1500777701]
+layout_mode = 2
+
 [node name="Save Changes" type="Button" parent="CanvasLayer/Control/Options" unique_id=1749066073]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_1fbba")
@@ -382,6 +412,8 @@ bus = &"Music"
 [connection signal="value_changed" from="CanvasLayer/Control/Options/Music Volume/Music Volume Slider" to="CanvasLayer" method="change_music_volume"]
 [connection signal="value_changed" from="CanvasLayer/Control/Options/Text Speed/Text Speed Slider" to="CanvasLayer" method="change_text_speed"]
 [connection signal="value_changed" from="CanvasLayer/Control/Options/Auto Progress Speed/Auto Progress Speed Slider" to="CanvasLayer" method="change_auto_progress_speed"]
+[connection signal="item_selected" from="CanvasLayer/Control/Options/Window Mode/OptionButton" to="CanvasLayer" method="select_window_mode"]
+[connection signal="item_selected" from="CanvasLayer/Control/Options/Resolution/OptionButton" to="CanvasLayer" method="select_resolution"]
 [connection signal="pressed" from="CanvasLayer/Control/Options/Save Changes" to="CanvasLayer" method="save_changes"]
 [connection signal="pressed" from="CanvasLayer/Control/Options/Back" to="CanvasLayer" method="toggle_options"]
 [connection signal="pressed" from="CanvasLayer/Control/Load Game/Back" to="CanvasLayer" method="toggle_load_game"]

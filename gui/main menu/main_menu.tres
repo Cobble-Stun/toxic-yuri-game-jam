@@ -2,6 +2,14 @@
 
 [ext_resource type="FontFile" uid="uid://momuqevgfdl0" path="res://fonts/SwedenSansBold.otf" id="1_q5vdq"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mh0v1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t0ywv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ikpfy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4nseq"]
+
 [resource]
 default_font = ExtResource("1_q5vdq")
 default_font_size = 30
@@ -12,3 +20,7 @@ Button/colors/font_hover_color = Color(0.5686275, 0.15294118, 0.11764706, 1)
 Button/colors/font_hover_pressed_color = Color(1, 0, 0, 1)
 Button/colors/font_pressed_color = Color(1, 0, 0, 1)
 Label/colors/font_color = Color(0.7294118, 0, 0.08235294, 1)
+OptionButton/styles/focus = SubResource("StyleBoxEmpty_mh0v1")
+OptionButton/styles/hover = SubResource("StyleBoxEmpty_t0ywv")
+OptionButton/styles/normal = SubResource("StyleBoxEmpty_ikpfy")
+OptionButton/styles/pressed = SubResource("StyleBoxEmpty_4nseq")

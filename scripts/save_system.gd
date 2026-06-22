@@ -28,6 +28,8 @@ func save_settings():
 	settings["musicVolume"] = Globals.musicVolume
 	settings["textSpeed"] = Globals.textSpeed
 	settings["textAutoProgressSpeed"] = Globals.textAutoProgressSpeed
+	settings["windowMode"] = Globals.windowMode
+	settings["resolutionIndex"] = Globals.resolutionIndex
 	
 	access = FileAccess.open(path + "settings.json", FileAccess.WRITE)
 	access.store_string(JSON.stringify(settings))
@@ -42,8 +44,10 @@ func load_settings():
 		Globals.musicVolume = settings["musicVolume"]
 		Globals.textSpeed = settings["textSpeed"]
 		Globals.textAutoProgressSpeed = settings["textAutoProgressSpeed"]
+		Globals.windowMode = settings["windowMode"]
+		Globals.resolutionIndex = settings["resolutionIndex"]
 	else:
-		return
+		save_settings()
 	
 func load_game(fileName: String):
 	if FileAccess.file_exists(path + fileName + ".json"):
