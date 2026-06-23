@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cupxbs3fxdbnw"
-path="res://.godot/imported/BgCc1ZAXd5xz.png-67a8160534433c2abf7d2b1f39abc6f5.ctex"
+uid="uid://b6nbauvt8kah6"
+path="res://.godot/imported/redbloodcell0009.png-9a39dc113eefb20798058e1e2c307ea9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/minigame sprites/BgCc1ZAXd5xz.png"
-dest_files=["res://.godot/imported/BgCc1ZAXd5xz.png-67a8160534433c2abf7d2b1f39abc6f5.ctex"]
+source_file="res://images/minigame sprites/redbloodcell0009.png"
+dest_files=["res://.godot/imported/redbloodcell0009.png-9a39dc113eefb20798058e1e2c307ea9.ctex"]
 
 [params]
 

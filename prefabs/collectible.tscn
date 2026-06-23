@@ -1,7 +1,62 @@
 [gd_scene format=3 uid="uid://c3xi10o6b6103"]
 
 [ext_resource type="Script" uid="uid://edni2miemupg" path="res://scripts/collectible.gd" id="1_vipen"]
-[ext_resource type="Texture2D" uid="uid://d3nfjdm5xjj8i" path="res://images/minigame sprites/Red Blood Cell.png" id="2_vipen"]
+[ext_resource type="Texture2D" uid="uid://bgvtkg7oyawx2" path="res://images/minigame sprites/redbloodcell0001.png" id="2_gdr8l"]
+[ext_resource type="Texture2D" uid="uid://bsn16tpynlhq8" path="res://images/minigame sprites/redbloodcell0002.png" id="3_asqlp"]
+[ext_resource type="Texture2D" uid="uid://fofqeadnpjye" path="res://images/minigame sprites/redbloodcell0003.png" id="4_hiuh2"]
+[ext_resource type="Texture2D" uid="uid://dbmc26iqqkyxl" path="res://images/minigame sprites/redbloodcell0004.png" id="5_o8af7"]
+[ext_resource type="Texture2D" uid="uid://bgvftdb7uvm8b" path="res://images/minigame sprites/redbloodcell0005.png" id="6_ximc2"]
+[ext_resource type="Texture2D" uid="uid://c08xvgxhe143l" path="res://images/minigame sprites/redbloodcell0006.png" id="7_2hht0"]
+[ext_resource type="Texture2D" uid="uid://vykq77siyiv5" path="res://images/minigame sprites/redbloodcell0007.png" id="8_7qjbt"]
+[ext_resource type="Texture2D" uid="uid://celyr21rmto13" path="res://images/minigame sprites/redbloodcell0008.png" id="9_ba5r2"]
+[ext_resource type="Texture2D" uid="uid://b6nbauvt8kah6" path="res://images/minigame sprites/redbloodcell0009.png" id="10_3wfut"]
+[ext_resource type="Texture2D" uid="uid://bggkepc8mytt5" path="res://images/minigame sprites/redbloodcell0010.png" id="11_4rgvn"]
+[ext_resource type="Texture2D" uid="uid://c24yoeba5xopy" path="res://images/minigame sprites/redbloodcell0011.png" id="12_e6o6o"]
+[ext_resource type="Texture2D" uid="uid://d1hw4atrr0hjw" path="res://images/minigame sprites/redbloodcell0012.png" id="13_uuxb5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ikpfy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gdr8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_asqlp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hiuh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o8af7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ximc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2hht0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7qjbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ba5r2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3wfut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4rgvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_e6o6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_uuxb5")
+}],
+"loop": 1,
+"name": &"spin",
+"speed": 24.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_imcew"]
 radius = 18.027756
@@ -9,9 +64,13 @@ radius = 18.027756
 [node name="Collectible" type="Area2D" unique_id=1912279942]
 script = ExtResource("1_vipen")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1289694167]
-scale = Vector2(0.059308082, 0.05930807)
-texture = ExtResource("2_vipen")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2131819346]
+scale = Vector2(0.28125, 0.28125)
+sprite_frames = SubResource("SpriteFrames_ikpfy")
+animation = &"spin"
+autoplay = "spin"
+frame = 3
+frame_progress = 0.21983553
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=34125988]
 shape = SubResource("CircleShape2D_imcew")

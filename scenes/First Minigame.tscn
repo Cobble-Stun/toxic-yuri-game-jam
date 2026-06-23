@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://cjgns41xsdy6c" path="res://scripts/minigame_game_state.gd" id="1_kdf0o"]
 [ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="2_qatla"]
 [ext_resource type="AudioStream" uid="uid://ccb2sluqkgrks" path="res://audio/music/Sex Music.ogg" id="3_s7uuw"]
-[ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="4_x1dc2"]
 [ext_resource type="Script" uid="uid://g17vjj3whv85" path="res://scripts/worm.gd" id="5_dubiv"]
 [ext_resource type="Script" uid="uid://div11xvua2h1g" path="res://scripts/minigame_wall.gd" id="6_yl4ug"]
 [ext_resource type="Script" uid="uid://dvr3nrg2mj43k" path="res://scripts/back_to_stage.gd" id="7_gregt"]
@@ -52,15 +51,13 @@ offset_top = -12080.0
 offset_right = 653.0
 offset_bottom = 2986.0
 
-[node name="TextureRect" type="TextureRect" parent="Control" unique_id=258639136]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_x1dc2")
-expand_mode = 3
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=117850639]
+layout_mode = 0
+offset_left = -1230.25
+offset_top = 8663.0
+offset_right = 2591.0
+offset_bottom = 15069.0
+color = Color(0.46820247, 0.08134761, 0.0813637, 1)
 
 [node name="Worm" type="Line2D" parent="." unique_id=327222106]
 points = PackedVector2Array(0, 0, 0, 15, 0, 30, 0, 45, 0, 60, 0, 75, 0, 90, 0, 105, 0, 120, 0, 135, 0, 150)
@@ -81,11 +78,11 @@ camera = NodePath("../CameraHolder")
 gameState = NodePath("../GameState")
 
 [node name="Polygon2D" type="Polygon2D" parent="Area2D2" unique_id=1248075768]
-color = Color(0.43581748, 0, 0.008797868, 1)
+color = Color(0.56, 0.086426646, 0.07839999, 1)
 polygon = PackedVector2Array(-76, 395, -76, -288.5495, -78, -324, -85, -372, -115, -395, -155, -401, -216, -401, -320, -423, -408, -453, -467, -520, -490, -612, -492, -664, -456, -746, -405, -809, -331, -849, -231, -878, 273.00696, -882.1043, 326, -892, 359, -901, 385, -932, 397, -976, 407, -1061, 398, -1140, 379, -1184, 349, -1207, 312, -1216, 267, -1220, 83, -1218, 22, -1218, -46, -1222, -109, -1243, -138, -1292, -153, -1352, -156, -1436, -142, -2932, -641, -2934, -624, 374)
 
 [node name="Polygon2D2" type="Polygon2D" parent="Area2D2" unique_id=1094761177]
-color = Color(0.43529412, 0, 0.007843138, 1)
+color = Color(0.56, 0.086426646, 0.07839999, 1)
 polygon = PackedVector2Array(72, 396, 70, -357, 54, -444, 23, -498, -15, -537, -76, -549, -207.05457, -550, -249, -551, -286, -561, -321, -592, -329, -637, -313, -691, -283, -711, -249, -719, -215.10706, -724, 201.26501, -724, 378, -746, 469, -799, 534, -903, 562.99994, -1005.2175, 563, -1105, 557, -1202, 530, -1272, 481, -1312, 410, -1331, 324, -1333, 25, -1338, -7, -1351, -31, -1377, -39, -1404, -37, -2940, 662, -2940, 660, -544, 664, 410)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D2" unique_id=1864700426]
