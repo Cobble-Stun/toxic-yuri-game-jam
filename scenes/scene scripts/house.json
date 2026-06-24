@@ -34,7 +34,8 @@
 	{"speaker": "Narrator", "event": "novel", "text":
 	"Christina nods and continues to cough."},
 	
-	{"speaker": "Christina", "event": "adventure", "text":
+	{"sound": "cardoorslam",
+	"speaker": "Christina", "event": "adventure", "text":
 	"Thanks for the ride, I’ll see you."},
 	
 	{"speaker": "Narrator", "event": "novel", "text":

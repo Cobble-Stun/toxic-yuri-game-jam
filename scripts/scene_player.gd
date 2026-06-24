@@ -165,6 +165,10 @@ func scene_rollback():
 		musicPlayer.stream = load(last_state["music"])
 		musicPlayer.play()
 		
+	if last_state["ambient"] and (ambientPlayer.stream == null or ambientPlayer.stream.resource_path != last_state["ambient"]):
+		ambientPlayer.stream = load(last_state["ambient"])
+		ambientPlayer.play()
+		
 	for node in get_tree().get_nodes_in_group("sprites"):
 		node.queue_free()
 		

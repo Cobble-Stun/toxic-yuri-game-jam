@@ -49,6 +49,7 @@
 	"Christina fumbles with her keys to the keyhole of her apartment door before she opens it and stumbles inside."},
 	
 	{"background": "bedroom light on:1.0",
+	"music" : "Christina's Theme",
 	"speaker": "Narrator", "text":
 	"	The smell, she had forgotten to take out the garbage from two days ago, so it’s been sitting there by the door, festering in the relative heat.
 	
@@ -133,7 +134,8 @@
 	{"speaker": "Christina", "text":
 	"Ok, ok, everything’s fine."},
 	
-	{"speaker": "Christina", "text":
+	{"music": "null",
+	"speaker": "Christina", "text":
 	"Fuck."},
 	
 	{"next_scene": "working", "transition": "fade"}

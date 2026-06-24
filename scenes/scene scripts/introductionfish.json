@@ -1,13 +1,14 @@
 [
 	{"background": "TyrestaLake:1.0",
-	 "speaker": "Narrator", "event": "novel", "text":
-	 "It was a fine evening on this particular day in Tyresta National Park. The lake's temperature had increased by 2 degrees since noon making it 16 degrees celsius, 60 degrees for you stupid yanks."},
+	"ambient": "lake",
+	"speaker": "Narrator", "event": "novel", "text":
+	"It was a fine evening on this particular day in Tyresta National Park. The lake's temperature had increased by 2 degrees since noon, making it 16 degrees celsius. That's 60 degrees for you stupid yanks."},
 	
 	{"speaker": "Narrator","text":
 	"An unfortunate infestation has been plaguing our aquatic friends in the lake, the fish. These creatures that sustain us are assaulted by parasites on all sides."},
 	
 	{"speaker": "Narrator","text":
-	"	You may know Parasites as the vampire creatures that suck blood, like ticks or mosquitoes.
+	"	You may know Parasites as the vampire creatures that suck blood, like ticks or mosquitos.
 	
 	We humans like to consider anything that harms others for their own gain to be a parasite, though even we the human race, are ultimately parasites."},
 	
@@ -30,7 +31,7 @@
 	{"speaker": "Blanche","text":
 	"Could you handle the... fishcooler and the bait?"},
 	
-	 {"sprite": "christina diagonal c:christina:-400:0:1.0",
+	{"sprite": "christina diagonal c:christina:-400:0:1.0:true",
 	"speaker": "Christina", "text":
 	"Livewell, fish cooler, whatever..."},
 	
@@ -211,7 +212,10 @@
 	
 	She thinks to herself that she can cope with the pain if she had some alone time to herself. Pasaya could make her feel better, she's probably live right now."},
 	
-	{"speaker": "Narrator", "text":
+	{"background": "CGcarparking:1.0",
+	"delete_sprite": "christina",
+	"delete_sprite2": "blanche",
+	"speaker": "Narrator", "text":
 	"	They finished gathering the fish. About 40% were relatively normal, and 60% were Infected. 
 	
 	Christina can still feel it. A wave of heat worms through her veins, brushing up against the walls of her bloodstream clumsily. 
@@ -224,10 +228,7 @@
 	{"speaker": "Christina","text": 
 	"Good... work..."},
 	
-	{"background": "CGcarparking:1.0",
-	"delete_sprite": "christina",
-	"delete_sprite2": "blanche",
-	"speaker": "Narrator", "event": "novel", "text":
+	{"speaker": "Narrator", "event": "novel", "text":
 	"	Moving the livewell was harder now that it was filled with fish and water. Christina can feel something wrong as she takes one omninous step towards the car park. 
 	
 	Blanche sees her sweating. It was hard to tell what was drenched by the river and what was drowned out by perspiration."},

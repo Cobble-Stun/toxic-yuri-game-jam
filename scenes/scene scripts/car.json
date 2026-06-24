@@ -1,5 +1,6 @@
 [
 	{"background": "BackSeats_sketch:1.0",
+	"ambient": "car",
 	"speaker": "Narrator","event": "novel", "text":
 	"Everything’s been packed into the car. Blanche takes her seat on the right. In a vain attempt to hide from Blanche's eyeline, Christina slumps over the fish cooler in the back seat."},
 
@@ -92,10 +93,12 @@
 	{"speaker": "Blanche","text":
 	"Where?!"},
 	
-	{"speaker": "Narrator","event": "novel", "text":
+	{"sound": "car accelerate",
+	"speaker": "Narrator","event": "novel", "text":
 	"Blanche starts to floor it, weaving in and out of traffic, trying to get off the highway as fast as possible. Maybe there would a place to pull over around here?"},
 
-	{"background": "bikelane:1.0",
+	{"ambient": "park",
+	"background": "bikelane:1.0",
 	"speaker": "Narrator", "text":
 	"	She finds one. There was a patch of greenery, a park, with a trash can. A few kids are kicking a ball around with a little dog joining in the fun. She stops in the bike lane. 
 	
@@ -132,7 +135,9 @@
 	{"speaker": "Christina", "text":
 	"Dunno, anything really."},
 
-	{"background": "car_radio:1.0","speaker": "Narrator","event": "novel", "text":
+	{"background": "car_radio:1.0",
+	"sound": "metal",
+	"speaker": "Narrator","event": "novel", "text":
 	"Blanche turns the radio dial with the rim of her hand swiftly. It’s already dialed into the good metal station where a song about the Battle of Ain Jalut just at the point where the Egyptian Mamluks start beating the Mongols ass."},
 
 	{"speaker": "Blanche","text":
