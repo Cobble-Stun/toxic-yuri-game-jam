@@ -1,5 +1,6 @@
 [
-	{"speaker": "Narrator", "event": "novel", "text":
+	{"background": "elevator:1.0",
+	"speaker": "Narrator", "event": "novel", "text":
 	"	Christina’s stomach inverts on the ride up from floor 1 to 6, practically forcing her to the back of the elevator. Everything feels like it wants to come out of her, but there’s nothing there. 
 	
 	Just the air in her lungs. Ferocious coughing for what seems to be an hour as the elevator ticks up one floor after another."},
@@ -9,7 +10,8 @@
 	
 	On floor six, she sees the feet of one of her neighbours and pushes herself out of the elevator."},
 	
-	{"speaker": "Pasaya", "event": "adventure", "text":
+	{"background": "door handle:1.0",
+	"speaker": "Pasaya", "event": "adventure", "text":
 	"Pasaya lore: Okay, on my home planet... my drones worshiped me too, just like you in chat!"},
 	
 	{"speaker": "Pasaya", "text":
@@ -21,12 +23,12 @@
 	{"speaker": "Narrator", "event": "novel", "text":
 	"	Christina’s apartment was really a relative of hers, Uncle Mangus on her father’s side, a tech guy. 
 	
-	He semi-officially gave her the place (so long as she paid rent) when his company moved him to the US with a big raise to fit. 
+	He semi-officially gave her the place, so long as she paid rent, when his company moved him to the US with a big raise to fit. 
 	
 	His laissez-faire attitude was a godsend for her; if he saw what his place had turned into in the intervening years, he’d almost consider giving up rent control to avoid fixing it up."},
 	
 	{"speaker": "Pasaya", "event": "adventure", "text":
-	"I main him because he’s big, I don’t want to look at a guy unless he’s fucking..."},
+	"I main him because he’s big, I don’t want to look at a guy unless he’s fucking-"},
 	
 	{"speaker": "Pasaya", "text":
 	"Oh, watch this."},

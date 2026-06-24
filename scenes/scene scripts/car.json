@@ -1,7 +1,5 @@
 [
-	{"background": "BackSeats_sketch:1.0", 
-	"delete_sprite": "christina",
-	"delete_sprite2": "blanche",
+	{"background": "BackSeats_sketch:1.0",
 	"speaker": "Narrator","event": "novel", "text":
 	"Everything’s been packed into the car. Blanche takes her seat on the right. In a vain attempt to hide from Blanche's eyeline, Christina slumps over the fish cooler in the back seat."},
 
