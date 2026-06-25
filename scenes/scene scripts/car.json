@@ -140,7 +140,8 @@
 	"speaker": "Narrator","event": "novel", "text":
 	"Blanche turns the radio dial with the rim of her hand swiftly. It’s already dialed into the good metal station where a song about the Battle of Ain Jalut just at the point where the Egyptian Mamluks start beating the Mongols ass."},
 
-	{"speaker": "Blanche","text":
+	{"ambient": "car",
+	"speaker": "Blanche","text":
 	"My fucking shit!"},
 
 	{"speaker": "Narrator","event": "novel", "text":

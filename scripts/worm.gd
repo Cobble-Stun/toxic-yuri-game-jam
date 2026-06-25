@@ -1,8 +1,9 @@
 extends Line2D
 @export var segment_length: float = 5.0
 @export var max_points: int = 25
-@export var start_thickness: float = 40.0
+@export var start_thickness: float = 30.0
 @export var end_thickness: float = 0.0
+@onready var visibilityNotifier = $VisibleOnScreenNotifier2D
 var collected = 0
 var collision_shapes: Array[CollisionShape2D] = []
 var mousePos = Vector2.ZERO
@@ -39,6 +40,7 @@ func _physics_process(delta):
 	var pts: PackedVector2Array = points
 
 	pts[0] = mousePos
+	visibilityNotifier.position = mousePos
 
 	for i in range(1, pts.size()):
 		var target_pos = pts[i - 1]
@@ -82,4 +84,4 @@ func collect_thing():
 	update_worm_length()
 	
 func update_worm_length():
-	segment_length = 5.0 + collected * 0.5
+	segment_length = 5.0 + collected * 1.5

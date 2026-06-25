@@ -35,6 +35,7 @@
 	"Christina nods and continues to cough."},
 	
 	{"sound": "cardoorslam",
+	"ambient": "park",
 	"speaker": "Christina", "event": "adventure", "text":
 	"Thanks for the ride, I’ll see you."},
 	

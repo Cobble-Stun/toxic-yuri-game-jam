@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c324nylm7plud"
+path="res://.godot/imported/elevator arrive.wav-98ebae3500ab44c97b76547fe545970f.sample"
+
+[deps]
+
+source_file="res://audio/sounds/elevator arrive.wav"
+dest_files=["res://.godot/imported/elevator arrive.wav-98ebae3500ab44c97b76547fe545970f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

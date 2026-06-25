@@ -4,23 +4,24 @@
 [ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="2_qatla"]
 [ext_resource type="AudioStream" uid="uid://ccb2sluqkgrks" path="res://audio/music/Sex Music.ogg" id="3_s7uuw"]
 [ext_resource type="Script" uid="uid://g17vjj3whv85" path="res://scripts/worm.gd" id="5_dubiv"]
-[ext_resource type="Script" uid="uid://div11xvua2h1g" path="res://scripts/minigame_wall.gd" id="6_yl4ug"]
 [ext_resource type="Script" uid="uid://dvr3nrg2mj43k" path="res://scripts/back_to_stage.gd" id="7_gregt"]
 [ext_resource type="Script" uid="uid://5h0ishyoyy38" path="res://scripts/minigame_camera.gd" id="8_htvkj"]
 [ext_resource type="PackedScene" uid="uid://c3xi10o6b6103" path="res://prefabs/collectible.tscn" id="9_qatla"]
 
 [sub_resource type="Curve" id="Curve_hymqf"]
-_data = [Vector2(0, 1), 0.0, -1.0, 0, 1, Vector2(1, 0), -1.0, 0.0, 1, 0]
-point_count = 2
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 1, Vector2(0.07000001, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -1.0752687, 0.0, 1, 0]
+point_count = 3
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ikpfy"]
 size = Vector2(184, 52)
 
 [node name="First Mini Game" type="Node2D" unique_id=802131244]
 
-[node name="GameState" type="CanvasLayer" parent="." unique_id=630450537]
+[node name="GameState" type="CanvasLayer" parent="." unique_id=630450537 node_paths=PackedStringArray("camera", "charBody2D")]
 visible = false
 script = ExtResource("1_kdf0o")
+camera = NodePath("../CameraHolder")
+charBody2D = NodePath("../Worm/CharacterBody2D")
 
 [node name="Label" type="Label" parent="GameState" unique_id=439253701]
 anchors_preset = 8
@@ -72,10 +73,9 @@ script = ExtResource("5_dubiv")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Worm" unique_id=683932388 groups=["Worm"]]
 
-[node name="Area2D2" type="Area2D" parent="." unique_id=132790759 node_paths=PackedStringArray("camera", "gameState")]
-script = ExtResource("6_yl4ug")
-camera = NodePath("../CameraHolder")
-gameState = NodePath("../GameState")
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Worm" unique_id=678234189]
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=132790759]
 
 [node name="Polygon2D" type="Polygon2D" parent="Area2D2" unique_id=1248075768]
 color = Color(0.56, 0.086426646, 0.07839999, 1)
@@ -107,5 +107,6 @@ script = ExtResource("8_htvkj")
 [node name="Collectible" parent="." unique_id=1912279942 instance=ExtResource("9_qatla")]
 position = Vector2(50, -808)
 
-[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
+[connection signal="screen_exited" from="Worm/VisibleOnScreenNotifier2D" to="GameState" method="screen_exited"]
+[connection signal="body_entered" from="Area2D2" to="GameState" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

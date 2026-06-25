@@ -1,16 +1,20 @@
 [
 	{"background": "elevator:1.0",
+	"ambient": "elevator",
 	"speaker": "Narrator", "event": "novel", "text":
 	"	Christina’s stomach inverts on the ride up from floor 1 to 6, practically forcing her to the back of the elevator. Everything feels like it wants to come out of her, but there’s nothing there. 
 	
 	Just the air in her lungs. Ferocious coughing for what seems to be an hour as the elevator ticks up one floor after another."},
 	
 	{"speaker": "Narrator", "text":
-	"She collapses on the floor, trying to sit in a way that it’ll make the pain a little bit less intense.
+	"She collapses on the floor, trying to sit in a way that it’ll make the pain a little bit less intense."},
 	
-	On floor six, she sees the feet of one of her neighbours and pushes herself out of the elevator."},
+	{"sound": "elevator destination",
+	"speaker": "Narrator", "text":
+	"On floor six, she sees the feet of one of her neighbours and pushes herself out of the elevator."},
 	
-	{"background": "door handle:1.0",
+	{"background": "hallway:1.0",
+	"ambient": "null",
 	"speaker": "Pasaya", "event": "adventure", "text":
 	"Pasaya lore: Okay, on my home planet... my drones worshiped me too, just like you in chat!"},
 	
@@ -42,18 +46,21 @@
 	{"speaker": "Pasaya", "text":
 	"Uh, anyone 13 to 20 feet tall or higher in chat, tell me."},
 	
-	{"speaker": "Pasaya", "text":
-	"Okay, so what I'm seeing is that  all of them, every single person in here, are total frauds!"},
+	{"background": "door handle:1.0",
+	"speaker": "Pasaya", "text":
+	"Okay, so what I'm seeing is that all of them, every single person in here, are total frauds!"},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
 	"Christina fumbles with her keys to the keyhole of her apartment door before she opens it and stumbles inside."},
 	
-	{"background": "bedroom light on:1.0",
+	{"background": "bedroom lights off:1.0",
+	"sound": "door open",
 	"music" : "Christina's Theme",
 	"speaker": "Narrator", "text":
-	"	The smell, she had forgotten to take out the garbage from two days ago, so it’s been sitting there by the door, festering in the relative heat.
+	"The smell, she had forgotten to take out the garbage from two days ago, so it’s been sitting there by the door, festering in the relative heat. \"Whatever,\" she thinks."},
 	
-	\"Whatever,\" she thinks. She heads back into the bedroom to sleep. She is too tired to realize her still muddy boots are on as he walks across the carpet."},
+	{"speaker": "Narrator", "text":
+	"She heads back into the bedroom to sleep. She is too tired to realize her still muddy boots are on as he walks across the carpet."},
 	
 	{"speaker": "Narrator", "text":
 	"	She passes by her computer, where the autoplay has been left on.
@@ -62,16 +69,19 @@
 	
 	A video compilation titled \"Pasaya’s Most Questionable Sounds?!?!?!?!?!\", one that she made herself in her dedicated Pasaya playlist, is going off in her ears as her eyes close."},
 	
-	{"speaker": "Narrator", "text":
+	{"transition": "fade",
+	"speaker": "Narrator", "text":
 	"	She can remember taking the timestamps for each utterance fondly while she places a hand in her mouth and sucks. She passes out. Her clothes, hair, and bed are all wet.
 	
 	When she wakes up, she sees that her sheets have been ruined and the playlist is still going."},
 
-	{"background": "bathroom lights on:1.0",
+	{"background": "bathroom lights off:1.0",
 	"speaker": "Narrator", "text":
 	"She takes off her boots and drops them in the designated walkable area of her bedroom. She carefully tiptoes around the assorted junk accumulated on the floor."},
 	
-	{"speaker": "Pasaya", "event": "adventure", "text":
+	{"background": "bathroom lights on:1.0",
+	"sound": "lightswitch on",
+	"speaker": "Pasaya", "event": "adventure", "text":
 	"Drone CT_576, thank you for inviting me to your island."},
 	
 	{"speaker": "Pasaya", "text":
@@ -123,7 +133,7 @@
 	"She said my name..."},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"One after another caterpillar plops down from underneath Pasya’s skirt."},
+	"One after another caterpillar plops down from underneath Pasaya’s skirt."},
 	
 	{"speaker": "Pasaya", "event": "adventure", "text":
 	"“Can't you feel them?"},
