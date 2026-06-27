@@ -1,5 +1,6 @@
 [
-	{"speaker": "Narrator","event": "novel", "text":
+	{"bakcground": "bathroom christina:1.0",
+	"speaker": "Narrator","event": "novel", "text":
 	"	Christina sits on her toilet in her dirty bathroom, with tiles covered in black mildew. Her shorts and underwear were thrown on the floor. 
 	
 	One hand cupped around her face, and another jammed it deep within her pussy."},
@@ -14,9 +15,10 @@
 	"Squirming little creature, why did you think you could beat me?"},
 	
 	{"speaker": "Christina","text":
-	"mmmmmmmm."},
+	"[wave]Mmmmmmmm.[/wave]"},
 	
-	{"speaker": "Narrator","text":
+	{"background": "bathroom lights on:1.0",
+	"speaker": "Narrator","text":
 	"Christina reaches her climax. And releases everything."},
 	
 	{"speaker": "Christina","text":
@@ -32,7 +34,7 @@
 	{"speaker": "Narrator","text":
 	"For a moment, Christina hesitates."},
 	
-	{"speaker": "Christina","text":
+	{"speaker": "Christina", "event": "adventure", "text":
 	"What?"},
 	
 	{"speaker": "Pasaya","text":
@@ -44,7 +46,8 @@
 	{"speaker": "Pasaya","text":
 	"That was some bullshit lag. Devs, please fix this cheap shit!"},
 
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "toilet bowl:1.0",
+	"speaker": "Narrator","event": "novel", "text":
 	"	Christina stands up, turns around, and peeks into the bowl. For a split second she thought should could see a lumpy mound of dark flesh of darkness floating in the water. 
 	
 	She blinks and a more usual sight appears before her, it was just some discharge. It was like Christina had imagined it."},
