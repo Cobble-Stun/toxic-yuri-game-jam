@@ -1,11 +1,14 @@
 [
-	{"speaker": "Narrator", "event": "novel", "text":
+	{"background": "street:1.0",
+	"speaker": "Narrator", "event": "novel", "text":
 	"Christina rushes out of the building. Taking a moment to glance back at the register girl, she can see her smiling at her again, but this time her smile feels off."},
 	
-	{"speaker": "Narrator", "text":
+	{"background": "bedroom lights on:1.0",
+	"speaker": "Narrator", "transistion": "fade", "text":
 	"She eventually makes it back home and decided to eat her lunch in the living room."},
 	
-	{"speaker": "Narrator","text":
+	{"background": "food:1.0",
+	"speaker": "Narrator", "transition": "fade", "text":
 	"She takes out her food from the bag. A burger, fries, some sauces, and a soda. The food was still hot, and salted to perfection."},
 
 	{"speaker": "Narrator","text":
@@ -97,7 +100,8 @@
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"Spit."},
 	
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "drink:1.0",
+	"speaker": "Narrator","event": "novel", "text":
 	"She releases. The cup is nearly filled with regurgitated food. Christina feels the wriggling ascend up from her stomach through her esophagus, into her mouth. She can hardly stand to breathe."},
 	
 	{"speaker": "Pasaya","text":

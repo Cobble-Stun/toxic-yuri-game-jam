@@ -1,20 +1,19 @@
 [
-	{"background": "red:1.0",
+	{"background": "messysink:1.0",
 	"speaker": "Narrator", "event": "novel", "text":
 	 "All Christina needed to clear her mind was to fill her stomach with some food. She walked into the kitchen and made her first realization."},
 
 	{"speaker": "Christina","event": "adventure","text":
 	 "Shit, the dishes."},
 
-	{"background": "messysink:1.0",
-	"speaker": "Narrator", "event": "novel", "text":
-	"She hadn't done the dishes in a few days. But she could salvage something in a moment. Then another thought."},
+	{"speaker": "Narrator", "event": "novel", "text":
+	"She hadn't done the dishes in a few days. But she could salvage something in a moment. Then another thought came."},
 
 	{"speaker": "Christina", "event": "adventure", "text":
-	"I left something in the microwave... for how long?"},
+	"I left something in the microwave for how long?"},
 
 	{"speaker": "Christina", "text":
-	"Oh God..."},
+	"Oh god..."},
 
 	{"speaker": "Christina", "text":
 	"At least a week!"},
@@ -22,12 +21,13 @@
 	{"speaker": "Christina", "text":
 	"Do I even have any fucking food?"},
 
-	{"speaker": "Narrator", "event": "novel", "text":
+	{"background": "fridge:1.0",
+	"speaker": "Narrator", "event": "novel", "text":
 	"	She opens up the refrigerator. Some of the items here have been there since Uncle Magnus left several years ago and are therefore inedible. 
 	
-	Leaving the rest. Week-old coffee with a ring of scum on top. Bagel and lox sandwich, sniffed and found to be spoiled. 
+	Not including those, there was a week-old coffee with a ring of scum on top, and a bagel and lox sandwich. She sniffed the bagel and found it to be spoiled
 	
-	Half-eaten kebab that has now become so desiccated as to resemble a lump of coal resting on a bed of rice topped with delectable frosting of mold. 
+	After searching a bit more, she discovers a half-eaten kebab that is now desiccated to resemble a lump of coal resting on a bed of rice topped with delectable frosting of mold. 
 	
 	She had gotten some fresh fruits from a sale at the university, but she couldn't remember how long ago that was."},
 
@@ -36,8 +36,7 @@
 	
 	Some of the items have managed to survive in a way, though they have managed to live by floating about the swamp of mush."},
 
-	{"background": "red:1.0",
-	"speaker" : "Pasaya", "event": "adventure","text":
+	{"speaker" : "Pasaya", "event": "adventure","text":
 	"Ok, I'm wrapping up for dinner, but I want your takes on this chat..."},
 
 	{"speaker" : "Pasaya", "text": 
@@ -46,8 +45,7 @@
 	{"speaker" : "Pasaya", "text":
 	"Tell me!"},
 
-	{"background": "purple:1.0",
-	"speaker" : "Christina", "text":
+	{"speaker" : "Christina", "text":
 	"There's this overpriced place that's a quick walk away from my place I think?"},
 
 	{"speaker" : "Christina", "text":
@@ -74,8 +72,7 @@
 	{"speaker" : "Christina", "text":
 	 "I've got a Max around me, but their burgers can get kinda get soggy."},
 	
-	{"background": "messysink:1.0",
-	"speaker" : "Pasaya", "text":
+	{"speaker" : "Pasaya", "text":
 	 "All you guys in the hive are making great choices tonight."},
 	
 	{"speaker" : "Pasaya", "text":

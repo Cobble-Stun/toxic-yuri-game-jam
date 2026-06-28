@@ -108,7 +108,8 @@
 	{"speaker": "Christina","event": "adventure", "text":
 	"I must be hallucinating."},
 	
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "keyboard:1.0",
+	"speaker": "Narrator","event": "novel", "text":
 	"	She puts another piece of candy in her mouth and sets up one of the 12-hour compilations of Pasaya laddering in her favorite fighting game. 
 	
 	Pasaya made it her specialty to use high-risk, high-reward characters since she liked playing aggressively even if the character wasn't that viable. 

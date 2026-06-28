@@ -1,5 +1,6 @@
 [
-	{"speaker": "Narrator", "event": "novel","text":
+	{"background": "street:1.0",
+	"speaker": "Narrator", "event": "novel","text":
 	"	The sidewalks are packed with adults and children bustling in this nice springtime weather. However, here walks Christina, a shambling mess compared to everyone else around her. 
 	
 	Christina's paranoia starts to kick in. They all must keenly aware of her presence, she knows it.
@@ -13,10 +14,15 @@
 	
 	It was like an angel was smiling brightly as Christina walked through those front doors. She had dark brunette hair tied up and stuffed with a bun underneath her cap, truly a beauty."},
 	
-	{"speaker": "Narrator", "text":
+	{"background": "self service machines:1.0",
+	"speaker": "Narrator", "text":
 	"	Christina becomes flustered from her gaze and she rushes over to the self service terminals away from sight. Unfortunately, she found them all of them were found to be busted.
 
-	She's front to confront the cashier at the desk. Christina straightens her back in a vain attempt to mimic normal human posture but instead resembles an octopus fresh out of water. 
+	She's front to confront the cashier at the desk."},
+	
+	{"background": "max register:1.0",
+	"speaker": "Narrator", "text":
+	"	Christina straightens her back in a vain attempt to mimic normal human posture but instead resembles an octopus fresh out of water. 
 	
 	She looks to her right, to avoid eye contact with the cashier."},
 	
@@ -48,7 +54,7 @@
 	"[wave]Uh, Are you wearing a fragrance by the way?[/wave]"},
  	
 	{"speaker": "Christina", "text":
-	"No. How much is the food?"},
+	"No? Um, how much is the food?"},
 
 	{"speaker": "Girl","text":
 	"Sorry, it's 150 kronor."},

@@ -5,7 +5,8 @@
 	{"speaker": "Christina","text":
 	"I-I've got to clean up in here."},
 	
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "keyboard:1.0",
+	"speaker": "Narrator","event": "novel", "text":
 	"	One look at the assorted piles of rubbish dissuades Christina from that idea. Instead, she bargains that a focused attack on her project will relieve most of the stress weighing down on her. 
 	
 	She turns on the livestream."},
@@ -29,7 +30,8 @@
 	{"speaker": "Pasaya","text":
 	"I know the dude was a freak, I'm not saying you should give that guy any of your money."},
 
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "email:1.0",
+	"speaker": "Narrator","event": "novel", "text":
 	"	She thumbs through more of Blanche's notes. Copying some of the most useful parts of the data onto her own documents. 
 	
 	Through this, she uncovered more interesting details about the parasite afflicting the fish."},
