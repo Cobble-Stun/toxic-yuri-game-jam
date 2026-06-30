@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://d2nqw0kw6whp4"]
+
+[ext_resource type="Script" uid="uid://cjgns41xsdy6c" path="res://scripts/minigame_game_state.gd" id="1_8j1mw"]
+[ext_resource type="Theme" uid="uid://cgn1dmy6afhvr" path="res://gui/speech/speech_theme.tres" id="2_ncu8l"]
+[ext_resource type="AudioStream" uid="uid://ccb2sluqkgrks" path="res://audio/music/Sex Music.ogg" id="3_1h3oc"]
+[ext_resource type="Script" uid="uid://g17vjj3whv85" path="res://scripts/worm.gd" id="4_msj53"]
+[ext_resource type="Script" uid="uid://dvr3nrg2mj43k" path="res://scripts/back_to_stage.gd" id="5_ot41m"]
+[ext_resource type="Script" uid="uid://5h0ishyoyy38" path="res://scripts/minigame_camera.gd" id="6_ovsp3"]
+[ext_resource type="PackedScene" uid="uid://c3xi10o6b6103" path="res://prefabs/collectible.tscn" id="7_byhgi"]
+
+[sub_resource type="Curve" id="Curve_hymqf"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 1, Vector2(0.07000001, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -1.0752687, 0.0, 1, 0]
+point_count = 3
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ikpfy"]
+size = Vector2(184, 52)
+
+[node name="Second Mini Game" type="Node2D" unique_id=802131244]
+
+[node name="GameState" type="CanvasLayer" parent="." unique_id=630450537 node_paths=PackedStringArray("camera", "charBody2D")]
+visible = false
+script = ExtResource("1_8j1mw")
+camera = NodePath("../CameraHolder")
+charBody2D = NodePath("../Worm/CharacterBody2D")
+
+[node name="Label" type="Label" parent="GameState" unique_id=439253701]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -11.5
+offset_right = 159.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_ncu8l")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Click to restart"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GameState" unique_id=108713606]
+stream = ExtResource("3_1h3oc")
+autoplay = true
+
+[node name="Control" type="Control" parent="." unique_id=665431565]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -653.0
+offset_top = -12080.0
+offset_right = 653.0
+offset_bottom = 2986.0
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=117850639]
+layout_mode = 0
+offset_left = -1230.25
+offset_top = 8663.0
+offset_right = 2591.0
+offset_bottom = 15069.0
+color = Color(0.46820247, 0.08134761, 0.0813637, 1)
+
+[node name="Worm" type="Line2D" parent="." unique_id=327222106]
+points = PackedVector2Array(0, 0, 0, 15, 0, 30, 0, 45, 0, 60, 0, 75, 0, 90, 0, 105, 0, 120, 0, 135, 0, 150)
+width = 30.0
+width_curve = SubResource("Curve_hymqf")
+default_color = Color(0.86908764, 0.48173475, 0.4666658, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+script = ExtResource("4_msj53")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Worm" unique_id=683932388 groups=["Worm"]]
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Worm" unique_id=678234189]
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=132790759]
+
+[node name="Polygon2D" type="Polygon2D" parent="Area2D2" unique_id=1248075768]
+color = Color(0.56, 0.086426646, 0.07839999, 1)
+polygon = PackedVector2Array(-76, 395, -76, -288.5495, -78, -324, -85, -372, -115, -395, -155, -401, -216, -401, -320, -423, -408, -453, -467, -520, -490, -612, -492, -664, -456, -746, -405, -809, -331, -849, -231, -878, 273.00696, -882.1043, 326, -892, 359, -901, 385, -932, 397, -976, 407, -1061, 398, -1140, 379, -1184, 349, -1207, 312, -1216, 267, -1220, 83, -1218, 22, -1218, -46, -1222, -109, -1243, -138, -1292, -153, -1352, -156, -1436, -142, -2932, -641, -2934, -624, 374)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Area2D2" unique_id=1094761177]
+color = Color(0.56, 0.086426646, 0.07839999, 1)
+polygon = PackedVector2Array(72, 396, 70, -357, 54, -444, 23, -498, -15, -537, -76, -549, -207.05457, -550, -249, -551, -286, -561, -321, -592, -329, -637, -313, -691, -283, -711, -249, -719, -215.10706, -724, 201.26501, -724, 378, -746, 469, -799, 534, -903, 562.99994, -1005.2175, 563, -1105, 557, -1202, 530, -1272, 481, -1312, 410, -1331, 324, -1333, 25, -1338, -7, -1351, -31, -1377, -39, -1404, -37, -2940, 662, -2940, 660, -544, 664, 410)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D2" unique_id=1864700426]
+polygon = PackedVector2Array(-76, 395, -76, -288.5495, -78, -324, -85, -372, -115, -395, -155, -401, -216, -401, -320, -423, -408, -453, -467, -520, -490, -612, -492, -664, -456, -746, -405, -809, -331, -849, -231, -878, 273.00696, -882.1043, 326, -892, 359, -901, 385, -932, 397, -976, 407, -1061, 398, -1140, 379, -1184, 349, -1207, 312, -1216, 267, -1220, 83, -1218, 22, -1218, -46, -1222, -109, -1243, -138, -1292, -153, -1352, -156, -1436, -142, -2932, -641, -2934, -624, 374)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D2" unique_id=822075964]
+polygon = PackedVector2Array(72, 396, 70, -357, 54, -444, 23, -498, -15, -537, -76, -549, -207.05457, -550, -249, -551, -286, -561, -321, -592, -329, -637, -313, -691, -283, -711, -249, -719, -215.10706, -724, 201.26501, -724, 378, -746, 469, -799, 534, -903, 562.99994, -1005.2175, 563, -1105, 557, -1202, 530, -1272, 481, -1312, 410, -1331, 324, -1333, 25, -1338, -7, -1351, -31, -1377, -39, -1404, -37, -2940, 662, -2940, 660, -544, 664, 410)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1987533677]
+position = Vector2(-83, -1925)
+script = ExtResource("5_ot41m")
+sceneName = "house2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2075664947]
+shape = SubResource("RectangleShape2D_ikpfy")
+
+[node name="CameraHolder" type="CharacterBody2D" parent="." unique_id=1942839046]
+script = ExtResource("6_ovsp3")
+
+[node name="Camera2D" type="Camera2D" parent="CameraHolder" unique_id=1696983179]
+
+[node name="Collectible" parent="." unique_id=1912279942 instance=ExtResource("7_byhgi")]
+position = Vector2(50, -808)
+
+[connection signal="screen_exited" from="Worm/VisibleOnScreenNotifier2D" to="GameState" method="screen_exited"]
+[connection signal="body_entered" from="Area2D2" to="GameState" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

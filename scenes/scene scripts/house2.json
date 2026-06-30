@@ -101,17 +101,23 @@
 	{"background": "bathroom shower:1.0",
 	"sound": "shower",
 	"speaker": "Narrator", "text":
-	"	Christina enters her walk-in shower and turns the nozzle. She had to be quick since the water bill was the one thing her uncle could wake up for.
+	"	Christina enters her shower and turns the nozzle. She had to be quick since the water bill was one thing her uncle would pester her over.
 	
-	She takes her 3 in one shampoo, conditioner, and body wash, and runs it through her hair. 
+	She takes her 3 in one shampoo, conditioner, and body wash, and runs it through her hair."},
 	
-	Closing her eyes, but In her mind, she can see Pasaya with a hand on her breast and another underneath her skirt. Her eyes are tracking hers as if she were staring at her."},
+	{"background": "black:1.0",
+	"speaker": "Narrator", "text":
+	"She closes her eyes, and lets her mind wander."},
+	
+	{"sprite": "pasaya shower:pasaya:0:0:1.0",
+	"speaker": "Narrator", "text":
+	"In her mind, she can see Pasaya with a hand on her breast and another underneath her skirt. Her eyes are tracking hers as if she were staring at her."},
 	
 	{"speaker": "Christina", "event": "adventure", "text":
 	"Oh, Pasaya..."},
 	
 	{"speaker": "Christina", "text":
-	"I-if I’m fast enough?"},
+	"A-am I fast enough?"},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
 	"	She bites the inside of her cheek and slides a hand down the left side of her body, guiding it to her crotch. Two fingers walk inside her pussy.
@@ -133,15 +139,17 @@
 	"She said my name..."},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
-	"One after another caterpillar plops down from underneath Pasaya’s skirt."},
+	"One after another, caterpillars plops down from underneath Pasaya’s skirt."},
 	
 	{"speaker": "Pasaya", "event": "adventure", "text":
-	"“Can't you feel them?"},
+	"Can't you feel them?"},
 	
-	{"speaker": "Narrator", "event": "novel", "text":
+	{"background": "bathroom shower:1.0",
+	"delete_sprite": "pasaya",
+	"speaker": "Narrator", "event": "novel", "text":
 	"Christina feels an itching feeling inside of her and opens her eyes. She turns off the shower and feels her pussy again."},
 	
-	{"speaker": "Christina", "text":
+	{"speaker": "Christina","event": "adventure", "text":
 	"Ok, ok, everything’s fine."},
 	
 	{"music": "null",

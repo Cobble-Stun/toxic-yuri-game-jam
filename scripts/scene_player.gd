@@ -42,6 +42,7 @@ var auto = false
 var novel = false
 
 func _ready() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	textSpeedTimer.wait_time = Globals.textSpeed
 	textAutoProgressTimer.wait_time = Globals.textAutoProgressSpeed
 	dialogIndex = Globals.savedDialogIndex
@@ -51,12 +52,14 @@ func _ready() -> void:
 	
 func _process(_delta: float) -> void:
 	if auto and textAutoProgressTimer.is_stopped() and !preventToggleDialogueBox and dialogIndex < dialog.size()-1:
+		if textRunning == true:
+			return
 		textAutoProgressTimer.start()
 		await textAutoProgressTimer.timeout
+		textAutoProgressTimer.stop()
 		capture_scene_state()
 		dialogIndex += 1
 		read_current_script_line()
-		textAutoProgressTimer.stop()
 		return
 	elif skipping and textSkipTimer.is_stopped() and !preventToggleDialogueBox and dialogIndex < dialog.size()-1:
 		textSkipTimer.start()
@@ -66,7 +69,6 @@ func _process(_delta: float) -> void:
 		read_current_script_line()
 		if textRunning:
 			complete_text_instantly()
-		dialogIndex += 1
 		textSkipTimer.stop()
 		return
 	
@@ -195,52 +197,7 @@ func scene_rollback():
 func read_current_script_line():
 	var line = dialog[dialogIndex]
 	
-	#choices
-	if line.has("choices"):
-		display_choices(line["choices"])
-	
-	#audio
-	if line.has("music"):
-		play_audio("res://audio/music/", line["music"], musicPlayer)
-		
-	if line.has("ambient"):
-		play_audio("res://audio/ambient/", line["ambient"], ambientPlayer)
-	
-	if line.has("sound"):
-		play_audio("res://audio/sounds/", line["sound"], soundPlayer)
-		
-	#sprites
-	if line.has("sprite"):
-		sprite_channel(line["sprite"])
-	if line.has("sprite2"):
-		sprite_channel(line["sprite2"])
-	if line.has("sprite3"):
-		sprite_channel(line["sprite3"])
-	if line.has("sprite4"):
-		sprite_channel(line["sprite4"])
-	
-	if line.has("delete_sprite"):
-		delete_sprite(line["delete_sprite"])
-	if line.has("delete_sprite2"):
-		delete_sprite(line["delete_sprite2"])
-	if line.has("delete_sprite3"):
-		delete_sprite(line["delete_sprite3"])
-	if line.has("delete_sprite4"):
-		delete_sprite(line["delete_sprite4"])
-		
-	if line.has("background"):
-		var lineInfo = line["background"].split(":")
-		var spriteImage
-		for image in DirAccess.open("res://images/backgrounds/").get_files():
-			if image == lineInfo[0] + ".png":
-				spriteImage = load("res://images/backgrounds/" + image)
-		change_background(spriteImage, float(lineInfo[1]))
-	
-	#sprite effects
-	if line.has("sprite effect"):
-		assign_sprite_effect(line["sprite effect"])
-	
-	#jumping
+		#jumping
 	if line.has("goto"):
 		dialogIndex = get_anchor(line["goto"])
 		read_current_script_line()
@@ -256,9 +213,46 @@ func read_current_script_line():
 		dialog = prepare_script(line["next_scene"])
 		dialogIndex = 0
 		read_current_script_line()
+		return
 	
 	if line.has("minigame"):
 		get_tree().change_scene_to_file("res://scenes/" + line["minigame"] + ".tscn")
+		return
+	
+	#choices
+	if line.has("choices"):
+		display_choices(line["choices"])
+	
+	#audio
+	if line.has("music"):
+		play_audio("res://audio/music/", line["music"], musicPlayer)
+		
+	if line.has("ambient"):
+		play_audio("res://audio/ambient/", line["ambient"], ambientPlayer)
+	
+	if line.has("sound"):
+		play_audio("res://audio/sounds/", line["sound"], soundPlayer)
+		
+	#sprites
+	for key in ["sprite", "sprite2", "sprite3", "sprite4"]:
+		if line.has(key):
+			sprite_channel(line[key])
+
+	for key in ["delete_sprite", "delete_sprite2", "delete_sprite3", "delete_sprite4"]:
+		if line.has(key):
+			delete_sprite(line[key])
+		
+	if line.has("background"):
+		var lineInfo = line["background"].split(":")
+		var spriteImage
+		for image in DirAccess.open("res://images/backgrounds/").get_files():
+			if image == lineInfo[0] + ".png":
+				spriteImage = load("res://images/backgrounds/" + image)
+		change_background(spriteImage, float(lineInfo[1]))
+	
+	#sprite effects
+	if line.has("sprite effect"):
+		assign_sprite_effect(line["sprite effect"])
 		
 	#text
 	if line.has("speaker"):

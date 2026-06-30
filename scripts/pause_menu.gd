@@ -38,6 +38,10 @@ var resolutions: Dictionary = {"3840x2160":Vector2i(3840,2160),
 
 func _ready() -> void:
 	animPlayer.play("Hidden")
+	SaveSystem.load_settings()
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Text"), Globals.textVolume)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), Globals.musicVolume)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), Globals.sfxVolume)
 	var Current_Resolution = get_window().get_size()
 	var ID = 0
 	

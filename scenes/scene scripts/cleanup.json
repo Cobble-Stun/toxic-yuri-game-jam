@@ -73,5 +73,5 @@
 	{"speaker": "Narrator","event": "novel", "text":
 	"Like a switch being flipped in her mind, Christina jolted up after a sharp pain in her stomach. It pulled her down out of her grease-stained chair, writhing on the floor in pain."},
 	
-	{"next_scene": "crawling"}
+	{"minigame": "Second Minigame"}
 ]

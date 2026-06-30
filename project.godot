@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Parasocial"
+run/main_scene="uid://di6xvap55bw3d"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/show_image=false
 config/icon="uid://igtivmgtptp8"

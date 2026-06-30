@@ -11,9 +11,9 @@ var sfxVolume = 0.5
 var musicVolume = 0.5
 
 var textSpeed = 0.04
-var textAutoProgressSpeed = 3.0
+var textAutoProgressSpeed = 0.5
 
-var windowMode = 0
+var windowMode = 1
 var resolutionIndex = 0
 
 func load_data():

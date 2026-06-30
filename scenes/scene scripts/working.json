@@ -61,7 +61,7 @@
 	"That thing wasn't just living in it's head."},
 
 	{"speaker": "Narrator","event": "novel", "text":
-	"The segmented body of an annelid has tentacle-like appendages, some of which seem to have intertwined themselves with various organs of the fish. It was also distressingly long. 
+	"	The segmented body of an annelid has tentacle-like appendages, some of which seem to have intertwined themselves with various organs of the fish. It was also distressingly long. 
 	
 	Long enough to wrap around the exterior length of the fish it lived inside."},
 	
@@ -85,7 +85,7 @@
 	
 	She found it intriguing how efficiently they evolved to nourish themselves, and how specific kinds could essentially take over the minds and bodies of insects, just so that they could spread more offspring."},
 	
-	{"speaker": "Christina","text":
+	{"speaker": "Christina","event": "adventure","text":
 	"Well, we don't know if this is an obligate parasite. If it was, we don't know if it was a parasitoid. Those were very rare in the water."},
 	
 	{"speaker": "Christina","text":
