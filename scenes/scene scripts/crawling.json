@@ -1,22 +1,25 @@
 [
-	{"speaker": "Narrator","event": "novel", "text":
+	{"background": "bedroom lights on:1.0",
+	"speaker": "Narrator","event": "novel", "text":
 	"	On the floor, crawling past rolling hills of rubbish, Christina feels the intense thrashing of something in her stomach. As she crawls, the thrashing makes more focused attacks inside of her. 
 	
-	As if she were being punched from the inside, to say she was crawling would be hyperbolic. She could only stand to pull her body across the dusty floor through the sheer grip of her hand. 
+	As if she were being punched from the inside, to say she was crawling would be hyperbolic. It felt more like she was climbing up the side of a mountain with just her bare hands. 
 	
-	One push at a time, while the agony continued, the floor's dust and grime had started to cake itself into her hair well before she managed to escape her own bedroom."},
+	One push at a time, while the agony continued, the floor's dust and grime had started to cling itself onto her hair well before she managed to escape her own bedroom."},
 	
-	{"speaker": "Narrator", "text":
-	"	In the damp bathroom, where mold had made itself home within the tiles on the walls and ceiling, the windows had been left untreated for a month, hosting a layer of grime thicker than the glass. 
+	{"background": "bathroom lights on:1.0",
+	"speaker": "Narrator", "text":
+	"	She had made it to the bathroom. Christina managed to bring her head above the toilet bowl. With barely enough fortitude to rise to the bowl, she places her head upon the toilet seat."},
 	
-	It had started growing on. Christina managed to bring her head above the toilet bowl. With barely enough fortitude to rise to the bowl, she places her head upon the toilet seat."},
-	
-	{"speaker": "Narrator", "text":
+	{"background": "toilet bowl clean:1.0",
+	"speaker": "Narrator", "text":
 	"	From there, she holds onto the top of the seat with one arm and braces for the torrent about to spew from her insides. There is the distinct taste of salt and iron in her mouth. 
 	
-	She desperately tries sealing her lips as she can taste a stream of bitter bloody liquid flowing up her esaphagus. She gags and lets it all out. 
+	She desperately tries sealing her lips as she can taste a stream of bitter bloody liquid flowing up her esaphagus. She gags and lets it all out."},
 	
-	Some of the blood and other ingredients have congealed into small chunks it seems. Besides that, there were clearly signs of small organisms picking at the congealed chunks of flesh of her vomit."},
+	{"background": "toilet bowl blood:1.0", 
+	"speaker": "Narrator", "text": 
+	"Some of the blood and other ingredients have congealed into small chunks it seems. Besides that, there were clearly signs of small organisms picking at the congealed chunks of flesh of her vomit."},
 
 	{"speaker": "Pasaya","event": "adventure","text":
  	"I had a dog once."},
@@ -30,8 +33,9 @@
 	{"speaker": "Pasaya","text":
 	"When I was a little gi-"},
 	
-	{"speaker": "Narrator","event": "novel", "text":
-	"	Christina, sitting against the side of the toilet, throws her earbuds on the floor. She takes out her phone and checks to see what's going on in PAsaya's stream. 
+	{"background": "bathroom lights on:1.0",
+	"speaker": "Narrator","event": "novel", "text":
+	"	Christina, sitting against the side of the toilet, throws her earbuds on the floor. She takes out her phone and checks to see what's going on in Pasaya's stream. 
 	
 	She's still talking about the impact of the double-barreled shotgun's spread nerf. Chat is making fun of her obsession with it a little. There isn't a word about dogs or vomit."},
 	

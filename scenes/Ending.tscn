@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://gq7ge55fq2ck"]
+
+[ext_resource type="Script" uid="uid://d4aq6hv64q3c6" path="res://scripts/ending.gd" id="1_4xsa7"]
+[ext_resource type="AudioStream" uid="uid://dymtohkicl6v" path="res://audio/music/Ending Theme.ogg" id="2_fnpsr"]
+[ext_resource type="FontFile" uid="uid://momuqevgfdl0" path="res://fonts/SwedenSansBold.otf" id="3_fnpsr"]
+
+[sub_resource type="Animation" id="Animation_fnpsr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control/RichTextLabel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Control/RichTextLabel2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ryuiv"]
+resource_name = "fade in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control/RichTextLabel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Control/RichTextLabel2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5q2ai"]
+_data = {
+&"RESET": SubResource("Animation_fnpsr"),
+&"fade in": SubResource("Animation_ryuiv")
+}
+
+[node name="Ending" type="Node2D" unique_id=2133658832]
+script = ExtResource("1_4xsa7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=809876766]
+stream = ExtResource("2_fnpsr")
+autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1983668732]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=13888551]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=1192472690]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Control" unique_id=1691541353]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("3_fnpsr")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "
+Thanks for playing!
+
+
+
+
+
+
+
+
+Credits:
+
+Umbrella: Sprite art + GUI design
+
+CobbleStun: Music + writing tweaks + additional art + programming
+
+Fyrmite: Sprite art
+
+Esbeedle: Writing"
+horizontal_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/Control" unique_id=450900265]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("3_fnpsr")
+bbcode_enabled = true
+text = "Press esc to quit"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1552201753]
+libraries/ = SubResource("AnimationLibrary_5q2ai")

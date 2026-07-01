@@ -15,24 +15,26 @@
 	"Fuck me, there's a worm inside my brain."},
 
 	{"speaker": "Christina","text":
-	"Are you a worm, do you even have an idea of what you are and whatever the fuck you're doing?"},
+	"Are you even conscious?"},
 
 	{"speaker": "Pasaya","text":
 	"I'm just trying to ensure the survival of my species."},
 	
 	{"speaker": "Narrator","event": "novel", "text":
-	"	It was then that Christina understood something, no matter what this worm could do to her, it was dependent on her, subservient to her. 
+	"	Perhaps it was the chemicals being fed into her brain, but it was then that Christina was met with a profound delusion. 
 	
-	In a way, it could provide something to her that she'd so far only imagined."},
+	No matter what this worm could do to her, the creature inside her was dependent on her, subservient to her. Christina beleived it could provide something to her that she could only imagine before.
+	
+	Christina had the upper hand here clearly, right? It was her body that she still had control over."},
 
 	{"speaker": "Christina","event": "adventure", "text":
 	"I've decided."},
 
 	{"speaker": "Christina","text":
-	"	I'll head to the university, have some of the med students peek into my skull and get famous for being the girl who discovered a unique form of whatever the fuck you are."},
+	"I'll head to my university, have some of the med students peek into my skull and i'll get famous for discovering a new parasite."},
 
 	{"speaker": "Christina","text":
-	"Maybe I'll get you removed and named after me?"},
+	"Maybe I'll name you after me after I get you removed?"},
 
 	{"speaker": "Pasaya","text":
 	"You'd kill me!"},
@@ -62,27 +64,25 @@
 	"Like this."},
 
 	{"sprite": "pasaya sex:pasaya:0:0:1.0",
+	"music": "Sex Music",
 	"speaker": "Christina","text":
 	"Agh!"},
 	
-	{"speaker": "Narrator","text":
-	"Christina's body begins to shake."},
+	{"speaker": "Narrator","event": "novel","text":
+	"It was like something appeared from her blindspot and took on the image of Pasaya. Christina's body begins to shake."},
 
-	{"speaker": "Christina","text":
-	"I wanna see the whole thing."},
-
-	{"sprite": "pasaya sex head:pasaya:0:0:1.0",
-	"speaker": "Christina","text":
-	"Christina places her hands on the face of the figure in front of her. She was an exact facsimile of Pasaya."},
-
-	{"speaker": "Christina","text":
-	"I need you to act, this isn't a doll, this is a person I'm playing with."},
-
+	{"speaker": "Christina","event": "adventure","text":
+	"C-can I feel you?"},
+	
 	{"speaker": "Christina","text":
 	"I want to really feel the roughness of her carapace."},
 
+	{"sprite": "pasaya sex head:pasaya:0:0:1.0",
+	"speaker": "Christina","text":
+	"Christina places her hands on the face of the figure in front of her. She was an exact facsimile of Pasaya. It felt like chitin, although it felt uniformly hard across her body."},
+
 	{"speaker": "Christina","text":
-	"The breasts and other areas need to be soft as well."},
+	"The breasts and other areas should be soft as well."},
 
 	{"speaker": "Christina","text":
 	"Understand?"},
@@ -91,34 +91,35 @@
 	"Okay!"},
 
 	{"sprite": "pasaya sex grope:pasaya:0:0:1.0",
-	"speaker": "Narrator","text":
+	"speaker": "Narrator", "event": "novel", "text":
 	"	Christina feels the face and slides her hands down to Pasaya's ample bosom. She puts both hands on each tit and squeezes. The firmness, the tension, all of it is exactly as she imagined. 
 	
 	She then plants her face directly in between her cleavage."},
-
-	{"sprite": "pasaya sex:pasaya:0:0:1.0",
-	"speaker": "Christina","text":
-	"Pasaya!"},
-
-	{"speaker": "Christina","text":
-	"Hug me, worm!"},
 	
-	{"speaker": "Pasaya","text":
-	"Okay?"},
-
+	{"speaker": "Christina","event": "adventure","text":
+	"I need you to act, this isn't a doll, this is a person I'm playing with."},
+	
 	{"speaker": "Christina","text":
-	"Act like the real Pasaya too!"},
+	"Act like the real Pasaya!"},
 
 	{"speaker": "Pasaya","text":
 	"Like I'm streaming?"},
 
 	{"speaker": "Christina","text":
-	"The interstellar, insectoid, alien, empress from the lore."},
+	"Yes, the interstellar insectoid alien empress from lore."},
+	
+	{"sprite": "pasaya sex:pasaya:0:0:1.0",
+	"speaker": "Christina","text":
+	"Now..."},
+
+	{"speaker": "Christina","text":
+	"Hug me, worm!"},
 
 	{"speaker": "Christina","text":
 	"Now put your arms around me and feel up my back."},
 	
-	{"speaker": "Pasaya","text":
+	{"delete sprite": "pasaya",
+	"speaker": "Pasaya","text":
 	"Like this?"},
 
 	{"speaker": "Christina","text":
@@ -134,10 +135,10 @@
 	"speaker": "Pasaya","text":
 	"Enter... deeper within my bosom and become my loyal drone."},
 
-	{"speaker": "Narrator","text":
+	{"speaker": "Narrator","event": "novel","text":
 	"Christina licks one of Pasaya's breasts."},
 
-	{"speaker": "Christina","text":
+	{"speaker": "Christina","event": "adventure","text":
 	"My queen, you've already overwhelmed my feeble mind."},
 
 	{"speaker": "Christina","text":
@@ -149,10 +150,10 @@
 	{"speaker": "Christina","text":
 	"Yes, Queen Pasaya."},
 
-	{"speaker": "Narrator","text":
+	{"speaker": "Narrator","event": "novel","text":
 	"The other end of the parasite wriggles forth through her body and exits from her."},
 
-	{"speaker": "Pasaya","text":
+	{"speaker": "Pasaya","event": "adventure","text":
 	"Caress me there."},
 	
 	{"sprite": "pasaya sex finger:pasaya:0:0:1.0",
@@ -172,10 +173,10 @@
 	"Oh~."},
 	
 	{"sprite": "pasaya neutral n:pasaya:0:0:1.0",
-	"speaker": "Narrator","text":
+	"speaker": "Narrator","event": "novel","text":
 	"The two come together. Christina's fluid lubricates the massive worm."},
 
-	{"speaker": "Christina","text":
+	{"speaker": "Christina","event": "adventure","text":
 	"Oh God!"},
 
 	{"speaker": "Pasaya","text":
