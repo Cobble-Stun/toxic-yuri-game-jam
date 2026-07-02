@@ -1,38 +1,36 @@
 [
-	{"speaker": "Doctor","text":
-	"There's your partner, the troll lady."},
+	{"background": "university hall:1.0",
+	"speaker": "Narrator", "event": "novel", "transistion": "fade", "text":
+	"It was the following day, Blanche and a professor had been chatting about her project."},
+	
+	{"speaker": "Doctor", "event": "adventure", "text":
+	"Hey there's your partner! Didn't you tell me she was sick?"},
 
 	{"speaker": "Blanche","text":
-	"Spare me."},
+	"What? I thought she would've stayed home for the day?"},
 
-	{"speaker": "Blanche","text":
-	"She wouldn't have gotten this far without serious dedication to her studies."},
-
-	{"speaker": "Blanche","text":
-	"I hope."},
-
-	{"speaker": "Narrator","text":
+	{"speaker": "Narrator", "event": "novel", "text":
 	"Christina waves at Blanche from across the hallway. There was a newfound radiance in her face. It was a brand new Christina. Blanche walked forward to meet her."},
 
-	{"speaker": "Blanche","text":
+	{"speaker": "Blanche", "event": "adventure", "text":
 	"You've recovered from your illness."},
 
 	{"speaker": "Christina","text":
-	"Yeah..."},
+	"Yeah."},
 
 	{"speaker": "Christina","text":
-	"I must admit... the way you went through the archives to find  that evidence of the worm from centuries ago surprised me."},
+	"I must admit, the way you went through the archives to find evidence of the worm from centuries ago surprised me."},
 
 	{"speaker": "Christina","text":
 	"Were you already aware of that incident before we started?"},
 
 	{"speaker": "Pasaya","text":
-	"Christina..."},
+	"Christina."},
 
 	{"speaker": "Narrator","text":
-	"	It's early in the morning. Early enough that Christina's working neighbors haven't started making breakfast yet. Early enough that the sun hasn't come through the bathroom window. 
+	"	It's early enough in the morning that Christina's working neighbors haven't started making breakfast yet. The sun hasn't even come through the bathroom window. 
 	
-	Christian sits in her chair with the long slippery appendage winding its way up from her vagina. It wraps itself around the contours of her body and holding her breasts. 
+	Christina sits in her chair with Pasaya's long slippery appendage writhes inside her vagina before slipping out and  It wraps itself around the contours of her body and holding her breasts. 
 	
 	It hooks itself onto her mouth. Blanche is drawn in further with every word. She's trying to suppress the heat building up in her body. Sweat formed on her forehead. 
 	

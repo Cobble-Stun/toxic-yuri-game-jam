@@ -13,13 +13,15 @@
 [resource]
 default_font = ExtResource("1_q5vdq")
 default_font_size = 30
-Button/colors/font_color = Color(0.7294118, 0, 0.08235294, 1)
-Button/colors/font_disabled_color = Color(0.28627452, 0.047058824, 0.08235294, 1)
-Button/colors/font_focus_color = Color(0.5672335, 0.15185377, 0.11608604, 1)
-Button/colors/font_hover_color = Color(0.5686275, 0.15294118, 0.11764706, 1)
-Button/colors/font_hover_pressed_color = Color(1, 0, 0, 1)
-Button/colors/font_pressed_color = Color(1, 0, 0, 1)
-Label/colors/font_color = Color(0.7294118, 0, 0.08235294, 1)
+Button/colors/font_color = Color(0.30980393, 0.050980393, 0.6117647, 1)
+Button/colors/font_disabled_color = Color(0.21568628, 0.09803922, 0.30588236, 1)
+Button/colors/font_focus_color = Color(0.21568628, 0.09803922, 0.30588236, 1)
+Button/colors/font_hover_color = Color(0.21568628, 0.09803922, 0.30588236, 1)
+Button/colors/font_hover_pressed_color = Color(0.21736425, 0.09849962, 0.3057669, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 19
+Label/colors/font_color = Color(0.3137255, 0.05490196, 0.6117647, 1)
+Label/constants/outline_size = 19
 OptionButton/styles/focus = SubResource("StyleBoxEmpty_mh0v1")
 OptionButton/styles/hover = SubResource("StyleBoxEmpty_t0ywv")
 OptionButton/styles/normal = SubResource("StyleBoxEmpty_ikpfy")

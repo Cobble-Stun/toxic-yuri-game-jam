@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d4aq6hv64q3c6" path="res://scripts/ending.gd" id="1_4xsa7"]
 [ext_resource type="AudioStream" uid="uid://dymtohkicl6v" path="res://audio/music/Ending Theme.ogg" id="2_fnpsr"]
 [ext_resource type="FontFile" uid="uid://momuqevgfdl0" path="res://fonts/SwedenSansBold.otf" id="3_fnpsr"]
+[ext_resource type="Texture2D" uid="uid://dljtmwkd3j6wf" path="res://gui/logo.png" id="3_ryuiv"]
 
 [sub_resource type="Animation" id="Animation_fnpsr"]
 length = 0.001
@@ -90,6 +91,23 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control" unique_id=1097338451]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -391.5
+offset_top = -247.0
+offset_right = 393.5
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ryuiv")
+expand_mode = 3
+stretch_mode = 5
+
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Control" unique_id=1691541353]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -110,16 +128,15 @@ Thanks for playing!
 
 
 
-
 Credits:
 
-Umbrella: Sprite art + GUI design
+Umbrella: Sprite, CG, and concept art + GUI design
 
 CobbleStun: Music + writing tweaks + additional art + programming
 
-Fyrmite: Sprite art
+Fyrmite: Sprite and concept art
 
-Esbeedle: Writing"
+Esbeedle: Writing + idea for Pasaya"
 horizontal_alignment = 1
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/Control" unique_id=450900265]
@@ -127,7 +144,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -31.0
+offset_bottom = -51.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("3_fnpsr")

@@ -204,7 +204,10 @@
 	"No, your queen's wisdom is known throughout the galaxy."},
 
 	{"speaker": "Pasaya","text":
-	"You will be a most obedient slave."},
+	"You will soon be my most obedient slave..."},
+	
+	{"speaker": "Christina","text":
+	"How am I going to show up to university now?"},
 	
 	{"next_scene": "school"}
 ]

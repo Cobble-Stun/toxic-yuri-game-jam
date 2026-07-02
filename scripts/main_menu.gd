@@ -1,7 +1,6 @@
 extends CanvasLayer
 
 @onready var loadSlotScene = preload("res://prefabs/UI/load_slot.tscn")
-@export var bgs: Array[Texture2D]
 @onready var primaryMenuButtons = $"Control/Primary Menu Buttons"
 @onready var options = $Control/Options
 @onready var loadGame = $"Control/Load Game"
