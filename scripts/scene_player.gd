@@ -245,9 +245,9 @@ func read_current_script_line():
 	if line.has("background"):
 		var lineInfo = line["background"].split(":")
 		var spriteImage
-		for image in DirAccess.open("res://images/backgrounds/").get_files():
-			if image == lineInfo[0] + ".png":
-				spriteImage = load("res://images/backgrounds/" + image)
+		var path = "res://images/backgrounds/%s.png" % lineInfo[0]
+		if ResourceLoader.exists(path):
+			spriteImage = load(path)
 		change_background(spriteImage, float(lineInfo[1]))
 	
 	#sprite effects
@@ -310,13 +310,11 @@ func choice_selected(anchor: String):
 #audio
 func play_audio(dir: String, jsonKey: String, audioPLayer: AudioStreamPlayer):
 	var sound
-	for track in DirAccess.open(dir).get_files():
-		if track == jsonKey + ".ogg":
-			sound = load(dir + track)
-		if track == jsonKey + ".wav":
-			sound = load(dir + track)
-		if track == jsonKey + ".mp3":
-			sound = load(dir + track)
+	var extensions = [".ogg", ".wav", ".mp3"]
+	for ext in extensions:
+		var path = dir + jsonKey + ext
+		if ResourceLoader.exists(path):
+			sound = load(path)
 	if sound == null:
 		change_audio_track(null, audioPLayer)
 		return
@@ -330,9 +328,9 @@ func change_audio_track(audio : AudioStream, track : AudioStreamPlayer):
 func sprite_channel(parameters):
 	var spriteImage
 	var imageInfo = parameters.split(":")
-	for image in DirAccess.open("res://images/foreground sprites/").get_files():
-		if image == imageInfo[0] + ".png" or image == imageInfo[0] + ".jpg":
-			spriteImage = load("res://images/foreground sprites/" + image)
+	var path = "res://images/foreground sprites/%s.png" % imageInfo[0]
+	if ResourceLoader.exists(path):
+		spriteImage = load(path)
 			
 	if imageInfo.size() > 5:
 		change_sprite(spriteImage, imageInfo[1], int(imageInfo[2]), int(imageInfo[3]), float(imageInfo[4]), str_to_var(imageInfo[5]))

@@ -13,7 +13,7 @@ var musicVolume = 0.5
 var textSpeed = 0.04
 var textAutoProgressSpeed = 0.5
 
-var windowMode = 1
+var windowMode = 0
 var resolutionIndex = 0
 
 func load_data():

@@ -55,10 +55,8 @@ func _ready() -> void:
 	get_window().set_size(resolutions[resolutionDropdown.get_item_text(Globals.resolutionIndex)])
 	match Globals.windowMode:
 		0:
-			get_window().set_mode(Window.MODE_EXCLUSIVE_FULLSCREEN)
-		1:
 			get_window().set_mode(Window.MODE_FULLSCREEN)
-		2:
+		1:
 			get_window().set_mode(Window.MODE_WINDOWED)
 	reset_settings()
 
@@ -191,10 +189,8 @@ func save_changes():
 	scenePlayer.textAutoProgressTimer.wait_time = Globals.textAutoProgressSpeed
 	match Globals.windowMode:
 		0:
-			get_window().set_mode(Window.MODE_EXCLUSIVE_FULLSCREEN)
-		1:
 			get_window().set_mode(Window.MODE_FULLSCREEN)
-		2:
+		1:
 			get_window().set_mode(Window.MODE_WINDOWED)
 	get_window().set_size(resolutions[resolutionDropdown.get_item_text(Globals.resolutionIndex)])
 	SaveSystem.save_settings()

@@ -1,9 +1,9 @@
 [
-	{"background": "university hall:1.0",
+	{"background": "university lecture hall:1.0",
 	"speaker": "Narrator", "event": "novel", "transistion": "fade", "text":
 	"It was the following day, Blanche and a professor had been chatting about her project."},
 	
-	{"speaker": "Doctor", "event": "adventure", "text":
+	{"speaker": "Professor", "event": "adventure", "text":
 	"Hey there's your partner! Didn't you tell me she was sick?"},
 
 	{"speaker": "Blanche","text":
@@ -19,7 +19,7 @@
 	"Yeah."},
 
 	{"speaker": "Christina","text":
-	"I must admit, the way you went through the archives to find evidence of the worm from centuries ago surprised me."},
+	"About the project, I must admit that the way you went through the archives to find evidence of the worm from centuries ago surprised me."},
 
 	{"speaker": "Christina","text":
 	"Were you already aware of that incident before we started?"},
@@ -27,32 +27,29 @@
 	{"speaker": "Pasaya","text":
 	"Christina."},
 
-	{"speaker": "Narrator","text":
-	"	It's early enough in the morning that Christina's working neighbors haven't started making breakfast yet. The sun hasn't even come through the bathroom window. 
+	{"speaker": "Narrator", "event": "novel", "text":
+	"	It's early enough in the morning that students hadn't yet come into the lecture hall yet. The professor walks off and Blanche and Christina both take a seat together.
 	
-	Christina sits in her chair with Pasaya's long slippery appendage writhes inside her vagina before slipping out and  It wraps itself around the contours of her body and holding her breasts. 
+	Christina exhales when she relaxes into the seat, as she does, the same aroma starts exiting her mouth, just like back at the restaurant. 
 	
-	It hooks itself onto her mouth. Blanche is drawn in further with every word. She's trying to suppress the heat building up in her body. Sweat formed on her forehead. 
+	Blanche is drawn in further with every word. She's trying to suppress the heat building up in her body. Beads of sweat formed on her forehead. 
 	
-	Her lungs are pushing into overdrive. Christina steps forward and places her hand on her forehead."},
+	Christina notices and scoots over to place her hand on her forehead."},
 
 	{"speaker": "Christina","text":
 	"Are you sick?"},
 
 	{"speaker": "Blanche","text":
-	"Please, back away."},
+	"Maybe I got it from you."},
 
 	{"speaker": "Christina","text":
 	"My bad."},
 
 	{"speaker": "Blanche","text":
-	"I'm fine."},
+	"I think I'm fine."},
 
 	{"speaker": "Blanche","text":
-	"I'll tell you after the presentation."},
-
-	{"speaker": "Blanche","text":
-	"Did you write everything down, did you memorize it, anything?"},
+	"I'll check if it's the case after the presentation."},
 
 	{"speaker": "Christina","text":
 	"I've put everything you sent and all of my own conclusions from my won research-"},
@@ -91,7 +88,7 @@
 	"She's making my head spin."},
 
 	{"speaker": "Narrator","text":
-	"	By the time Christina finishes, the classroom is ready to explode with excitement. 
+	"	By the time Christina finishes, the erupts into a standing ovation. 
 	
 	The peach scent wafting about the room intoxicates even the professor, who clearly indicates that their project is passing. 
 	
@@ -122,7 +119,7 @@
 	
 	What had happened was a suggestion by the worm inside her head, who had discovered a new trick by poking around her brain. That certain emotional responses could be rerouted or simply turned off as needed. 
 	
-	That a well-placed tendril could manipulate the body to move in a way that showed precision that Christina could never show. That she could take over when necessary, if that's what Christina wanted."},
+	That a well-placed tendril could manipulate the body to move in a way that Christina could never notice. That she could take over when necessary, if that's what Christina wanted."},
 
 	{"speaker": "Pasaya","text":
 	"Why are you so afraid of her?"},
@@ -131,81 +128,69 @@
 	"This isn't the way to the library either."},
 
 	{"speaker": "Pasaya","text":
-	"Oh I get it, you haven't been with anything but me in years."},
+	"Oh I get it, you haven't been interested in anything but this vtuber in years."},
 
 	{"speaker": "Pasaya","text":
-	"Pa-thetic!"},
+	"Pathetic!"},
 
 	{"speaker": "Pasaya","text":
-	"She wants you."},
+	"She wants you, you know."},
 
 	{"speaker": "Christina","text":
 	"I don't want her!"},
 
 	{"speaker": "Pasaya","text":
-	"I know exactly what you want, I've been practicing for a while now!"},
+	"Don't kid yourself, we both know how you really feel. You know that no one else be as close to you as her."},
 
 	{"speaker": "Christina","text":
-	"If you know what to do, then do it."},
-
-	{"speaker": "Christina","text":
-	"When we meet up, you take over."},
-
-	{"speaker": "Christina","text": 
-	"When you screw it up, I'll just walk my body over to the medical school for dissection."},
-
-	{"speaker": "Christina","text":
-	"We'll make a wonderful museum exhibit!"},
+	"I... don't think I have the heart to tell her how I feel."},
 
 	{"speaker": "Pasaya","text":
-	"Promise."},
+	"How about a proposition? If you let me take over your body, I can ask her out for you."},
+
+	{"speaker": "Christina","text": 
+	"I will think about it. Can't risk you screwing up."},
+
+	{"speaker": "Pasaya","text":
+	"You should have more faith in me."},
 
 	{"speaker": "Christina","text":
-	"I promise, fucking worm."},
+	"Now, which way was the library again?"},
 
-	{"speaker": "Christina","text":
-	"Which way was the library again?"},
-
-	{"speaker": "Narrator","text":
+	{"background": "library:1.0",
+	"speaker": "Narrator","text":
 	"	The worm and Chrstina take a few hours to bury themselves in supplemental research. 
 	
-	Or more honestly, for Christina to share her mutual love of fish and parasites with someone who couldn't run away. 
-	
-	And of course, for the worm's survival, it was forced to become Pasaya again."},
+	For Christina to share her mutual love of fish and parasites with someone who would be by her side 24/7, it made her feel less lonely, especially since Blanche wasn't here."},
 
 	{"speaker": "Christina","text":
-	"Look at this little guy."},
-
-	{"speaker": "Christina","text":
-	"This snail, having been made a thrall of the worm it has ingested, will become the vector of its ultimate plan: To embed itself in this killifish!"},
+	"Look at this little guy. This snail, having been made a thrall of the worm it has ingested, will become the vector of its ultimate plan: To embed itself in this killifish."},
 
 	{"speaker": "Christina","text":
 	"Isn't it cute?"},
 
 	{"speaker": "Pasaya","text":
-	"Drone, you've shown me something truly remarkable."},
-
-	{"speaker": "Pasaya","text":
-	"What happens to the worm when it gets eaten?"},
+	"Moreso fascinating."},
 
 	{"speaker": "Christina","text":
-	"Oh, you'll love it, this book's got great diagrams of the whole euphalorchis life cycle."},
+	"Oh, you'll love it, this book's got great diagrams of the whole euhaplorchis life cycle."},
 
 	{"speaker": "Narrator", "event": "novel", "text":
 	"Eventually, Christina gets the text from Blanche. To meet at the place near the library for a late coffee and sandwiches. She promised to pay for the sandwiches within reason."},
 
-	{"speaker": "Narrator","text":
-	"	Blanche sat at a booth on the couch side, with her head hunched over the table. Her coffee was still covered up, and a sandwich was sitting on the bare table still in its wrapper. 
+	{"background": "diner:1.0",
+	"speaker": "Narrator","text":
+	"	When they had arrived, Blanche sat at a booth on the couch side, Christina sat on a chair instead. Blanche calls over a waiter for the promised coffee and sandwiches, meanwhile Christina is hunched over the table.
 	
-	She was beginning to rethink this. She hoped that Christina would regain some of her hermit nature and disappear, saving her the trouble of dealing with her. 
+	A few minutes pass, and while Blanche is peering out the window enjoying her food and drink, Christina's coffee and sandwich were sitting there untouched. 
 	
-	That woman with the disgusting ooze-covered face was burning herself into her mind, and it hadn't just been today either."},
+	She was beginning to rethink this. She worried that she'd push her away with a confession. She did have a tendency to push people out of her life, and Blanche was the last person she'd want to lose."},
 
 	{"speaker": "Christina","event": "adventure","text":
 	"Blanche."},
 
 	{"speaker": "Blanche","text":
-	"Christina, hello."},
+	"Yeah?"},
 
 	{"speaker": "Christina","text":
 	"I want to be blunt with you, if that's okay?"},
@@ -216,18 +201,20 @@
 	{"speaker": "Blanche","text":
 	"Please, that can wait until you get your-"},
 
-	{"speaker": "Narrator","text":
-	"Christina bent down to reach Blanche's face at eye level."}, 
+	{"speaker": "Narrator", "event": "novel", "text":
+	"	Christina suddenly stands up, and bends over towards Blanche on the other side of the table. Her demeaner and face changes. 
+	
+	Christina should have a shocked expression on her face right now, but her body is just not obeying her."}, 
 
-	{"speaker": "Christina","text":
+	{"speaker": "Christina","event": "adventure","text":
 	"We have work to do, I want to be quick with you."},
 
-	{"speaker": "Narrator","text":
+	{"speaker": "Narrator", "event": "novel", "text":
 	"	She grabs Blanche by the collar of her blouse and yanks her out of the booth. 
 	
-	Pushing her body close, she puts her right arm around Blanche's body and pulls her towards hers, pressing their breasts together in a jumbled heap of pillows. 
+	Pushing her body close, she puts her right arm around Blanche's body and pulls her towards hers, pressing their lips together into a peachy-coffee aromatic mess. 
 	
-	Christina's left hand pushes Blanche's face towards her for a kiss."},
+	Their chests press together and they can feel each other's pulse."},
 
 	{"speaker": "Narrator","text":
 	"	It was what she wanted, right? Blanche closed her eyes and met Christina's lips with hers, getting a mouthful of her breath. 
@@ -237,33 +224,33 @@
 	The two of them were totally enraptured in their kiss."},
 
 	{"speaker": "Narrator","text":
-	"	And yet, Christina, whose body the worm had been using, was one of the three enjoying this most of all. 
+	"	Christina, whose body the worm had been using, was one of the three enjoying this most of all. 
 	
 	The excitement of being in the midst of a passionate kiss, without the fear, without the anxiety. 
 	
-	She was feeling and watching at the same time, while also experiencing the worm's own pleasure as it shook within her body. It was sublime."},
+	This was the ultimate voyeuristc fantasy, all the while you were still inside your own body. Christina soon felt a tingling sensation in her abdomen. It was satisfaction. It was sublime."},
 
 	{"speaker": "Narrator","text":
-	"	The three of them disengage. A saliva trail stretches between the two girls in full view of the dozen or so students and workers loitering around the cafe. 
+	"	The three of them disengage. A saliva trail stretches between the two girls in full view of the dozen or so students and workers loitering around the cafe. All they can do is stare in awe.
 	
-	In their act, they had bumped the table, knocking Blanche's sandwich and coffee all over the floor broadly and on their shoes conspicuously."},
+	In their act, they had displaced everything they had on the table, knocking Blanche's sandwich and coffee all over the floor broadly and some napkins even end up between their shoes."},
+
+	{"speaker": "Christina", "event": "adventure", "text":
+	"I love you Blanche."},
 
 	{"speaker": "Christina","text":
-	"This is what you wanted?"},
-
-	{"speaker": "Christina","text":
-	"Whenever you want more, just ask?"},
+	"You make me the happiest woman alive, all I ask is one thing. Could we be something more?"},
 
 	{"speaker": "Blanche","text":
 	"Sure."},
 
 	{"speaker": "Blanche","text":
-	"Just another time."},
+	"I just... expected a warning or something. We made a mess."},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"They cleaned up before they went their separate ways."},
 
-	{"speaker": "Blanche","text":
-	"Goodbye."},
-
-	{"speaker": "Pasaya","text":
+	{"speaker": "Pasaya","event": "adventure", "text":
 	"Did I pull it off?"},
 
 	{"next_scene": "together"}

@@ -302,13 +302,11 @@ text = "Window Mode"
 [node name="OptionButton" type="OptionButton" parent="CanvasLayer/Control/Options/Window Mode" unique_id=1269631131]
 layout_mode = 2
 selected = 0
-item_count = 3
+item_count = 2
 popup/item_0/text = "Fullscreen"
-popup/item_0/id = 0
-popup/item_1/text = "Windowed Fullscreen"
-popup/item_1/id = 1
-popup/item_2/text = "Windowed"
-popup/item_2/id = 2
+popup/item_0/id = 1
+popup/item_1/text = "Windowed"
+popup/item_1/id = 2
 
 [node name="Resolution" type="HBoxContainer" parent="CanvasLayer/Control/Options" unique_id=1862429811]
 layout_mode = 2
