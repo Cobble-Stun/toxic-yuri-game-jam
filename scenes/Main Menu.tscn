@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://di6xvap55bw3d"]
 
 [ext_resource type="Script" uid="uid://c2k8n3ni4v1oa" path="res://scripts/main_menu.gd" id="1_65kbn"]
-[ext_resource type="Texture2D" uid="uid://bfxjgtgjb4n5i" path="res://gui/main menu/main_menu.png" id="2_1i3ks"]
+[ext_resource type="Texture2D" uid="uid://1o8pu83um8p2" path="res://images/backgrounds/CGcarparking.png" id="3_mslyy"]
 [ext_resource type="Theme" uid="uid://dc3ye336atiph" path="res://gui/main menu/main_menu.tres" id="4_estw7"]
 [ext_resource type="Texture2D" uid="uid://dljtmwkd3j6wf" path="res://gui/logo.png" id="4_mslyy"]
 [ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="5_mslyy"]
@@ -82,7 +82,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_1i3ks")
+texture = ExtResource("3_mslyy")
 expand_mode = 3
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control" unique_id=1122293602]

@@ -1,5 +1,7 @@
 [
-	{"speaker": "Blanche","text":
+	{"transition": "fade",
+	"background": "blanche bedroom:1.0",
+	"speaker": "Blanche","text":
 	"Everything's fucking damp."},
 
 	{"speaker": "Narrator","event": "novel", "text":

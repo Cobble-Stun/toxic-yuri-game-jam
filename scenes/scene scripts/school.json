@@ -36,7 +36,7 @@
 	
 	Christina notices and scoots over to place her hand on her forehead."},
 
-	{"speaker": "Christina","text":
+	{"speaker": "Christina", "event": "adventure", "text":
 	"Are you sick?"},
 
 	{"speaker": "Blanche","text":
@@ -59,11 +59,13 @@
 
 	{"speaker": "Blanche","text":
 	 "Ah, good."},
-
-	{"speaker": "Narrator","text":
-	"	Christina would be giving the presentation to their class of mostly female students of marine biology, parasitology, and ecology. 
 	
-	This was intended to be a multidisciplinary endeavor to give the future scientists of Sweden an oppotunity applying unorthodox research methods in their work and collaborating."},
+	{"speaker": "Narrator", "event": "novel", "text":
+	"	Students are starting to flood in as the class is about to start. The other groups give their speeches about their research while Christina and Blanche fight their nerves for when they go last.
+	
+	For Christina, it's more than just nerves that is messing with her insides.
+	
+	The room is mostly comprised up of female students majoring in marine biology, parasitology, and ecology."},
 
 	{"speaker": "Narrator","text":
 	"	Christina sat through a series of brief presentations. One was an especially interesting one, where pharmaceutical pollution had affected the behavior of salmon. 
@@ -73,30 +75,27 @@
 	{"speaker": "Narrator","text":
 	"	Some of these students had known her since she first moved to Stockholm several years ago, when she had been a different person, a more open person. 
 	
-	Some of them had known her almost as a friend. None of them had seen her like this. She was speaking with a confidence they had never seen from her before."},
+	Some of them had known her almost as a friend. None of them had seen her like this. She was speaking with a confidence they had never seen from her before, she had the room spellbound."},
+	
+	{"background": "presentation:1.0",
+	"speaker": "Narrator", "text":
+	"	Before long it was Christina and Blanche's turn. They anxiously walked up on stage and proceeded to give their presentation despite how shaky their hands were.
+	
+	Christina goes on to explain the life cycle of a particular parasite in Tyresta lake. Blanche continues where Christina leaves off by giving some supporting details from their research."},
 
 	{"speaker": "Narrator","text":
-	"She had them spellbound."},
-
-	{"speaker": "Blanche","text":
-	"She's pulling it off."},
-
-	{"speaker": "Blanche","text":
-	"But, huh?"},
-
-	{"speaker": "Blanche","text":
-	"She's making my head spin."},
-
-	{"speaker": "Narrator","text":
-	"	By the time Christina finishes, the erupts into a standing ovation. 
+	"	When they finish, the room erupts into a standing ovation. Christina triumphantly smiles with her mouth open, exhaling that familiar smell into the room.
 	
 	The peach scent wafting about the room intoxicates even the professor, who clearly indicates that their project is passing. 
 	
-	Christina is hounded by the girls, who are desperately providing feedback and offering to spend time with her to work on her research. 
+	Christina is hounded by the girls of the class, who are desperately providing feedback and offering to spend time with her to work on her research. 
 	
-	However, the only one Christina seems to care about is Blanche."},
+	However, Christina's eyes seem only to be fixated on Blanche right next to her. Eventually the class starts to depart from the hall, but the duo remain in the room."},
 
-	{"speaker": "Blanche","text":
+	{"background": "university lecture hall:1.0",
+	"sprite": "christina neutral c:christina:200:0:1.0",
+	"sprite2": "blanche neutral c:blanche:-200:0:1.0",
+	"speaker": "Blanche", "event": "adventure", "text":
 	"You did the work."},
 
 	{"speaker": "Christina","text":
@@ -105,23 +104,30 @@
 	{"speaker": "Blanche","text":
 	"I have another thing to do after this, but after that, would you like to meet with me for fishing?"},
 
-	{"speaker": "Christina","text":
-	"Fishing again?"},
+	{"sprite effect": "sprite bounce:christina:0.5:50.0",
+	"speaker": "Christina","text":
+	"Fishing? Again?"},
+	
+	{"speaker": "Blanche","text":
+	"Yeah, but not for school this time. I actually had fun doing it."},
 
 	{"speaker": "Christina","text":
-	"Sure, I'll wait for you in the library."},
+	"Sure, I'll wait for you in the cafe near the library. We could order some things before we go."},
 
 	{"speaker": "Blanche","text":
 	"Great, thank you Christina."},
 
-	{"speaker": "Narrator","text":
+	{"background": "university hall:1.0",
+	"delete_sprite": "christina",
+	"delete_sprite2": "blanche",
+	"speaker": "Narrator","event": "novel", "text":
 	"Christina dashes off in the wrong direction. Leaving the masssive crowd confused. 
 	
 	What had happened was a suggestion by the worm inside her head, who had discovered a new trick by poking around her brain. That certain emotional responses could be rerouted or simply turned off as needed. 
 	
 	That a well-placed tendril could manipulate the body to move in a way that Christina could never notice. That she could take over when necessary, if that's what Christina wanted."},
 
-	{"speaker": "Pasaya","text":
+	{"speaker": "Pasaya", "event": "adventure","text":
 	"Why are you so afraid of her?"},
 
 	{"speaker": "Pasaya","text":
@@ -137,7 +143,7 @@
 	"She wants you, you know."},
 
 	{"speaker": "Christina","text":
-	"I don't want her!"},
+	"I don't want her in that way!"},
 
 	{"speaker": "Pasaya","text":
 	"Don't kid yourself, we both know how you really feel. You know that no one else be as close to you as her."},
@@ -158,18 +164,18 @@
 	"Now, which way was the library again?"},
 
 	{"background": "library:1.0",
-	"speaker": "Narrator","text":
+	"speaker": "Narrator", "event": "novel", "text":
 	"	The worm and Chrstina take a few hours to bury themselves in supplemental research. 
 	
 	For Christina to share her mutual love of fish and parasites with someone who would be by her side 24/7, it made her feel less lonely, especially since Blanche wasn't here."},
 
-	{"speaker": "Christina","text":
+	{"speaker": "Christina", "event": "adventure", "text":
 	"Look at this little guy. This snail, having been made a thrall of the worm it has ingested, will become the vector of its ultimate plan: To embed itself in this killifish."},
 
-	{"speaker": "Christina","text":
+	{"speaker": "Christina", "text":
 	"Isn't it cute?"},
 
-	{"speaker": "Pasaya","text":
+	{"speaker": "Pasaya", "text":
 	"Moreso fascinating."},
 
 	{"speaker": "Christina","text":
@@ -209,14 +215,18 @@
 	{"speaker": "Christina","event": "adventure","text":
 	"We have work to do, I want to be quick with you."},
 
-	{"speaker": "Narrator", "event": "novel", "text":
+	{"background": "diner kiss:1.0",
+	"speaker": "Narrator", "event": "novel", "text":
 	"	She grabs Blanche by the collar of her blouse and yanks her out of the booth. 
 	
 	Pushing her body close, she puts her right arm around Blanche's body and pulls her towards hers, pressing their lips together into a peachy-coffee aromatic mess. 
 	
 	Their chests press together and they can feel each other's pulse."},
+	
+	{"speaker": "Blanche","event": "adventure","text":
+	"Mmmh!"},
 
-	{"speaker": "Narrator","text":
+	{"speaker": "Narrator", "event": "novel", "text":
 	"	It was what she wanted, right? Blanche closed her eyes and met Christina's lips with hers, getting a mouthful of her breath. 
 	
 	She felt Christina's tongue sliding over her lips with a sweet taste like melted candy in her mouth. The two intertwining tongues compressed to wet tunnels, sharing their spit together. 
@@ -230,7 +240,8 @@
 	
 	This was the ultimate voyeuristc fantasy, all the while you were still inside your own body. Christina soon felt a tingling sensation in her abdomen. It was satisfaction. It was sublime."},
 
-	{"speaker": "Narrator","text":
+	{"background": "diner:1.0",
+	"speaker": "Narrator","text":
 	"	The three of them disengage. A saliva trail stretches between the two girls in full view of the dozen or so students and workers loitering around the cafe. All they can do is stare in awe.
 	
 	In their act, they had displaced everything they had on the table, knocking Blanche's sandwich and coffee all over the floor broadly and some napkins even end up between their shoes."},

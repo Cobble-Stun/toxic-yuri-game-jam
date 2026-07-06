@@ -44,28 +44,17 @@
 	{"speaker": "Narrator","event": "novel", "text":
 	"Pasaya had over done it. Christina had prematurely relived herself."},
 	
-	{"speaker": "Pasaya","text":
+	{"speaker": "Christina","text":
 	 "Oh no the chair..."},
 	
-	{"speaker": "Christina","text":
-	"N-nobody's coming in here anytime soon."},
-
-	{"speaker": "Christina","text":
-	"A-as a reward, I'll m-make breakfast the way you l-like it."},
-	
-	{"speaker": "Christina","text":
-	"Fuck!"},
-	
-	{"speaker": "Christina","text":
-	"After I get some more sleep."},
-	
 	{"speaker": "Pasaya","text":
-	"Yay!"},
+	"Nobody's going to know."},
+
+	{"speaker": "Pasaya","text":
+	"I'll make some brunch, just the way you like it."},
 	
 	{"speaker": "Narrator","event": "novel", "text":
-	"	After a nap and a shower, Christina churned together an indescribable stew of rotting waste. 
-	
-	Pasaya had insisted that she save money by repurposing the carefully prepared sacks of compost left out by their neighbors. 
+	"	Pasaya had insisted that she save money by repurposing the carefully prepared sacks of compost left out by their neighbors. 
 	
 	With some debate, Christina allowed Pasaya to take whatever action was necessary when she was unconscious as long as she didn't wake up to the specific taste of garbage."},
 	
@@ -73,7 +62,9 @@
 	"It's wonderful."},
 	
 	{"speaker": "Narrator","event": "novel", "text":
-	"The worm slithers out of Chris's mouth. Its sliding motion still makes Christina gag a little, so the worm takes extra steps to manipulate the trachea for Christina's breathing."},
+	"The worm slithers out of Christina
+	
+	's mouth. Its sliding motion still makes Christina gag a little, so the worm takes extra steps to manipulate the trachea for Christina's breathing."},
 	
 	{"speaker": "Pasaya","event": "adventure", "text":
 	"I almost forgot!"},
@@ -85,7 +76,7 @@
 	"The Saltlakrits papa gave me when I broke my arm in 5th grade."},
 	
 	{"speaker": "Pasaya","text":
-	"OK."},
+	"Okay."},
 	
 	{"speaker": "Pasaya","text":
 	"Would you rather see Pasaya do this or \"the worm\"?"},
