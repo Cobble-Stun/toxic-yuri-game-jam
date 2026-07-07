@@ -23,7 +23,8 @@ SaveSystem="*uid://cla3r0mor6qgo"
 
 [display]
 
-window/stretch/mode="canvas_items"
+window/size/mode=3
+window/stretch/mode="viewport"
 
 [input]
 

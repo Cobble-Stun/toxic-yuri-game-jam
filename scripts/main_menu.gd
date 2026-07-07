@@ -46,7 +46,6 @@ func _ready() -> void:
 			resolutionDropdown.select(ID)
 		
 		ID += 1
-	get_window().set_size(resolutions[resolutionDropdown.get_item_text(Globals.resolutionIndex)])
 	match Globals.windowMode:
 		0:
 			get_window().set_mode(Window.MODE_FULLSCREEN)
