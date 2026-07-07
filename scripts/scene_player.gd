@@ -120,7 +120,8 @@ func capture_scene_state():
 				"group": child.get_groups()[0],
 				"texture": child.texture.resource_path if child.texture else null,
 				"pos": child.position,
-				"scale": child.scale
+				"scale": child.scale,
+				"flipped": child.flip_h
 			})
 	
 	stateHistory.append(snapshot)
@@ -180,6 +181,7 @@ func scene_rollback():
 		newSprite.texture = load(s["texture"])
 		newSprite.position = s["pos"]
 		newSprite.scale = s["scale"]
+		newSprite.flip_h = s["flipped"]
 		newSprite.add_to_group(s["group"])
 		newSprite.add_to_group("sprites")
 	

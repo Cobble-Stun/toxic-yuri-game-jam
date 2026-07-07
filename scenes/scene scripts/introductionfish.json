@@ -15,7 +15,7 @@
 	{"speaker": "Narrator", "text":
 	"	Christina was a young woman had a love of fish and their parasites. Her interest in the subject had barely been enough to get her through several years of grinding university work. 
 	
-	She had been a delinquent in her upper secondary school years which scared off a bunch of classmates from being friends with her.
+	She had been antisocial, sometimes abrasive student in her upper secondary school years which scared off a bunch of classmates from being friends with her.
 	
 	The only exception is her classmate, Blanche, who doesn't seem to as afraid by her intimadating aura for some odd reason."},
 	
@@ -166,7 +166,8 @@
 	
 	With her hand below the water, she felt something. It was not just the warmth of the water, not just the fish, something else."},
 	
-	{"speaker": "Christina","event": "adventure", "text": 
+	{"sound": "splash fish",
+	"speaker": "Christina","event": "adventure", "text": 
 	"AGH!"},
 	
 	{"speaker": "Narrator", "event": "novel", "text":
@@ -218,7 +219,7 @@
 	"speaker": "Narrator", "text":
 	"	They finished gathering the fish. About 40% were relatively normal, and 60% were Infected. 
 	
-	Christina can still feel it. A wave of heat worms through her veins, brushing up against the walls of her bloodstream clumsily. 
+	Christina can still feel it. A wave of heat pulsates through her veins, brushing up against the walls of her bloodstream clumsily. 
 	
 	It was as if a child was inside her finger running their hand down the wooden walls of an old house. She also notices it’s getting harder to breathe."},
 	

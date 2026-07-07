@@ -1,5 +1,6 @@
 [
 	{"background": "university lecture hall:1.0",
+	"music": "null",
 	"speaker": "Narrator", "event": "novel", "transistion": "fade", "text":
 	"It was the following day, Blanche and a professor had been chatting about her project."},
 	
@@ -185,6 +186,7 @@
 	"Eventually, Christina gets the text from Blanche. To meet at the place near the library for a late coffee and sandwiches. She promised to pay for the sandwiches within reason."},
 
 	{"background": "diner:1.0",
+	"ambient": "restaurant inside",
 	"speaker": "Narrator","text":
 	"	When they had arrived, Blanche sat at a booth on the couch side, Christina sat on a chair instead. Blanche calls over a waiter for the promised coffee and sandwiches, meanwhile Christina is hunched over the table.
 	

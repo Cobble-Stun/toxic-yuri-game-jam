@@ -1,5 +1,7 @@
 [
 	{"background": "checkup room:1.0",
+	"delete_sprite": "christina",
+	"delete_sprite2": "pasaya",
 	"speaker": "Blanche","text":
 	"So you're telling me there's a worm inside my body?"},
 	

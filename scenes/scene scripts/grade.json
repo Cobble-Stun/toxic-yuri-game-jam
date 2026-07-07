@@ -1,5 +1,6 @@
 [
-	{"speaker": "Narrator", "event": "novel","text":
+	{"background": "professor office:1.0",
+	"speaker": "Narrator", "event": "novel","text":
 	"	It was near the end of the semester. Blanche and Christina are meeting with their marine biology professor during office hours. 
 	
 	She had been curious about how they could improve the project considering one aspect that may affect their synergy, Blanche had been undecided until recently over the course of her education.
@@ -36,7 +37,7 @@
 	"Doing it the proper way for once."},
 	
 	{"speaker": "Blanche","text":
-	"Very important, the fishing laws..."},
+	"Very important, the fishing laws."},
 	
 	{"speaker": "Professor","text":
 	"Yes."},

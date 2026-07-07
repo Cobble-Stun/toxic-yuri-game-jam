@@ -59,7 +59,7 @@
 	"Oh Gystf320, thank you for the dono!"},
 
 	{"speaker": "Pasaya","text":
-	"Chatterpillars, before I go, I will leave you guys with a question. Would you guys still love me if I was a worm?"},
+	"Chatterpillars, before I go do something else, I will leave you guys with a question. Would you guys still love me if I was a worm?"},
 	
 	{"background": "cityhighway:1.0",
 	"speaker": "Narrator","event": "novel", "text":
@@ -105,7 +105,7 @@
 	Christina is just barely holding back the urge to puke with her palm against her mouth. She frantically pulls open the door of her sedan, finds a nearby bush, and releases with a hearty \"Blaaargh!\"."},
 
 	{"speaker": "Narrator", "text":
-	"She turns around to look at Blanche with a drop or two still on her lip. She notices from the reflection on Blanche's car"},
+	"She turns around to look at Blanche with a drop or two still on her lip. She notices from the reflection on Blanche's car."},
 
 	{"speaker": "Christina", "event": "adventure", "text":
 	"Oh. My bad."},

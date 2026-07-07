@@ -1,5 +1,6 @@
 [
 	{"background": "street:1.0",
+	"ambient": "outside city",
 	"speaker": "Narrator", "event": "novel","text":
 	"	The sidewalks are packed with adults and children bustling in this nice springtime weather. However, here walks Christina, a shambling mess compared to everyone else around her. 
 	
@@ -15,6 +16,7 @@
 	It was like an angel was smiling brightly as Christina walked through those front doors. She had dark brunette hair tied up and stuffed with a bun underneath her cap, truly a beauty."},
 	
 	{"background": "self service machines:1.0",
+	"ambient": "restaurant inside",
 	"speaker": "Narrator", "text":
 	"	Christina becomes flustered from her gaze and she rushes over to the self service terminals away from sight. Unfortunately, she found them all of them were found to be busted.
 
@@ -74,7 +76,7 @@
 	{"speaker": "Narrator", "event": "novel","text":
 	"When Christina reaches for the receipt, the girl suddenly latches onto her hand and gently caresses her thumb."},
 	
-	{"speaker": "Christina", "text":
+	{"speaker": "Christina", "event": "adventure", "text":
 	"Hey, let go of my hand!"},
 	
 	{"speaker": "Girl","text":
