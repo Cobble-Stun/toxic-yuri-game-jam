@@ -1,5 +1,7 @@
 [
-	{"speaker": "Narrator","event": "novel", "text":
+	{"ambient": "null",
+	"background": "bedroom lights on:1.0",
+	"speaker": "Narrator","event": "novel", "text":
 	"	The arrangement had been a major success. The worm and Christina had learned to appreciate the intimacy that only those who shared a body could know. 
 	
 	The worm accepted the name Pasaya and grew to love the role that was chosen for her, internalizing aspects of it. The confidence of a queen. 
@@ -44,7 +46,7 @@
 	{"speaker": "Narrator","event": "novel", "text":
 	"Pasaya had over done it. Christina had prematurely relived herself."},
 	
-	{"speaker": "Christina","text":
+	{"speaker": "Christina","event": "adventure","text":
 	 "Oh no the chair..."},
 	
 	{"speaker": "Pasaya","text":

@@ -54,7 +54,7 @@ func _ready() -> void:
 	reset_settings()
 		
 func start_new_game():
-	SaveSystem.load_scene("introductionfish")
+	SaveSystem.load_scene("together")
 	Globals.load_data()
 	get_tree().change_scene_to_file("res://scenes/Stage.tscn")
 

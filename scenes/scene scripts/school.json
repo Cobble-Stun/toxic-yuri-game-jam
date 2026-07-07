@@ -1,6 +1,7 @@
 [
 	{"background": "university lecture hall:1.0",
 	"music": "null",
+	"delete_sprite": "pasaya",
 	"speaker": "Narrator", "event": "novel", "transistion": "fade", "text":
 	"It was the following day, Blanche and a professor had been chatting about her project."},
 	
@@ -119,6 +120,7 @@
 	"Great, thank you Christina."},
 
 	{"background": "university hall:1.0",
+	"ambient": "outside city",
 	"delete_sprite": "christina",
 	"delete_sprite2": "blanche",
 	"speaker": "Narrator","event": "novel", "text":

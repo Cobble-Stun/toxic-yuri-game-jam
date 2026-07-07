@@ -1,6 +1,7 @@
 [
 	{"transistion": "fade",
 	"background": "bedroom lights on:1.0",
+	"ambient": "null",
 	"sprite": "christina diagonal c:christina:-200:0:1.0",
 	"sprite2": "pasaya neutral c:pasaya:200:0:1.0",
 	"speaker": "Pasaya","text":
