@@ -26,7 +26,7 @@ var saveName: String
 @onready var resolutionDropdown = $"Options/Options/Resolution/OptionButton"
 
 var resolutions: Dictionary = {"3840x2160":Vector2i(3840,2160),
-								"2560x1440":Vector2i(2560,1080),
+								"2560x1440":Vector2i(2560,1440),
 								"1920x1080":Vector2i(1920,1080),
 								"1366x768":Vector2i(1366,768),
 								"1536x864":Vector2i(1536,864),
@@ -39,9 +39,9 @@ var resolutions: Dictionary = {"3840x2160":Vector2i(3840,2160),
 func _ready() -> void:
 	animPlayer.play("Hidden")
 	SaveSystem.load_settings()
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Text"), Globals.textVolume)
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), Globals.musicVolume)
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), Globals.sfxVolume)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Text"), linear_to_db(Globals.textVolume))
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(Globals.musicVolume))
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), linear_to_db(Globals.sfxVolume))
 	var Current_Resolution = get_window().get_size()
 	var ID = 0
 	

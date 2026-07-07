@@ -14,7 +14,7 @@ var textSpeed = 0.04
 var textAutoProgressSpeed = 0.5
 
 var windowMode = 0
-var resolutionIndex = 0
+var resolutionIndex = 2
 
 func load_data():
 	savedDialogIndex = SaveSystem.data["saved_dialog_index"]

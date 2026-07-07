@@ -8,7 +8,6 @@
 [ext_resource type="Script" uid="uid://pi0dlsq68aw3" path="res://scripts/speechbox_buttons.gd" id="5_ptht1"]
 [ext_resource type="Script" uid="uid://bu0oglgq237js" path="res://scripts/pause_menu.gd" id="5_vr4fv"]
 [ext_resource type="Texture2D" uid="uid://c2g35syaxhf1k" path="res://gui/pause menu/main_menu.png" id="6_780hr"]
-[ext_resource type="Texture2D" uid="uid://byd2gj8qy4cw6" path="res://gui/main menu/game_menu.png" id="6_vm6a4"]
 [ext_resource type="Texture2D" uid="uid://dn48veyafqi3g" path="res://gui/speech/VN_NvlMode.png" id="6_vr4fv"]
 [ext_resource type="Texture2D" uid="uid://masjfeil0u8v" path="res://gui/main menu/Slider Knob.png" id="7_1aivi"]
 [ext_resource type="Texture2D" uid="uid://bfh8tqhanj8vs" path="res://gui/main menu/Slider Center.png" id="8_fpdpx"]
@@ -394,7 +393,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("3_ptht1")
 
-[node name="Background" type="TextureRect" parent="CanvasLayer/Control/History" unique_id=54844894]
+[node name="Background" type="ColorRect" parent="CanvasLayer/Control/History" unique_id=1244064508]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -402,8 +401,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("6_vm6a4")
-expand_mode = 5
+color = Color(0.35581514, 0.36770222, 0.5927599, 1)
 
 [node name="Title" type="Label" parent="CanvasLayer/Control/History" unique_id=24050869]
 layout_mode = 1

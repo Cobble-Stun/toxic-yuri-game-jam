@@ -99,8 +99,9 @@ sceneName = "house2"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2075664947]
 shape = SubResource("RectangleShape2D_ikpfy")
 
-[node name="CameraHolder" type="CharacterBody2D" parent="." unique_id=1942839046]
+[node name="CameraHolder" type="CharacterBody2D" parent="." unique_id=1942839046 node_paths=PackedStringArray("worm")]
 script = ExtResource("8_htvkj")
+worm = NodePath("../Worm")
 
 [node name="Camera2D" type="Camera2D" parent="CameraHolder" unique_id=1696983179]
 

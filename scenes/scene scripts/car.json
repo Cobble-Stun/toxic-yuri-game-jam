@@ -16,7 +16,7 @@
 	{"speaker": "Christina","event": "adventure","text":
 	"I'm fine... really."},
 
-	{"speaker": "Narrator", "text":
+	{"speaker": "Narrator", "event": "novel", "text":
 	"Christina feels something coming up her throat and she forces it down, creating a loud, audible gulp. Blanche sighs."},
 
 	{"background": "countryroad:1.0",

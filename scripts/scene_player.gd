@@ -149,6 +149,7 @@ func scene_rollback():
 	dialogIndex = last_state["index"]
 	
 	nameText.text = last_state["speaker"]
+	change_color(last_state["speaker"])
 	nameText2.text = last_state["speaker"]
 	dialogueText.text = last_state["text"]
 	dialogueText2.text = last_state["text"]
@@ -385,6 +386,7 @@ func assign_speaker_name(lineInfo: String):
 		nameText.text = lineInfo
 		nameText2.text = lineInfo
 		change_font(lineInfo)
+		change_color(lineInfo)
 	else:
 		nameText.text = "???"
 		nameText2.text = "???"
@@ -423,6 +425,7 @@ func change_font(name):
 			dialogueText.add_theme_font_size_override("normal_font_size", 20)
 			dialogueText2.add_theme_font_override("normal_font", narratorFont)
 			dialogueText2.add_theme_font_size_override("normal_font_size", 20)
+			set_novel()
 	else:
 		nameText.remove_theme_font_override("normal_font")
 		nameText.add_theme_font_size_override("normal_font_size", 32)
@@ -432,6 +435,18 @@ func change_font(name):
 		dialogueText.add_theme_font_size_override("normal_font_size", 32)
 		dialogueText2.remove_theme_font_override("normal_font")
 		dialogueText2.add_theme_font_size_override("normal_font_size", 32)
+		set_adventure()
+		
+func change_color(name):
+	match name:
+		"Christina":
+			nameText.set_modulate("cyan")
+		"Blanche":
+			nameText.set_modulate("yellow")
+		"Pasaya":
+			nameText.set_modulate("purple")
+		_:
+			nameText.set_modulate("white")
 	
 #transition
 func assign_transition(line):
@@ -484,11 +499,17 @@ func assign_event(line):
 		"unhide text":
 			update_dialogue_box_type()
 		"novel":
-			novel = true
-			update_dialogue_box_type()
+			set_novel()
 		"adventure":
-			novel = false
-			update_dialogue_box_type()
+			set_adventure()
+	
+func set_novel():
+	novel = true
+	update_dialogue_box_type()
+	
+func set_adventure():
+	novel = false
+	update_dialogue_box_type()
 	
 func update_dialogue_box_type():
 	if novel:

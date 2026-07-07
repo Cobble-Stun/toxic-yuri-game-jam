@@ -1,7 +1,6 @@
 [
 	{"background": "checkup room:1.0",
-	"delete_sprite": "christina",
-	"delete_sprite2": "pasaya",
+	"delete_sprite": "pasaya",
 	"speaker": "Blanche","text":
 	"So you're telling me there's a worm inside my body?"},
 	
@@ -31,6 +30,9 @@
 	
 	{"speaker": "Blanche","text":
 	"Yes, I understand."},
+	
+	{"speaker": "Narrator", "event": "novel", "text":
+	"Blanche never did take that medicine. Something compelled her not to."},
 	
 	{"next_scene": "grade"}
 ]
